@@ -1,0 +1,10 @@
+PODS:
+  - Glyptodon (1.0.9)
+
+DEPENDENCIES:
+  - Glyptodon (~> 1.0)
+
+SPEC CHECKSUMS:
+  Glyptodon: 0a73952fe2b413f5784a640b665b39719515b3a1
+
+COCOAPODS: 0.38.2

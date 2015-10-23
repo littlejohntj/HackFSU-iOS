@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02F68061BA5805621C7AD9E84360354A /* UIView+Glyptodon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AADDEAB5759DF6E067995E98FAFA893 /* UIView+Glyptodon.swift */; };
+		0561C649D56289832EA4466D7B1B7AED /* GlyptodonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9D1A1FB03096EFF1A7B54B7DA25EE6 /* GlyptodonView.swift */; };
+		11808AEF075494F4CAC38623EACA7088 /* GlyptodonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D584A7B239A7C58014EA03FEC17AD510 /* GlyptodonStyle.swift */; };
+		1FFAF417551123B8618C1A72C83AC3C8 /* Glyptodon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9218F4564325BC9289DF933777BDD9BD /* Glyptodon.swift */; };
+		20F72D8CF283B90990065B2BA8804EAD /* GlyptodonViewDefaultStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E40110405B249B32D1F33676CD8376 /* GlyptodonViewDefaultStyles.swift */; };
+		31ED8134576B62F08BB0825A5CA9BB2D /* GlyptodonViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB756ABBDE628AE3DA744782FD9B321 /* GlyptodonViewStyle.swift */; };
+		56904905402589FCBE57B966ACDF4EAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9030BA3D2C433821056F1421AD6B6AD3 /* Foundation.framework */; };
+		6FBCA2300DCE7E1947BC272FA2BBF339 /* GlyptodonColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A740B5A57B73CBBB918D17B895360EAC /* GlyptodonColor.swift */; };
+		8635453A69E6C0F43E76E83712CAAE31 /* Pods-Hack FSU-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E936A6C1E1CA05A2F3B3631205CC89EE /* Pods-Hack FSU-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		915135003FF4F76773D29D699C833F8D /* Glyptodon-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AA2E21137F69BA28618A39F8F0C86141 /* Glyptodon-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A300746E2626006AB2636A19BE35E692 /* Pods-Hack FSU-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 144FD4AE50FB5C58CD38710F9F4DE04B /* Pods-Hack FSU-dummy.m */; };
+		A6DBC332F381AD1B9B8C8AFADCA609EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9030BA3D2C433821056F1421AD6B6AD3 /* Foundation.framework */; };
+		AFF58A0FC504DE49214D5A32006FB67C /* GlyptodonButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0538B3655D657A48E868B96E9F290881 /* GlyptodonButtonStyle.swift */; };
+		BBA20B386BD33D70ED4D67283880A4B7 /* Glyptodon-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4D706E4327D800506A2D16CAFA718A /* Glyptodon-dummy.m */; };
+		BC328F630DDBD5095A745D894D44A491 /* GlyptodonTitleDefaultStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CAC0B2C6D61CB0C3D65F5235A033F9 /* GlyptodonTitleDefaultStyles.swift */; };
+		F0E8F72DBB55A618C0DDD1DE2AED886B /* GlyptodonTitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E2CB703728794AFA0C26A4C985D36E /* GlyptodonTitleStyle.swift */; };
+		FF5A3D931E041CA4402300EEFA26FE32 /* GlyptodonButtonDefaultStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A2B5D6C073F1798D86B2DF6D16AF1E /* GlyptodonButtonDefaultStyles.swift */; };
+		FF807CB8A48FD6A6F30A65D98F0912A4 /* TegAutolayoutConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7426728BE1DD3DE373A6F2452815DE /* TegAutolayoutConstraints.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E35ABF5EF30F78CCF027AD114F0EDF9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 033762EFC8AD066FCE0EB477380AAB86;
+			remoteInfo = Glyptodon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0538B3655D657A48E868B96E9F290881 /* GlyptodonButtonStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlyptodonButtonStyle.swift; path = Glyptodon/Styles/GlyptodonButtonStyle.swift; sourceTree = "<group>"; };
+		0CD1B7E876A63C7F2C22F3019544BE99 /* Pods-Hack FSU-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hack FSU-frameworks.sh"; sourceTree = "<group>"; };
+		144FD4AE50FB5C58CD38710F9F4DE04B /* Pods-Hack FSU-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hack FSU-dummy.m"; sourceTree = "<group>"; };
+		31EFE223528B3F52CF49C84F2C544A56 /* Glyptodon.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Glyptodon.modulemap; sourceTree = "<group>"; };
+		3D49F10986B0678C66CE86D52C53E9D6 /* Pods-Hack FSU-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hack FSU-acknowledgements.plist"; sourceTree = "<group>"; };
+		46A7146C3EFC8949D5B06CDAB2BB33A2 /* Pods-Hack FSU-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hack FSU-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4AADDEAB5759DF6E067995E98FAFA893 /* UIView+Glyptodon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Glyptodon.swift"; path = "Glyptodon/UIView+Glyptodon.swift"; sourceTree = "<group>"; };
+		631E7EA16F38E5E87720476070278A11 /* Pods-Hack FSU-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hack FSU-resources.sh"; sourceTree = "<group>"; };
+		646CCA5700C3435D44691D709B9E1C38 /* Pods-Hack FSU.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hack FSU.debug.xcconfig"; sourceTree = "<group>"; };
+		6627619D870EDA071B6572D87B381E56 /* Glyptodon.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Glyptodon.xcconfig; sourceTree = "<group>"; };
+		70A2B5D6C073F1798D86B2DF6D16AF1E /* GlyptodonButtonDefaultStyles.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlyptodonButtonDefaultStyles.swift; path = Glyptodon/Styles/GlyptodonButtonDefaultStyles.swift; sourceTree = "<group>"; };
+		7F4D706E4327D800506A2D16CAFA718A /* Glyptodon-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Glyptodon-dummy.m"; sourceTree = "<group>"; };
+		8381E5615022C34D59E31FEA05FE7FBA /* Pods-Hack FSU.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Hack FSU.modulemap"; sourceTree = "<group>"; };
+		9030BA3D2C433821056F1421AD6B6AD3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		9031001D6B7862CDC93BC8780DEDFAD7 /* Pods-Hack FSU.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hack FSU.release.xcconfig"; sourceTree = "<group>"; };
+		91E40110405B249B32D1F33676CD8376 /* GlyptodonViewDefaultStyles.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlyptodonViewDefaultStyles.swift; path = Glyptodon/Styles/GlyptodonViewDefaultStyles.swift; sourceTree = "<group>"; };
+		9218F4564325BC9289DF933777BDD9BD /* Glyptodon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Glyptodon.swift; path = Glyptodon/Glyptodon.swift; sourceTree = "<group>"; };
+		9D9D1A1FB03096EFF1A7B54B7DA25EE6 /* GlyptodonView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlyptodonView.swift; path = Glyptodon/GlyptodonView.swift; sourceTree = "<group>"; };
+		A740B5A57B73CBBB918D17B895360EAC /* GlyptodonColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlyptodonColor.swift; path = Glyptodon/Utils/GlyptodonColor.swift; sourceTree = "<group>"; };
+		A78344ECA0D0C7FC84CDC0029C5AE24E /* Pods_Hack_FSU.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hack_FSU.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA2E21137F69BA28618A39F8F0C86141 /* Glyptodon-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Glyptodon-umbrella.h"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C8C36D48685A5B746C6EE1CE88895A2E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D584A7B239A7C58014EA03FEC17AD510 /* GlyptodonStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlyptodonStyle.swift; path = Glyptodon/Styles/GlyptodonStyle.swift; sourceTree = "<group>"; };
+		DE7426728BE1DD3DE373A6F2452815DE /* TegAutolayoutConstraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TegAutolayoutConstraints.swift; path = Glyptodon/Utils/TegAutolayoutConstraints.swift; sourceTree = "<group>"; };
+		DF70321C3D5970200579C38E90994FFF /* Glyptodon-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Glyptodon-Private.xcconfig"; sourceTree = "<group>"; };
+		E5E2CB703728794AFA0C26A4C985D36E /* GlyptodonTitleStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlyptodonTitleStyle.swift; path = Glyptodon/Styles/GlyptodonTitleStyle.swift; sourceTree = "<group>"; };
+		E615F0AACDBCE879C0DC601096D9E98F /* Glyptodon-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Glyptodon-prefix.pch"; sourceTree = "<group>"; };
+		E936A6C1E1CA05A2F3B3631205CC89EE /* Pods-Hack FSU-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Hack FSU-umbrella.h"; sourceTree = "<group>"; };
+		EB35D45BC7F32EFCE0D5B93FFF51201E /* Glyptodon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Glyptodon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7CAC0B2C6D61CB0C3D65F5235A033F9 /* GlyptodonTitleDefaultStyles.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlyptodonTitleDefaultStyles.swift; path = Glyptodon/Styles/GlyptodonTitleDefaultStyles.swift; sourceTree = "<group>"; };
+		FF7FA10BD883B98E7A1FABCB48630BF2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFB756ABBDE628AE3DA744782FD9B321 /* GlyptodonViewStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlyptodonViewStyle.swift; path = Glyptodon/Styles/GlyptodonViewStyle.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9ED5E1CE90B55D2FA88507106A41A0A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6DBC332F381AD1B9B8C8AFADCA609EC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1605F85A1AB5D56C4946E797F60E540 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56904905402589FCBE57B966ACDF4EAE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B010B1A41F0ECC15D3C6771D948DDAE /* Glyptodon */ = {
+			isa = PBXGroup;
+			children = (
+				9218F4564325BC9289DF933777BDD9BD /* Glyptodon.swift */,
+				70A2B5D6C073F1798D86B2DF6D16AF1E /* GlyptodonButtonDefaultStyles.swift */,
+				0538B3655D657A48E868B96E9F290881 /* GlyptodonButtonStyle.swift */,
+				A740B5A57B73CBBB918D17B895360EAC /* GlyptodonColor.swift */,
+				D584A7B239A7C58014EA03FEC17AD510 /* GlyptodonStyle.swift */,
+				F7CAC0B2C6D61CB0C3D65F5235A033F9 /* GlyptodonTitleDefaultStyles.swift */,
+				E5E2CB703728794AFA0C26A4C985D36E /* GlyptodonTitleStyle.swift */,
+				9D9D1A1FB03096EFF1A7B54B7DA25EE6 /* GlyptodonView.swift */,
+				91E40110405B249B32D1F33676CD8376 /* GlyptodonViewDefaultStyles.swift */,
+				FFB756ABBDE628AE3DA744782FD9B321 /* GlyptodonViewStyle.swift */,
+				DE7426728BE1DD3DE373A6F2452815DE /* TegAutolayoutConstraints.swift */,
+				4AADDEAB5759DF6E067995E98FAFA893 /* UIView+Glyptodon.swift */,
+				E5A0B0ABEFF1BFF2A61EE2A74A533C59 /* Support Files */,
+			);
+			path = Glyptodon;
+			sourceTree = "<group>";
+		};
+		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				9030BA3D2C433821056F1421AD6B6AD3 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				D6A2040BB213DE95ABD4C28380ADBB76 /* Pods */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				C3C95A1E4B104CA0BD86B661E48C8D5F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		AD2E66A373671B9DCA9DF356E0927212 /* Pods-Hack FSU */ = {
+			isa = PBXGroup;
+			children = (
+				FF7FA10BD883B98E7A1FABCB48630BF2 /* Info.plist */,
+				8381E5615022C34D59E31FEA05FE7FBA /* Pods-Hack FSU.modulemap */,
+				46A7146C3EFC8949D5B06CDAB2BB33A2 /* Pods-Hack FSU-acknowledgements.markdown */,
+				3D49F10986B0678C66CE86D52C53E9D6 /* Pods-Hack FSU-acknowledgements.plist */,
+				144FD4AE50FB5C58CD38710F9F4DE04B /* Pods-Hack FSU-dummy.m */,
+				0CD1B7E876A63C7F2C22F3019544BE99 /* Pods-Hack FSU-frameworks.sh */,
+				631E7EA16F38E5E87720476070278A11 /* Pods-Hack FSU-resources.sh */,
+				E936A6C1E1CA05A2F3B3631205CC89EE /* Pods-Hack FSU-umbrella.h */,
+				646CCA5700C3435D44691D709B9E1C38 /* Pods-Hack FSU.debug.xcconfig */,
+				9031001D6B7862CDC93BC8780DEDFAD7 /* Pods-Hack FSU.release.xcconfig */,
+			);
+			name = "Pods-Hack FSU";
+			path = "Target Support Files/Pods-Hack FSU";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53F661C0CA7190D2CF05023FB33D61E4 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3C95A1E4B104CA0BD86B661E48C8D5F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD2E66A373671B9DCA9DF356E0927212 /* Pods-Hack FSU */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB35D45BC7F32EFCE0D5B93FFF51201E /* Glyptodon.framework */,
+				A78344ECA0D0C7FC84CDC0029C5AE24E /* Pods_Hack_FSU.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6A2040BB213DE95ABD4C28380ADBB76 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B010B1A41F0ECC15D3C6771D948DDAE /* Glyptodon */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E5A0B0ABEFF1BFF2A61EE2A74A533C59 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				31EFE223528B3F52CF49C84F2C544A56 /* Glyptodon.modulemap */,
+				6627619D870EDA071B6572D87B381E56 /* Glyptodon.xcconfig */,
+				DF70321C3D5970200579C38E90994FFF /* Glyptodon-Private.xcconfig */,
+				7F4D706E4327D800506A2D16CAFA718A /* Glyptodon-dummy.m */,
+				E615F0AACDBCE879C0DC601096D9E98F /* Glyptodon-prefix.pch */,
+				AA2E21137F69BA28618A39F8F0C86141 /* Glyptodon-umbrella.h */,
+				C8C36D48685A5B746C6EE1CE88895A2E /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Glyptodon";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		91C2C0A6205D0A110ACC05E42B48C651 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				915135003FF4F76773D29D699C833F8D /* Glyptodon-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9F555116EC25D3ABCE49730B1CD3F49 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8635453A69E6C0F43E76E83712CAAE31 /* Pods-Hack FSU-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		033762EFC8AD066FCE0EB477380AAB86 /* Glyptodon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6126173A5CF4E226A4C2B70BC424F1FD /* Build configuration list for PBXNativeTarget "Glyptodon" */;
+			buildPhases = (
+				A336FA3A117D68151BB20D411F651976 /* Sources */,
+				C1605F85A1AB5D56C4946E797F60E540 /* Frameworks */,
+				91C2C0A6205D0A110ACC05E42B48C651 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Glyptodon;
+			productName = Glyptodon;
+			productReference = EB35D45BC7F32EFCE0D5B93FFF51201E /* Glyptodon.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A9FDA62AEA9CCCFE1FCE7F1993A7645F /* Pods-Hack FSU */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F795CE71B8C24ECA8DC3D81FFA28FCCD /* Build configuration list for PBXNativeTarget "Pods-Hack FSU" */;
+			buildPhases = (
+				ACDE519E4D177283353BC3C9D0E1AC95 /* Sources */,
+				9ED5E1CE90B55D2FA88507106A41A0A0 /* Frameworks */,
+				E9F555116EC25D3ABCE49730B1CD3F49 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D66099A42B9F38FA7983408C48654D5 /* PBXTargetDependency */,
+			);
+			name = "Pods-Hack FSU";
+			productName = "Pods-Hack FSU";
+			productReference = A78344ECA0D0C7FC84CDC0029C5AE24E /* Pods_Hack_FSU.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				033762EFC8AD066FCE0EB477380AAB86 /* Glyptodon */,
+				A9FDA62AEA9CCCFE1FCE7F1993A7645F /* Pods-Hack FSU */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A336FA3A117D68151BB20D411F651976 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBA20B386BD33D70ED4D67283880A4B7 /* Glyptodon-dummy.m in Sources */,
+				1FFAF417551123B8618C1A72C83AC3C8 /* Glyptodon.swift in Sources */,
+				FF5A3D931E041CA4402300EEFA26FE32 /* GlyptodonButtonDefaultStyles.swift in Sources */,
+				AFF58A0FC504DE49214D5A32006FB67C /* GlyptodonButtonStyle.swift in Sources */,
+				6FBCA2300DCE7E1947BC272FA2BBF339 /* GlyptodonColor.swift in Sources */,
+				11808AEF075494F4CAC38623EACA7088 /* GlyptodonStyle.swift in Sources */,
+				BC328F630DDBD5095A745D894D44A491 /* GlyptodonTitleDefaultStyles.swift in Sources */,
+				F0E8F72DBB55A618C0DDD1DE2AED886B /* GlyptodonTitleStyle.swift in Sources */,
+				0561C649D56289832EA4466D7B1B7AED /* GlyptodonView.swift in Sources */,
+				20F72D8CF283B90990065B2BA8804EAD /* GlyptodonViewDefaultStyles.swift in Sources */,
+				31ED8134576B62F08BB0825A5CA9BB2D /* GlyptodonViewStyle.swift in Sources */,
+				FF807CB8A48FD6A6F30A65D98F0912A4 /* TegAutolayoutConstraints.swift in Sources */,
+				02F68061BA5805621C7AD9E84360354A /* UIView+Glyptodon.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACDE519E4D177283353BC3C9D0E1AC95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A300746E2626006AB2636A19BE35E692 /* Pods-Hack FSU-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7D66099A42B9F38FA7983408C48654D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Glyptodon;
+			target = 033762EFC8AD066FCE0EB477380AAB86 /* Glyptodon */;
+			targetProxy = E35ABF5EF30F78CCF027AD114F0EDF9B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		098F7C769841B9C9A69B6ED12384968A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9031001D6B7862CDC93BC8780DEDFAD7 /* Pods-Hack FSU.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Hack FSU/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Hack FSU/Pods-Hack FSU.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Hack_FSU;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		51EE1B481649B0889FB1E0F607786478 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF70321C3D5970200579C38E90994FFF /* Glyptodon-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1.0.9;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Glyptodon/Glyptodon-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Glyptodon/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Glyptodon/Glyptodon.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Glyptodon;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		56AA30606B2B0C03CD895BA9A77FB942 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 646CCA5700C3435D44691D709B9E1C38 /* Pods-Hack FSU.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Hack FSU/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Hack FSU/Pods-Hack FSU.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Hack_FSU;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		74857149DC1E0D599B8A01A78349A926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A2E7E98291C1D14A69E8A685204E49FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF70321C3D5970200579C38E90994FFF /* Glyptodon-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1.0.9;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Glyptodon/Glyptodon-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Glyptodon/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Glyptodon/Glyptodon.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Glyptodon;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */,
+				74857149DC1E0D599B8A01A78349A926 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6126173A5CF4E226A4C2B70BC424F1FD /* Build configuration list for PBXNativeTarget "Glyptodon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2E7E98291C1D14A69E8A685204E49FA /* Debug */,
+				51EE1B481649B0889FB1E0F607786478 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F795CE71B8C24ECA8DC3D81FFA28FCCD /* Build configuration list for PBXNativeTarget "Pods-Hack FSU" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56AA30606B2B0C03CD895BA9A77FB942 /* Debug */,
+				098F7C769841B9C9A69B6ED12384968A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
