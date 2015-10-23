@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		61551A701BD9C0C50091D44A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61551A6F1BD9C0C50091D44A /* AppDelegate.swift */; };
+		61551A721BD9C0C50091D44A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61551A711BD9C0C50091D44A /* ViewController.swift */; };
+		61551A751BD9C0C50091D44A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61551A731BD9C0C50091D44A /* Main.storyboard */; };
+		61551A771BD9C0C50091D44A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61551A761BD9C0C50091D44A /* Assets.xcassets */; };
+		61551A7A1BD9C0C50091D44A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61551A781BD9C0C50091D44A /* LaunchScreen.storyboard */; };
+		61551A851BD9C0C50091D44A /* Hack_FSUTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61551A841BD9C0C50091D44A /* Hack_FSUTests.swift */; };
+		61551A901BD9C0C50091D44A /* Hack_FSUUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61551A8F1BD9C0C50091D44A /* Hack_FSUUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		61551A811BD9C0C50091D44A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61551A641BD9C0C50091D44A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61551A6B1BD9C0C50091D44A;
+			remoteInfo = "Hack FSU";
+		};
+		61551A8C1BD9C0C50091D44A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61551A641BD9C0C50091D44A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61551A6B1BD9C0C50091D44A;
+			remoteInfo = "Hack FSU";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		61551A6C1BD9C0C50091D44A /* Hack FSU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hack FSU.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61551A6F1BD9C0C50091D44A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		61551A711BD9C0C50091D44A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		61551A741BD9C0C50091D44A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		61551A761BD9C0C50091D44A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		61551A791BD9C0C50091D44A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		61551A7B1BD9C0C50091D44A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61551A801BD9C0C50091D44A /* Hack FSUTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hack FSUTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61551A841BD9C0C50091D44A /* Hack_FSUTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hack_FSUTests.swift; sourceTree = "<group>"; };
+		61551A861BD9C0C50091D44A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61551A8B1BD9C0C50091D44A /* Hack FSUUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hack FSUUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61551A8F1BD9C0C50091D44A /* Hack_FSUUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hack_FSUUITests.swift; sourceTree = "<group>"; };
+		61551A911BD9C0C50091D44A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		61551A691BD9C0C50091D44A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61551A7D1BD9C0C50091D44A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61551A881BD9C0C50091D44A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		61551A631BD9C0C50091D44A = {
+			isa = PBXGroup;
+			children = (
+				61551A6E1BD9C0C50091D44A /* Hack FSU */,
+				61551A831BD9C0C50091D44A /* Hack FSUTests */,
+				61551A8E1BD9C0C50091D44A /* Hack FSUUITests */,
+				61551A6D1BD9C0C50091D44A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		61551A6D1BD9C0C50091D44A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61551A6C1BD9C0C50091D44A /* Hack FSU.app */,
+				61551A801BD9C0C50091D44A /* Hack FSUTests.xctest */,
+				61551A8B1BD9C0C50091D44A /* Hack FSUUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		61551A6E1BD9C0C50091D44A /* Hack FSU */ = {
+			isa = PBXGroup;
+			children = (
+				61551A6F1BD9C0C50091D44A /* AppDelegate.swift */,
+				61551A711BD9C0C50091D44A /* ViewController.swift */,
+				61551A731BD9C0C50091D44A /* Main.storyboard */,
+				61551A761BD9C0C50091D44A /* Assets.xcassets */,
+				61551A781BD9C0C50091D44A /* LaunchScreen.storyboard */,
+				61551A7B1BD9C0C50091D44A /* Info.plist */,
+			);
+			path = "Hack FSU";
+			sourceTree = "<group>";
+		};
+		61551A831BD9C0C50091D44A /* Hack FSUTests */ = {
+			isa = PBXGroup;
+			children = (
+				61551A841BD9C0C50091D44A /* Hack_FSUTests.swift */,
+				61551A861BD9C0C50091D44A /* Info.plist */,
+			);
+			path = "Hack FSUTests";
+			sourceTree = "<group>";
+		};
+		61551A8E1BD9C0C50091D44A /* Hack FSUUITests */ = {
+			isa = PBXGroup;
+			children = (
+				61551A8F1BD9C0C50091D44A /* Hack_FSUUITests.swift */,
+				61551A911BD9C0C50091D44A /* Info.plist */,
+			);
+			path = "Hack FSUUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		61551A6B1BD9C0C50091D44A /* Hack FSU */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61551A941BD9C0C50091D44A /* Build configuration list for PBXNativeTarget "Hack FSU" */;
+			buildPhases = (
+				61551A681BD9C0C50091D44A /* Sources */,
+				61551A691BD9C0C50091D44A /* Frameworks */,
+				61551A6A1BD9C0C50091D44A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hack FSU";
+			productName = "Hack FSU";
+			productReference = 61551A6C1BD9C0C50091D44A /* Hack FSU.app */;
+			productType = "com.apple.product-type.application";
+		};
+		61551A7F1BD9C0C50091D44A /* Hack FSUTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61551A971BD9C0C50091D44A /* Build configuration list for PBXNativeTarget "Hack FSUTests" */;
+			buildPhases = (
+				61551A7C1BD9C0C50091D44A /* Sources */,
+				61551A7D1BD9C0C50091D44A /* Frameworks */,
+				61551A7E1BD9C0C50091D44A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61551A821BD9C0C50091D44A /* PBXTargetDependency */,
+			);
+			name = "Hack FSUTests";
+			productName = "Hack FSUTests";
+			productReference = 61551A801BD9C0C50091D44A /* Hack FSUTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		61551A8A1BD9C0C50091D44A /* Hack FSUUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61551A9A1BD9C0C50091D44A /* Build configuration list for PBXNativeTarget "Hack FSUUITests" */;
+			buildPhases = (
+				61551A871BD9C0C50091D44A /* Sources */,
+				61551A881BD9C0C50091D44A /* Frameworks */,
+				61551A891BD9C0C50091D44A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61551A8D1BD9C0C50091D44A /* PBXTargetDependency */,
+			);
+			name = "Hack FSUUITests";
+			productName = "Hack FSUUITests";
+			productReference = 61551A8B1BD9C0C50091D44A /* Hack FSUUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		61551A641BD9C0C50091D44A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Todd Littlejohn";
+				TargetAttributes = {
+					61551A6B1BD9C0C50091D44A = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					61551A7F1BD9C0C50091D44A = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 61551A6B1BD9C0C50091D44A;
+					};
+					61551A8A1BD9C0C50091D44A = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 61551A6B1BD9C0C50091D44A;
+					};
+				};
+			};
+			buildConfigurationList = 61551A671BD9C0C50091D44A /* Build configuration list for PBXProject "Hack FSU" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 61551A631BD9C0C50091D44A;
+			productRefGroup = 61551A6D1BD9C0C50091D44A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				61551A6B1BD9C0C50091D44A /* Hack FSU */,
+				61551A7F1BD9C0C50091D44A /* Hack FSUTests */,
+				61551A8A1BD9C0C50091D44A /* Hack FSUUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		61551A6A1BD9C0C50091D44A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61551A7A1BD9C0C50091D44A /* LaunchScreen.storyboard in Resources */,
+				61551A771BD9C0C50091D44A /* Assets.xcassets in Resources */,
+				61551A751BD9C0C50091D44A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61551A7E1BD9C0C50091D44A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61551A891BD9C0C50091D44A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		61551A681BD9C0C50091D44A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61551A721BD9C0C50091D44A /* ViewController.swift in Sources */,
+				61551A701BD9C0C50091D44A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61551A7C1BD9C0C50091D44A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61551A851BD9C0C50091D44A /* Hack_FSUTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61551A871BD9C0C50091D44A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61551A901BD9C0C50091D44A /* Hack_FSUUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		61551A821BD9C0C50091D44A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 61551A6B1BD9C0C50091D44A /* Hack FSU */;
+			targetProxy = 61551A811BD9C0C50091D44A /* PBXContainerItemProxy */;
+		};
+		61551A8D1BD9C0C50091D44A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 61551A6B1BD9C0C50091D44A /* Hack FSU */;
+			targetProxy = 61551A8C1BD9C0C50091D44A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		61551A731BD9C0C50091D44A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61551A741BD9C0C50091D44A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		61551A781BD9C0C50091D44A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61551A791BD9C0C50091D44A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		61551A921BD9C0C50091D44A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		61551A931BD9C0C50091D44A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		61551A951BD9C0C50091D44A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Hack FSU/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HackFSU.Hack-FSU";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		61551A961BD9C0C50091D44A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Hack FSU/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HackFSU.Hack-FSU";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		61551A981BD9C0C50091D44A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Hack FSUTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HackFSU.Hack-FSUTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hack FSU.app/Hack FSU";
+			};
+			name = Debug;
+		};
+		61551A991BD9C0C50091D44A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Hack FSUTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HackFSU.Hack-FSUTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hack FSU.app/Hack FSU";
+			};
+			name = Release;
+		};
+		61551A9B1BD9C0C50091D44A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Hack FSUUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HackFSU.Hack-FSUUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Hack FSU";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		61551A9C1BD9C0C50091D44A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Hack FSUUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HackFSU.Hack-FSUUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Hack FSU";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		61551A671BD9C0C50091D44A /* Build configuration list for PBXProject "Hack FSU" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61551A921BD9C0C50091D44A /* Debug */,
+				61551A931BD9C0C50091D44A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61551A941BD9C0C50091D44A /* Build configuration list for PBXNativeTarget "Hack FSU" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61551A951BD9C0C50091D44A /* Debug */,
+				61551A961BD9C0C50091D44A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		61551A971BD9C0C50091D44A /* Build configuration list for PBXNativeTarget "Hack FSUTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61551A981BD9C0C50091D44A /* Debug */,
+				61551A991BD9C0C50091D44A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		61551A9A1BD9C0C50091D44A /* Build configuration list for PBXNativeTarget "Hack FSUUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61551A9B1BD9C0C50091D44A /* Debug */,
+				61551A9C1BD9C0C50091D44A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 61551A641BD9C0C50091D44A /* Project object */;
+}
