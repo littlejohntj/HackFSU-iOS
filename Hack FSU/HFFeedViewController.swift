@@ -52,6 +52,7 @@ class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDa
             case 0: if updateFeedArray.count == 0 {
                 feedTableView.alpha = 0.0
                 tableViewContainerView.glyptodon.show("No Updates. Happy Hacking!")
+                
             }   else {
                 tableViewContainerView.glyptodon.hide()
                 feedTableView.alpha = 1.0

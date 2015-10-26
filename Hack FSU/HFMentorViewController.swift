@@ -17,17 +17,16 @@ class HFMentorViewController: UIViewController {
     @IBOutlet weak var locationTextField: UITextField!
     
     // MARK: Class Varibles 
-    var textViewColor = UIColor.lightGrayColor()
-    
+    var textViewColor = UIColor._lightGrayColor()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         descriptionTextField.layer.borderWidth = 0.5
-        descriptionTextField.layer.borderColor = UIColor.lightGrayColor().CGColor
+        descriptionTextField.layer.borderColor = self.textViewColor.CGColor
         descriptionTextField.layer.cornerRadius = 7.5
-        descriptionTextField.text = "What do you need?"
-        descriptionTextField.textColor = textViewColor
-        descriptionTextField.selectedTextRange = descriptionTextField.textRangeFromPosition(descriptionTextField.beginningOfDocument, toPosition: descriptionTextField.beginningOfDocument)
+        
+        
 
     }
 
@@ -38,19 +37,22 @@ class HFMentorViewController: UIViewController {
     }
     
     /* Functions to allow for a placeholder in the text view. */
-    func textViewDidChange(textView: UITextView) { //Handle the text changes here
-        
-        if textView.text.isEmpty {
-            textView.text = "What do you need?"
-            textView.textColor = textViewColor
-        } else if textView.text == "What do you need?" {
-            textView.textColor = textViewColor
-        } else if textView.text.containsString("What do you need?") {
-            textView.text = textView.text.componentsSeparatedByString("What do you need?")[1]
-            textView.textColor = UIColor.blackColor()
-        }
-        
-    }
+//    func textViewDidChange(textView: UITextView) { //Handle the text changes here
+//        
+//        if textView.text.isEmpty {
+//            textView.text = "What do you need?"
+//            textView.textColor = textViewColor
+//            UITextView.appearance().tintColor = textViewColor
+//        } else if textView.text == "What do you need?" {
+//            textView.textColor = textViewColor
+//            UITextView.appearance().tintColor = textViewColor
+//        } else if textView.text.containsString("What do you need?") {
+//            textView.text = textView.text.componentsSeparatedByString("What do you need?")[1]
+//            textView.textColor = UIColor.blackColor()
+//            UITextView.appearance().tintColor = UIColor.blackColor()
+//        }
+//        
+//    }
 
     
 

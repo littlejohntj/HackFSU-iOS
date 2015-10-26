@@ -1,10 +1,13 @@
 PODS:
   - Glyptodon (1.0.9)
+  - KMPlaceholderTextView (1.0.0)
 
 DEPENDENCIES:
   - Glyptodon (~> 1.0)
+  - KMPlaceholderTextView (~> 1.0.0)
 
 SPEC CHECKSUMS:
   Glyptodon: 0a73952fe2b413f5784a640b665b39719515b3a1
+  KMPlaceholderTextView: 08514547996d3bc7ce1b57e296af2ce8e832c0f6
 
 COCOAPODS: 0.38.2

@@ -7,126 +7,146 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02F68061BA5805621C7AD9E84360354A /* UIView+Glyptodon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AADDEAB5759DF6E067995E98FAFA893 /* UIView+Glyptodon.swift */; };
-		0561C649D56289832EA4466D7B1B7AED /* GlyptodonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9D1A1FB03096EFF1A7B54B7DA25EE6 /* GlyptodonView.swift */; };
-		11808AEF075494F4CAC38623EACA7088 /* GlyptodonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D584A7B239A7C58014EA03FEC17AD510 /* GlyptodonStyle.swift */; };
-		1FFAF417551123B8618C1A72C83AC3C8 /* Glyptodon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9218F4564325BC9289DF933777BDD9BD /* Glyptodon.swift */; };
-		20F72D8CF283B90990065B2BA8804EAD /* GlyptodonViewDefaultStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E40110405B249B32D1F33676CD8376 /* GlyptodonViewDefaultStyles.swift */; };
-		31ED8134576B62F08BB0825A5CA9BB2D /* GlyptodonViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB756ABBDE628AE3DA744782FD9B321 /* GlyptodonViewStyle.swift */; };
-		56904905402589FCBE57B966ACDF4EAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9030BA3D2C433821056F1421AD6B6AD3 /* Foundation.framework */; };
-		6FBCA2300DCE7E1947BC272FA2BBF339 /* GlyptodonColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A740B5A57B73CBBB918D17B895360EAC /* GlyptodonColor.swift */; };
-		8635453A69E6C0F43E76E83712CAAE31 /* Pods-Hack FSU-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E936A6C1E1CA05A2F3B3631205CC89EE /* Pods-Hack FSU-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		915135003FF4F76773D29D699C833F8D /* Glyptodon-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AA2E21137F69BA28618A39F8F0C86141 /* Glyptodon-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A300746E2626006AB2636A19BE35E692 /* Pods-Hack FSU-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 144FD4AE50FB5C58CD38710F9F4DE04B /* Pods-Hack FSU-dummy.m */; };
-		A6DBC332F381AD1B9B8C8AFADCA609EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9030BA3D2C433821056F1421AD6B6AD3 /* Foundation.framework */; };
-		AFF58A0FC504DE49214D5A32006FB67C /* GlyptodonButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0538B3655D657A48E868B96E9F290881 /* GlyptodonButtonStyle.swift */; };
-		BBA20B386BD33D70ED4D67283880A4B7 /* Glyptodon-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4D706E4327D800506A2D16CAFA718A /* Glyptodon-dummy.m */; };
-		BC328F630DDBD5095A745D894D44A491 /* GlyptodonTitleDefaultStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CAC0B2C6D61CB0C3D65F5235A033F9 /* GlyptodonTitleDefaultStyles.swift */; };
-		F0E8F72DBB55A618C0DDD1DE2AED886B /* GlyptodonTitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E2CB703728794AFA0C26A4C985D36E /* GlyptodonTitleStyle.swift */; };
-		FF5A3D931E041CA4402300EEFA26FE32 /* GlyptodonButtonDefaultStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A2B5D6C073F1798D86B2DF6D16AF1E /* GlyptodonButtonDefaultStyles.swift */; };
-		FF807CB8A48FD6A6F30A65D98F0912A4 /* TegAutolayoutConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7426728BE1DD3DE373A6F2452815DE /* TegAutolayoutConstraints.swift */; };
+		0B1BBBD9C327E07DC8EC23255F4567D6 /* GlyptodonTitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684D8272D098A819B4FE5E4A57D6AECE /* GlyptodonTitleStyle.swift */; };
+		23BB6E40EBE531C526A07CBEA65C5072 /* GlyptodonButtonDefaultStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D2A5D732726C0019AA4FCE97FDD8EA /* GlyptodonButtonDefaultStyles.swift */; };
+		442E770AA7DFE3E5F0515D94EAB2EAAC /* UIView+Glyptodon.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC53683C5F873A059A578940958A5967 /* UIView+Glyptodon.swift */; };
+		527B3C63BAC89A6B75F5F566EA215F31 /* GlyptodonViewDefaultStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2797FF9E3EFCFE875C70A4E565F4B56A /* GlyptodonViewDefaultStyles.swift */; };
+		5EF34AD36BB3EF74E2DB0E5E53868D82 /* KMPlaceholderTextView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 069193D9D6D57E4F2380372F807DF945 /* KMPlaceholderTextView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		699AFE59D610078A89F3EB9FE6A5E6BB /* GlyptodonButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117C12C62CE9A7960D421E2520769A8C /* GlyptodonButtonStyle.swift */; };
+		6E3C2FCBEBD23D41CED5CAF5744849F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E08DF9398E4F3B60A8DBD8D51E0D949 /* Foundation.framework */; };
+		70923046879C3C298EAD5E6CB73A81B2 /* Glyptodon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F40BF0ED4A88BE60CA965F19415E017 /* Glyptodon.swift */; };
+		7617CFC3B3CB4614F5475A7345A9BE2A /* GlyptodonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12725BAE529B768CCC1B25852A1781FF /* GlyptodonView.swift */; };
+		83CF87D1AF23D4D3BFD3311BC7C55598 /* Glyptodon-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1EAF2B3D9A85202370BB0D8EF0E122 /* Glyptodon-dummy.m */; };
+		858E51A7A80CC4B0BF16A425F307C379 /* Pods-Hack FSU-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 77B6C366923C26BF3001A34C6C499ECA /* Pods-Hack FSU-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C189D50A9351BE0DB66E339DD868CF0 /* GlyptodonViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7F59261FEFF48CCBF7E950D60EBB7A /* GlyptodonViewStyle.swift */; };
+		8C920621A7B1FB8577A7E33EB5DFFA2F /* TegAutolayoutConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82418EE69C41C436C3340AC324EB6669 /* TegAutolayoutConstraints.swift */; };
+		98A2248DC6FA003CCA6BB9B972057AEC /* KMPlaceholderTextView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F933F6D25C83CA47AFE7DC6DDA101089 /* KMPlaceholderTextView-dummy.m */; };
+		9C8A3CF91EADC4853CA6C37926F306C1 /* GlyptodonTitleDefaultStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9504A37DA24EF0BF4E100B6AE1050D6E /* GlyptodonTitleDefaultStyles.swift */; };
+		A77843CBF910B863003FA55B2B378BC7 /* KMPlaceholderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9980421962D91038E427C9CA8D9A264D /* KMPlaceholderTextView.swift */; };
+		C43AFE95A276E540D85CA4A4B0A6F739 /* GlyptodonColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE3316F5AC7A5ECD77F0CEB4FDC1D20 /* GlyptodonColor.swift */; };
+		C86EBEDA3C434DF8898EBB65FEE02E04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E08DF9398E4F3B60A8DBD8D51E0D949 /* Foundation.framework */; };
+		D2A539A78414B336D097953D7A60DE15 /* Glyptodon-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 217B7BB794CA1800353E6E236D860770 /* Glyptodon-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E137A58056F93F6EB77460CA0DDEE3E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E08DF9398E4F3B60A8DBD8D51E0D949 /* Foundation.framework */; };
+		EC6B1DFCB923FE4F312C932605AA1475 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C31BA7766D58F0FD18AA88C8AB821D /* UIKit.framework */; };
+		F31E89470E122A55DE5A28F1DC56B52B /* Pods-Hack FSU-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F02C8BE4298E2C3B7945CD5ADD9E4A30 /* Pods-Hack FSU-dummy.m */; };
+		F75167BE7C04E0C913C5C7E14C9C812B /* GlyptodonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA6C78F8FE59CB3BB4707280D0AD436 /* GlyptodonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E35ABF5EF30F78CCF027AD114F0EDF9B /* PBXContainerItemProxy */ = {
+		900BD2BB1EB4C67DB1A691697AE9EE0D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 033762EFC8AD066FCE0EB477380AAB86;
+			remoteGlobalIDString = F2D80BDA48D05BDE1C7FD167F73D5216;
 			remoteInfo = Glyptodon;
+		};
+		B3262E474F0B2F1C976792CD215317DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 29A5EAF6E34813098157C7722892D64D;
+			remoteInfo = KMPlaceholderTextView;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0538B3655D657A48E868B96E9F290881 /* GlyptodonButtonStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlyptodonButtonStyle.swift; path = Glyptodon/Styles/GlyptodonButtonStyle.swift; sourceTree = "<group>"; };
+		069193D9D6D57E4F2380372F807DF945 /* KMPlaceholderTextView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KMPlaceholderTextView-umbrella.h"; sourceTree = "<group>"; };
+		0AA6C78F8FE59CB3BB4707280D0AD436 /* GlyptodonStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlyptodonStyle.swift; path = Glyptodon/Styles/GlyptodonStyle.swift; sourceTree = "<group>"; };
 		0CD1B7E876A63C7F2C22F3019544BE99 /* Pods-Hack FSU-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hack FSU-frameworks.sh"; sourceTree = "<group>"; };
-		144FD4AE50FB5C58CD38710F9F4DE04B /* Pods-Hack FSU-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hack FSU-dummy.m"; sourceTree = "<group>"; };
-		31EFE223528B3F52CF49C84F2C544A56 /* Glyptodon.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Glyptodon.modulemap; sourceTree = "<group>"; };
+		117C12C62CE9A7960D421E2520769A8C /* GlyptodonButtonStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlyptodonButtonStyle.swift; path = Glyptodon/Styles/GlyptodonButtonStyle.swift; sourceTree = "<group>"; };
+		12725BAE529B768CCC1B25852A1781FF /* GlyptodonView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlyptodonView.swift; path = Glyptodon/GlyptodonView.swift; sourceTree = "<group>"; };
+		1662FBB5DCBD8EE386FAE0CE1B863DB2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B3464C0735E8BA7E10797482A73B481 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		217B7BB794CA1800353E6E236D860770 /* Glyptodon-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Glyptodon-umbrella.h"; sourceTree = "<group>"; };
+		25D2A5D732726C0019AA4FCE97FDD8EA /* GlyptodonButtonDefaultStyles.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlyptodonButtonDefaultStyles.swift; path = Glyptodon/Styles/GlyptodonButtonDefaultStyles.swift; sourceTree = "<group>"; };
+		2797FF9E3EFCFE875C70A4E565F4B56A /* GlyptodonViewDefaultStyles.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlyptodonViewDefaultStyles.swift; path = Glyptodon/Styles/GlyptodonViewDefaultStyles.swift; sourceTree = "<group>"; };
+		3B0C587FD61C60F7275DCDDB8AC2B32F /* Glyptodon-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Glyptodon-prefix.pch"; sourceTree = "<group>"; };
+		3B1EAF2B3D9A85202370BB0D8EF0E122 /* Glyptodon-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Glyptodon-dummy.m"; sourceTree = "<group>"; };
+		3CE3316F5AC7A5ECD77F0CEB4FDC1D20 /* GlyptodonColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlyptodonColor.swift; path = Glyptodon/Utils/GlyptodonColor.swift; sourceTree = "<group>"; };
 		3D49F10986B0678C66CE86D52C53E9D6 /* Pods-Hack FSU-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hack FSU-acknowledgements.plist"; sourceTree = "<group>"; };
 		46A7146C3EFC8949D5B06CDAB2BB33A2 /* Pods-Hack FSU-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hack FSU-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4AADDEAB5759DF6E067995E98FAFA893 /* UIView+Glyptodon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Glyptodon.swift"; path = "Glyptodon/UIView+Glyptodon.swift"; sourceTree = "<group>"; };
+		5C597AD75FB0CDBCFCB8C499486C16B0 /* Pods_Hack_FSU.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hack_FSU.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E08DF9398E4F3B60A8DBD8D51E0D949 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5FCE95A0026DB3CEB7119B0AB46B108D /* KMPlaceholderTextView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "KMPlaceholderTextView-Private.xcconfig"; sourceTree = "<group>"; };
 		631E7EA16F38E5E87720476070278A11 /* Pods-Hack FSU-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hack FSU-resources.sh"; sourceTree = "<group>"; };
-		646CCA5700C3435D44691D709B9E1C38 /* Pods-Hack FSU.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hack FSU.debug.xcconfig"; sourceTree = "<group>"; };
-		6627619D870EDA071B6572D87B381E56 /* Glyptodon.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Glyptodon.xcconfig; sourceTree = "<group>"; };
-		70A2B5D6C073F1798D86B2DF6D16AF1E /* GlyptodonButtonDefaultStyles.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlyptodonButtonDefaultStyles.swift; path = Glyptodon/Styles/GlyptodonButtonDefaultStyles.swift; sourceTree = "<group>"; };
-		7F4D706E4327D800506A2D16CAFA718A /* Glyptodon-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Glyptodon-dummy.m"; sourceTree = "<group>"; };
+		63B984632BF9BC176DB7BA9B72815D17 /* KMPlaceholderTextView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KMPlaceholderTextView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		684D8272D098A819B4FE5E4A57D6AECE /* GlyptodonTitleStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlyptodonTitleStyle.swift; path = Glyptodon/Styles/GlyptodonTitleStyle.swift; sourceTree = "<group>"; };
+		714ED8E381F4F9008AE91913182CF801 /* Glyptodon-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Glyptodon-Private.xcconfig"; sourceTree = "<group>"; };
+		77B6C366923C26BF3001A34C6C499ECA /* Pods-Hack FSU-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Hack FSU-umbrella.h"; sourceTree = "<group>"; };
+		7F40BF0ED4A88BE60CA965F19415E017 /* Glyptodon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Glyptodon.swift; path = Glyptodon/Glyptodon.swift; sourceTree = "<group>"; };
+		82418EE69C41C436C3340AC324EB6669 /* TegAutolayoutConstraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TegAutolayoutConstraints.swift; path = Glyptodon/Utils/TegAutolayoutConstraints.swift; sourceTree = "<group>"; };
 		8381E5615022C34D59E31FEA05FE7FBA /* Pods-Hack FSU.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Hack FSU.modulemap"; sourceTree = "<group>"; };
-		9030BA3D2C433821056F1421AD6B6AD3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		9031001D6B7862CDC93BC8780DEDFAD7 /* Pods-Hack FSU.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hack FSU.release.xcconfig"; sourceTree = "<group>"; };
-		91E40110405B249B32D1F33676CD8376 /* GlyptodonViewDefaultStyles.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlyptodonViewDefaultStyles.swift; path = Glyptodon/Styles/GlyptodonViewDefaultStyles.swift; sourceTree = "<group>"; };
-		9218F4564325BC9289DF933777BDD9BD /* Glyptodon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Glyptodon.swift; path = Glyptodon/Glyptodon.swift; sourceTree = "<group>"; };
-		9D9D1A1FB03096EFF1A7B54B7DA25EE6 /* GlyptodonView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlyptodonView.swift; path = Glyptodon/GlyptodonView.swift; sourceTree = "<group>"; };
-		A740B5A57B73CBBB918D17B895360EAC /* GlyptodonColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlyptodonColor.swift; path = Glyptodon/Utils/GlyptodonColor.swift; sourceTree = "<group>"; };
-		A78344ECA0D0C7FC84CDC0029C5AE24E /* Pods_Hack_FSU.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hack_FSU.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA2E21137F69BA28618A39F8F0C86141 /* Glyptodon-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Glyptodon-umbrella.h"; sourceTree = "<group>"; };
+		9504A37DA24EF0BF4E100B6AE1050D6E /* GlyptodonTitleDefaultStyles.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlyptodonTitleDefaultStyles.swift; path = Glyptodon/Styles/GlyptodonTitleDefaultStyles.swift; sourceTree = "<group>"; };
+		96F89A220DD099B7E367169942922EC2 /* Glyptodon.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Glyptodon.xcconfig; sourceTree = "<group>"; };
+		9980421962D91038E427C9CA8D9A264D /* KMPlaceholderTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KMPlaceholderTextView.swift; path = KMPlaceholderTextView/KMPlaceholderTextView.swift; sourceTree = "<group>"; };
+		9E128CBAF78BDCD2B109C3690994907D /* KMPlaceholderTextView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KMPlaceholderTextView-prefix.pch"; sourceTree = "<group>"; };
+		B3C31BA7766D58F0FD18AA88C8AB821D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C8C36D48685A5B746C6EE1CE88895A2E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D584A7B239A7C58014EA03FEC17AD510 /* GlyptodonStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlyptodonStyle.swift; path = Glyptodon/Styles/GlyptodonStyle.swift; sourceTree = "<group>"; };
-		DE7426728BE1DD3DE373A6F2452815DE /* TegAutolayoutConstraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TegAutolayoutConstraints.swift; path = Glyptodon/Utils/TegAutolayoutConstraints.swift; sourceTree = "<group>"; };
-		DF70321C3D5970200579C38E90994FFF /* Glyptodon-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Glyptodon-Private.xcconfig"; sourceTree = "<group>"; };
-		E5E2CB703728794AFA0C26A4C985D36E /* GlyptodonTitleStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlyptodonTitleStyle.swift; path = Glyptodon/Styles/GlyptodonTitleStyle.swift; sourceTree = "<group>"; };
-		E615F0AACDBCE879C0DC601096D9E98F /* Glyptodon-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Glyptodon-prefix.pch"; sourceTree = "<group>"; };
-		E936A6C1E1CA05A2F3B3631205CC89EE /* Pods-Hack FSU-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Hack FSU-umbrella.h"; sourceTree = "<group>"; };
-		EB35D45BC7F32EFCE0D5B93FFF51201E /* Glyptodon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Glyptodon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7CAC0B2C6D61CB0C3D65F5235A033F9 /* GlyptodonTitleDefaultStyles.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlyptodonTitleDefaultStyles.swift; path = Glyptodon/Styles/GlyptodonTitleDefaultStyles.swift; sourceTree = "<group>"; };
+		BC92D87B68B20813563B76FAC98230D0 /* Pods-Hack FSU.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hack FSU.debug.xcconfig"; sourceTree = "<group>"; };
+		D1220F539C9A345C9C8B947EAEE71198 /* Pods-Hack FSU.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hack FSU.release.xcconfig"; sourceTree = "<group>"; };
+		D5FC281ACA157A5DA93CFAAE434D2FCC /* Glyptodon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Glyptodon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3A1BBE6EA6B12F7D8EE3F6A14D7E9DA /* KMPlaceholderTextView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KMPlaceholderTextView.modulemap; sourceTree = "<group>"; };
+		EC53683C5F873A059A578940958A5967 /* UIView+Glyptodon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Glyptodon.swift"; path = "Glyptodon/UIView+Glyptodon.swift"; sourceTree = "<group>"; };
+		ECF74F1CA66030E40DA9D663DD5901B8 /* Glyptodon.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Glyptodon.modulemap; sourceTree = "<group>"; };
+		F02C8BE4298E2C3B7945CD5ADD9E4A30 /* Pods-Hack FSU-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hack FSU-dummy.m"; sourceTree = "<group>"; };
+		F4DF04003D4CD1F9C3C95770A254BEB5 /* KMPlaceholderTextView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KMPlaceholderTextView.xcconfig; sourceTree = "<group>"; };
+		F933F6D25C83CA47AFE7DC6DDA101089 /* KMPlaceholderTextView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KMPlaceholderTextView-dummy.m"; sourceTree = "<group>"; };
+		FA7F59261FEFF48CCBF7E950D60EBB7A /* GlyptodonViewStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlyptodonViewStyle.swift; path = Glyptodon/Styles/GlyptodonViewStyle.swift; sourceTree = "<group>"; };
 		FF7FA10BD883B98E7A1FABCB48630BF2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FFB756ABBDE628AE3DA744782FD9B321 /* GlyptodonViewStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlyptodonViewStyle.swift; path = Glyptodon/Styles/GlyptodonViewStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9ED5E1CE90B55D2FA88507106A41A0A0 /* Frameworks */ = {
+		977A9E5B4D9CF5830BD1FE519AB4BF28 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6DBC332F381AD1B9B8C8AFADCA609EC /* Foundation.framework in Frameworks */,
+				6E3C2FCBEBD23D41CED5CAF5744849F1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C1605F85A1AB5D56C4946E797F60E540 /* Frameworks */ = {
+		9F4941428F2FF30A04A6BD24EDC5B2F7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56904905402589FCBE57B966ACDF4EAE /* Foundation.framework in Frameworks */,
+				E137A58056F93F6EB77460CA0DDEE3E1 /* Foundation.framework in Frameworks */,
+				EC6B1DFCB923FE4F312C932605AA1475 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFDAF3E0D5EB53BFFF5BCF8A258CB372 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C86EBEDA3C434DF8898EBB65FEE02E04 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0B010B1A41F0ECC15D3C6771D948DDAE /* Glyptodon */ = {
+		27C0505B83BD72DA5E13C6A482CFC10D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9218F4564325BC9289DF933777BDD9BD /* Glyptodon.swift */,
-				70A2B5D6C073F1798D86B2DF6D16AF1E /* GlyptodonButtonDefaultStyles.swift */,
-				0538B3655D657A48E868B96E9F290881 /* GlyptodonButtonStyle.swift */,
-				A740B5A57B73CBBB918D17B895360EAC /* GlyptodonColor.swift */,
-				D584A7B239A7C58014EA03FEC17AD510 /* GlyptodonStyle.swift */,
-				F7CAC0B2C6D61CB0C3D65F5235A033F9 /* GlyptodonTitleDefaultStyles.swift */,
-				E5E2CB703728794AFA0C26A4C985D36E /* GlyptodonTitleStyle.swift */,
-				9D9D1A1FB03096EFF1A7B54B7DA25EE6 /* GlyptodonView.swift */,
-				91E40110405B249B32D1F33676CD8376 /* GlyptodonViewDefaultStyles.swift */,
-				FFB756ABBDE628AE3DA744782FD9B321 /* GlyptodonViewStyle.swift */,
-				DE7426728BE1DD3DE373A6F2452815DE /* TegAutolayoutConstraints.swift */,
-				4AADDEAB5759DF6E067995E98FAFA893 /* UIView+Glyptodon.swift */,
-				E5A0B0ABEFF1BFF2A61EE2A74A533C59 /* Support Files */,
+				B1324CD6AF268A3F8CF8760F8E14CB01 /* Glyptodon */,
+				D3352B47D30B05F2C25BF75954A21F6F /* KMPlaceholderTextView */,
 			);
-			path = Glyptodon;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9030BA3D2C433821056F1421AD6B6AD3 /* Foundation.framework */,
+				D0FB9306D21AF23A056944AE037CBFFF /* iOS */,
 			);
-			name = iOS;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				D6A2040BB213DE95ABD4C28380ADBB76 /* Pods */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				27C0505B83BD72DA5E13C6A482CFC10D /* Pods */,
 				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
 				C3C95A1E4B104CA0BD86B661E48C8D5F /* Targets Support Files */,
 			);
@@ -139,23 +159,65 @@
 				8381E5615022C34D59E31FEA05FE7FBA /* Pods-Hack FSU.modulemap */,
 				46A7146C3EFC8949D5B06CDAB2BB33A2 /* Pods-Hack FSU-acknowledgements.markdown */,
 				3D49F10986B0678C66CE86D52C53E9D6 /* Pods-Hack FSU-acknowledgements.plist */,
-				144FD4AE50FB5C58CD38710F9F4DE04B /* Pods-Hack FSU-dummy.m */,
+				F02C8BE4298E2C3B7945CD5ADD9E4A30 /* Pods-Hack FSU-dummy.m */,
 				0CD1B7E876A63C7F2C22F3019544BE99 /* Pods-Hack FSU-frameworks.sh */,
 				631E7EA16F38E5E87720476070278A11 /* Pods-Hack FSU-resources.sh */,
-				E936A6C1E1CA05A2F3B3631205CC89EE /* Pods-Hack FSU-umbrella.h */,
-				646CCA5700C3435D44691D709B9E1C38 /* Pods-Hack FSU.debug.xcconfig */,
-				9031001D6B7862CDC93BC8780DEDFAD7 /* Pods-Hack FSU.release.xcconfig */,
+				77B6C366923C26BF3001A34C6C499ECA /* Pods-Hack FSU-umbrella.h */,
+				BC92D87B68B20813563B76FAC98230D0 /* Pods-Hack FSU.debug.xcconfig */,
+				D1220F539C9A345C9C8B947EAEE71198 /* Pods-Hack FSU.release.xcconfig */,
 			);
 			name = "Pods-Hack FSU";
 			path = "Target Support Files/Pods-Hack FSU";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		B1324CD6AF268A3F8CF8760F8E14CB01 /* Glyptodon */ = {
 			isa = PBXGroup;
 			children = (
-				53F661C0CA7190D2CF05023FB33D61E4 /* iOS */,
+				7F40BF0ED4A88BE60CA965F19415E017 /* Glyptodon.swift */,
+				25D2A5D732726C0019AA4FCE97FDD8EA /* GlyptodonButtonDefaultStyles.swift */,
+				117C12C62CE9A7960D421E2520769A8C /* GlyptodonButtonStyle.swift */,
+				3CE3316F5AC7A5ECD77F0CEB4FDC1D20 /* GlyptodonColor.swift */,
+				0AA6C78F8FE59CB3BB4707280D0AD436 /* GlyptodonStyle.swift */,
+				9504A37DA24EF0BF4E100B6AE1050D6E /* GlyptodonTitleDefaultStyles.swift */,
+				684D8272D098A819B4FE5E4A57D6AECE /* GlyptodonTitleStyle.swift */,
+				12725BAE529B768CCC1B25852A1781FF /* GlyptodonView.swift */,
+				2797FF9E3EFCFE875C70A4E565F4B56A /* GlyptodonViewDefaultStyles.swift */,
+				FA7F59261FEFF48CCBF7E950D60EBB7A /* GlyptodonViewStyle.swift */,
+				82418EE69C41C436C3340AC324EB6669 /* TegAutolayoutConstraints.swift */,
+				EC53683C5F873A059A578940958A5967 /* UIView+Glyptodon.swift */,
+				BA777817101E985B11B4E8E5BC983625 /* Support Files */,
 			);
-			name = Frameworks;
+			path = Glyptodon;
+			sourceTree = "<group>";
+		};
+		BA777817101E985B11B4E8E5BC983625 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ECF74F1CA66030E40DA9D663DD5901B8 /* Glyptodon.modulemap */,
+				96F89A220DD099B7E367169942922EC2 /* Glyptodon.xcconfig */,
+				714ED8E381F4F9008AE91913182CF801 /* Glyptodon-Private.xcconfig */,
+				3B1EAF2B3D9A85202370BB0D8EF0E122 /* Glyptodon-dummy.m */,
+				3B0C587FD61C60F7275DCDDB8AC2B32F /* Glyptodon-prefix.pch */,
+				217B7BB794CA1800353E6E236D860770 /* Glyptodon-umbrella.h */,
+				1B3464C0735E8BA7E10797482A73B481 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Glyptodon";
+			sourceTree = "<group>";
+		};
+		C2AF7800FC53AF427094A51A35550D37 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1662FBB5DCBD8EE386FAE0CE1B863DB2 /* Info.plist */,
+				E3A1BBE6EA6B12F7D8EE3F6A14D7E9DA /* KMPlaceholderTextView.modulemap */,
+				F4DF04003D4CD1F9C3C95770A254BEB5 /* KMPlaceholderTextView.xcconfig */,
+				5FCE95A0026DB3CEB7119B0AB46B108D /* KMPlaceholderTextView-Private.xcconfig */,
+				F933F6D25C83CA47AFE7DC6DDA101089 /* KMPlaceholderTextView-dummy.m */,
+				9E128CBAF78BDCD2B109C3690994907D /* KMPlaceholderTextView-prefix.pch */,
+				069193D9D6D57E4F2380372F807DF945 /* KMPlaceholderTextView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KMPlaceholderTextView";
 			sourceTree = "<group>";
 		};
 		C3C95A1E4B104CA0BD86B661E48C8D5F /* Targets Support Files */ = {
@@ -169,64 +231,104 @@
 		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EB35D45BC7F32EFCE0D5B93FFF51201E /* Glyptodon.framework */,
-				A78344ECA0D0C7FC84CDC0029C5AE24E /* Pods_Hack_FSU.framework */,
+				D5FC281ACA157A5DA93CFAAE434D2FCC /* Glyptodon.framework */,
+				63B984632BF9BC176DB7BA9B72815D17 /* KMPlaceholderTextView.framework */,
+				5C597AD75FB0CDBCFCB8C499486C16B0 /* Pods_Hack_FSU.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D6A2040BB213DE95ABD4C28380ADBB76 /* Pods */ = {
+		D0FB9306D21AF23A056944AE037CBFFF /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				0B010B1A41F0ECC15D3C6771D948DDAE /* Glyptodon */,
+				5E08DF9398E4F3B60A8DBD8D51E0D949 /* Foundation.framework */,
+				B3C31BA7766D58F0FD18AA88C8AB821D /* UIKit.framework */,
 			);
-			name = Pods;
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		E5A0B0ABEFF1BFF2A61EE2A74A533C59 /* Support Files */ = {
+		D3352B47D30B05F2C25BF75954A21F6F /* KMPlaceholderTextView */ = {
 			isa = PBXGroup;
 			children = (
-				31EFE223528B3F52CF49C84F2C544A56 /* Glyptodon.modulemap */,
-				6627619D870EDA071B6572D87B381E56 /* Glyptodon.xcconfig */,
-				DF70321C3D5970200579C38E90994FFF /* Glyptodon-Private.xcconfig */,
-				7F4D706E4327D800506A2D16CAFA718A /* Glyptodon-dummy.m */,
-				E615F0AACDBCE879C0DC601096D9E98F /* Glyptodon-prefix.pch */,
-				AA2E21137F69BA28618A39F8F0C86141 /* Glyptodon-umbrella.h */,
-				C8C36D48685A5B746C6EE1CE88895A2E /* Info.plist */,
+				9980421962D91038E427C9CA8D9A264D /* KMPlaceholderTextView.swift */,
+				C2AF7800FC53AF427094A51A35550D37 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Glyptodon";
+			path = KMPlaceholderTextView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		91C2C0A6205D0A110ACC05E42B48C651 /* Headers */ = {
+		3145F338D69EDDB3DB3B7048F6E4E5B6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				915135003FF4F76773D29D699C833F8D /* Glyptodon-umbrella.h in Headers */,
+				D2A539A78414B336D097953D7A60DE15 /* Glyptodon-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E9F555116EC25D3ABCE49730B1CD3F49 /* Headers */ = {
+		423F4C0328CEC35F6A5854D2324CB108 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8635453A69E6C0F43E76E83712CAAE31 /* Pods-Hack FSU-umbrella.h in Headers */,
+				858E51A7A80CC4B0BF16A425F307C379 /* Pods-Hack FSU-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3F4BA19749F11B6B693145A2A349557 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EF34AD36BB3EF74E2DB0E5E53868D82 /* KMPlaceholderTextView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		033762EFC8AD066FCE0EB477380AAB86 /* Glyptodon */ = {
+		29A5EAF6E34813098157C7722892D64D /* KMPlaceholderTextView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6126173A5CF4E226A4C2B70BC424F1FD /* Build configuration list for PBXNativeTarget "Glyptodon" */;
+			buildConfigurationList = FC90E4F6C2E2F68127912EB5E7695801 /* Build configuration list for PBXNativeTarget "KMPlaceholderTextView" */;
 			buildPhases = (
-				A336FA3A117D68151BB20D411F651976 /* Sources */,
-				C1605F85A1AB5D56C4946E797F60E540 /* Frameworks */,
-				91C2C0A6205D0A110ACC05E42B48C651 /* Headers */,
+				AEA5C7E26B2EF340687B4F6502459C56 /* Sources */,
+				9F4941428F2FF30A04A6BD24EDC5B2F7 /* Frameworks */,
+				C3F4BA19749F11B6B693145A2A349557 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KMPlaceholderTextView;
+			productName = KMPlaceholderTextView;
+			productReference = 63B984632BF9BC176DB7BA9B72815D17 /* KMPlaceholderTextView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B3102F27EF9D15D71311221A5CA50312 /* Pods-Hack FSU */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F7D7004593E88412EE05F1048453FCD /* Build configuration list for PBXNativeTarget "Pods-Hack FSU" */;
+			buildPhases = (
+				603C7ECD7D490A2E11253DD999A4CF66 /* Sources */,
+				FFDAF3E0D5EB53BFFF5BCF8A258CB372 /* Frameworks */,
+				423F4C0328CEC35F6A5854D2324CB108 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50C45C8AEE4EC2A45C8FB61672861083 /* PBXTargetDependency */,
+				50BFE12CB2C261C003BEEFB00555BA57 /* PBXTargetDependency */,
+			);
+			name = "Pods-Hack FSU";
+			productName = "Pods-Hack FSU";
+			productReference = 5C597AD75FB0CDBCFCB8C499486C16B0 /* Pods_Hack_FSU.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F2D80BDA48D05BDE1C7FD167F73D5216 /* Glyptodon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01911FB8695908E782D3A3DFBDE47951 /* Build configuration list for PBXNativeTarget "Glyptodon" */;
+			buildPhases = (
+				24F0F91D57C4414322B8B02EE817A772 /* Sources */,
+				977A9E5B4D9CF5830BD1FE519AB4BF28 /* Frameworks */,
+				3145F338D69EDDB3DB3B7048F6E4E5B6 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -234,25 +336,7 @@
 			);
 			name = Glyptodon;
 			productName = Glyptodon;
-			productReference = EB35D45BC7F32EFCE0D5B93FFF51201E /* Glyptodon.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		A9FDA62AEA9CCCFE1FCE7F1993A7645F /* Pods-Hack FSU */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F795CE71B8C24ECA8DC3D81FFA28FCCD /* Build configuration list for PBXNativeTarget "Pods-Hack FSU" */;
-			buildPhases = (
-				ACDE519E4D177283353BC3C9D0E1AC95 /* Sources */,
-				9ED5E1CE90B55D2FA88507106A41A0A0 /* Frameworks */,
-				E9F555116EC25D3ABCE49730B1CD3F49 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7D66099A42B9F38FA7983408C48654D5 /* PBXTargetDependency */,
-			);
-			name = "Pods-Hack FSU";
-			productName = "Pods-Hack FSU";
-			productReference = A78344ECA0D0C7FC84CDC0029C5AE24E /* Pods_Hack_FSU.framework */;
+			productReference = D5FC281ACA157A5DA93CFAAE434D2FCC /* Glyptodon.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -276,101 +360,88 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				033762EFC8AD066FCE0EB477380AAB86 /* Glyptodon */,
-				A9FDA62AEA9CCCFE1FCE7F1993A7645F /* Pods-Hack FSU */,
+				F2D80BDA48D05BDE1C7FD167F73D5216 /* Glyptodon */,
+				29A5EAF6E34813098157C7722892D64D /* KMPlaceholderTextView */,
+				B3102F27EF9D15D71311221A5CA50312 /* Pods-Hack FSU */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A336FA3A117D68151BB20D411F651976 /* Sources */ = {
+		24F0F91D57C4414322B8B02EE817A772 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBA20B386BD33D70ED4D67283880A4B7 /* Glyptodon-dummy.m in Sources */,
-				1FFAF417551123B8618C1A72C83AC3C8 /* Glyptodon.swift in Sources */,
-				FF5A3D931E041CA4402300EEFA26FE32 /* GlyptodonButtonDefaultStyles.swift in Sources */,
-				AFF58A0FC504DE49214D5A32006FB67C /* GlyptodonButtonStyle.swift in Sources */,
-				6FBCA2300DCE7E1947BC272FA2BBF339 /* GlyptodonColor.swift in Sources */,
-				11808AEF075494F4CAC38623EACA7088 /* GlyptodonStyle.swift in Sources */,
-				BC328F630DDBD5095A745D894D44A491 /* GlyptodonTitleDefaultStyles.swift in Sources */,
-				F0E8F72DBB55A618C0DDD1DE2AED886B /* GlyptodonTitleStyle.swift in Sources */,
-				0561C649D56289832EA4466D7B1B7AED /* GlyptodonView.swift in Sources */,
-				20F72D8CF283B90990065B2BA8804EAD /* GlyptodonViewDefaultStyles.swift in Sources */,
-				31ED8134576B62F08BB0825A5CA9BB2D /* GlyptodonViewStyle.swift in Sources */,
-				FF807CB8A48FD6A6F30A65D98F0912A4 /* TegAutolayoutConstraints.swift in Sources */,
-				02F68061BA5805621C7AD9E84360354A /* UIView+Glyptodon.swift in Sources */,
+				83CF87D1AF23D4D3BFD3311BC7C55598 /* Glyptodon-dummy.m in Sources */,
+				70923046879C3C298EAD5E6CB73A81B2 /* Glyptodon.swift in Sources */,
+				23BB6E40EBE531C526A07CBEA65C5072 /* GlyptodonButtonDefaultStyles.swift in Sources */,
+				699AFE59D610078A89F3EB9FE6A5E6BB /* GlyptodonButtonStyle.swift in Sources */,
+				C43AFE95A276E540D85CA4A4B0A6F739 /* GlyptodonColor.swift in Sources */,
+				F75167BE7C04E0C913C5C7E14C9C812B /* GlyptodonStyle.swift in Sources */,
+				9C8A3CF91EADC4853CA6C37926F306C1 /* GlyptodonTitleDefaultStyles.swift in Sources */,
+				0B1BBBD9C327E07DC8EC23255F4567D6 /* GlyptodonTitleStyle.swift in Sources */,
+				7617CFC3B3CB4614F5475A7345A9BE2A /* GlyptodonView.swift in Sources */,
+				527B3C63BAC89A6B75F5F566EA215F31 /* GlyptodonViewDefaultStyles.swift in Sources */,
+				8C189D50A9351BE0DB66E339DD868CF0 /* GlyptodonViewStyle.swift in Sources */,
+				8C920621A7B1FB8577A7E33EB5DFFA2F /* TegAutolayoutConstraints.swift in Sources */,
+				442E770AA7DFE3E5F0515D94EAB2EAAC /* UIView+Glyptodon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ACDE519E4D177283353BC3C9D0E1AC95 /* Sources */ = {
+		603C7ECD7D490A2E11253DD999A4CF66 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A300746E2626006AB2636A19BE35E692 /* Pods-Hack FSU-dummy.m in Sources */,
+				F31E89470E122A55DE5A28F1DC56B52B /* Pods-Hack FSU-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEA5C7E26B2EF340687B4F6502459C56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98A2248DC6FA003CCA6BB9B972057AEC /* KMPlaceholderTextView-dummy.m in Sources */,
+				A77843CBF910B863003FA55B2B378BC7 /* KMPlaceholderTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7D66099A42B9F38FA7983408C48654D5 /* PBXTargetDependency */ = {
+		50BFE12CB2C261C003BEEFB00555BA57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KMPlaceholderTextView;
+			target = 29A5EAF6E34813098157C7722892D64D /* KMPlaceholderTextView */;
+			targetProxy = B3262E474F0B2F1C976792CD215317DF /* PBXContainerItemProxy */;
+		};
+		50C45C8AEE4EC2A45C8FB61672861083 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Glyptodon;
-			target = 033762EFC8AD066FCE0EB477380AAB86 /* Glyptodon */;
-			targetProxy = E35ABF5EF30F78CCF027AD114F0EDF9B /* PBXContainerItemProxy */;
+			target = F2D80BDA48D05BDE1C7FD167F73D5216 /* Glyptodon */;
+			targetProxy = 900BD2BB1EB4C67DB1A691697AE9EE0D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		098F7C769841B9C9A69B6ED12384968A /* Release */ = {
+		0A4463DF91EE0A64E93ADF1D7B9C8B56 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9031001D6B7862CDC93BC8780DEDFAD7 /* Pods-Hack FSU.release.xcconfig */;
+			baseConfigurationReference = 5FCE95A0026DB3CEB7119B0AB46B108D /* KMPlaceholderTextView-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Hack FSU/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Hack FSU/Pods-Hack FSU.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_Hack_FSU;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		51EE1B481649B0889FB1E0F607786478 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF70321C3D5970200579C38E90994FFF /* Glyptodon-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1.0.9;
+				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Glyptodon/Glyptodon-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Glyptodon/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/KMPlaceholderTextView/KMPlaceholderTextView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KMPlaceholderTextView/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Glyptodon/Glyptodon.modulemap";
+				MODULEMAP_FILE = "Target Support Files/KMPlaceholderTextView/KMPlaceholderTextView.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Glyptodon;
+				PRODUCT_NAME = KMPlaceholderTextView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -378,36 +449,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		56AA30606B2B0C03CD895BA9A77FB942 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 646CCA5700C3435D44691D709B9E1C38 /* Pods-Hack FSU.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Hack FSU/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Hack FSU/Pods-Hack FSU.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_Hack_FSU;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -448,6 +489,33 @@
 			};
 			name = Debug;
 		};
+		679FC2118EC240A53752F34C8EDC0FAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 714ED8E381F4F9008AE91913182CF801 /* Glyptodon-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1.0.9;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Glyptodon/Glyptodon-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Glyptodon/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Glyptodon/Glyptodon.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Glyptodon;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		74857149DC1E0D599B8A01A78349A926 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -482,9 +550,68 @@
 			};
 			name = Release;
 		};
-		A2E7E98291C1D14A69E8A685204E49FA /* Debug */ = {
+		7A7FD3AD3A705572FAC68EACF73AD8BB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF70321C3D5970200579C38E90994FFF /* Glyptodon-Private.xcconfig */;
+			baseConfigurationReference = D1220F539C9A345C9C8B947EAEE71198 /* Pods-Hack FSU.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Hack FSU/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Hack FSU/Pods-Hack FSU.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Hack_FSU;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B365BB70F02F4864A3FB5C38894D8B92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC92D87B68B20813563B76FAC98230D0 /* Pods-Hack FSU.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Hack FSU/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Hack FSU/Pods-Hack FSU.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Hack_FSU;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C8486265E4B047844AD53BA5269390E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 714ED8E381F4F9008AE91913182CF801 /* Glyptodon-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1.0.9;
@@ -510,9 +637,46 @@
 			};
 			name = Debug;
 		};
+		FB325BA9C68CF18C9BBD6DE1413D204A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FCE95A0026DB3CEB7119B0AB46B108D /* KMPlaceholderTextView-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1.0.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KMPlaceholderTextView/KMPlaceholderTextView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KMPlaceholderTextView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KMPlaceholderTextView/KMPlaceholderTextView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = KMPlaceholderTextView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		01911FB8695908E782D3A3DFBDE47951 /* Build configuration list for PBXNativeTarget "Glyptodon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8486265E4B047844AD53BA5269390E8 /* Debug */,
+				679FC2118EC240A53752F34C8EDC0FAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -522,20 +686,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6126173A5CF4E226A4C2B70BC424F1FD /* Build configuration list for PBXNativeTarget "Glyptodon" */ = {
+		4F7D7004593E88412EE05F1048453FCD /* Build configuration list for PBXNativeTarget "Pods-Hack FSU" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A2E7E98291C1D14A69E8A685204E49FA /* Debug */,
-				51EE1B481649B0889FB1E0F607786478 /* Release */,
+				B365BB70F02F4864A3FB5C38894D8B92 /* Debug */,
+				7A7FD3AD3A705572FAC68EACF73AD8BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F795CE71B8C24ECA8DC3D81FFA28FCCD /* Build configuration list for PBXNativeTarget "Pods-Hack FSU" */ = {
+		FC90E4F6C2E2F68127912EB5E7695801 /* Build configuration list for PBXNativeTarget "KMPlaceholderTextView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				56AA30606B2B0C03CD895BA9A77FB942 /* Debug */,
-				098F7C769841B9C9A69B6ED12384968A /* Release */,
+				FB325BA9C68CF18C9BBD6DE1413D204A /* Debug */,
+				0A4463DF91EE0A64E93ADF1D7B9C8B56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

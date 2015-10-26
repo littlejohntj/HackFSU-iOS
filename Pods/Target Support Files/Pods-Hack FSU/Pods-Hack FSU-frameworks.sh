@@ -53,7 +53,9 @@ code_sign_if_enabled() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'Pods-Hack FSU/Glyptodon.framework'
+  install_framework 'Pods-Hack FSU/KMPlaceholderTextView.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'Pods-Hack FSU/Glyptodon.framework'
+  install_framework 'Pods-Hack FSU/KMPlaceholderTextView.framework'
 fi
