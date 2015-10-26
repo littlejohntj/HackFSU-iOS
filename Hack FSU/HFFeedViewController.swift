@@ -19,8 +19,8 @@ class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     @IBOutlet weak var tableViewContainerView: UIView!
     
-    @IBOutlet weak var segmentViewBackground: UIView!
     
+    // MARK: Class Variables
     var updateFeedArray:[String] = [String]()
     var hackerFeedArray:[String] = [String]()
     var twitterFeedArray:[String] = [String]()
@@ -31,7 +31,6 @@ class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     override func viewWillLayoutSubviews() {
         checkForContent()
-        
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -47,48 +46,32 @@ class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBAction func feedSegControlValueChanged(sender: AnyObject) {
         }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     /* checkForContent will check if there is data to be displayed in the view. If not, it will set the correct Glyptodon view. */
     func checkForContent() {
             switch(self.feedSegmentControl.selectedSegmentIndex) {
             case 0: if updateFeedArray.count == 0 {
                 feedTableView.alpha = 0.0
                 tableViewContainerView.glyptodon.show("No Updates. Happy Hacking!")
-            } else {
+            }   else {
                 tableViewContainerView.glyptodon.hide()
                 feedTableView.alpha = 1.0
-            }
+                }
             case 1: if hackerFeedArray.count == 0 {
                 feedTableView.alpha = 0.0
                 tableViewContainerView.glyptodon.show("No Posts. Happy Hacking!")
-            } else {
+            }   else {
                 feedTableView.alpha = 0.0
                 tableViewContainerView.glyptodon.hide()
-            }
+                }
             case 2: if twitterFeedArray.count == 0 {
                 feedTableView.alpha = 0.0
-                tableViewContainerView.glyptodon.show("No Tweets. Happy Hacking!")
-            } else {
+                tableViewContainerView.glyptodon.show("No Tweets Yet. Use the Hashtag: #HackFSU")
+            }   else {
                 feedTableView.alpha = 0.0
                 tableViewContainerView.glyptodon.hide()
-            }
+                }
             default: break
-        }
+        } // End of Switch
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-}
+    
+}// End of View Controller Class

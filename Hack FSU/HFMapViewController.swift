@@ -1,5 +1,5 @@
 //
-//  BlurViewController.swift
+//  HFMapViewController.swift
 //  Hack FSU
 //
 //  Created by Todd Littlejohn on 10/23/15.
@@ -8,23 +8,37 @@
 
 import UIKit
 
-class BlurViewController: UIViewController {
+class HFMapViewController: UIViewController {
 
+    // MARK: UI Outlets
+    @IBOutlet weak var MapView: UIImageView!
+    
+    @IBOutlet weak var floorSegmentControl: UISegmentedControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
-        
-        let blur = UIVisualEffectView(effect: UIBlurEffect(style: UIBlurEffectStyle.Light))
-        blur.frame = view.frame
-        view.addSubview(blur)
     }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func floorMapSegmentValueChange(sender: AnyObject) {
+        setImage()
+    }
+    
+    func setImage() {
+        switch(self.floorSegmentControl.selectedSegmentIndex) {
+        case 0: self.MapView.image = UIImage(named: "diracFloorOne")
+        case 1: self.MapView.image = UIImage(named: "diracFloorTwo")
+        case 2: self.MapView.image = UIImage(named: "diracFloorThree")
+        default: break
+        }
+    }
 
     /*
     // MARK: - Navigation

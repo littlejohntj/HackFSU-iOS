@@ -9,6 +9,10 @@
 import UIKit
 
 class HFScheduleViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    @IBOutlet weak var scheduleSementControl: UISegmentedControl!
+    
+    @IBOutlet weak var scheduleTableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +33,9 @@ class HFScheduleViewController: UIViewController, UITableViewDataSource, UITable
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func scheduleSegControlValueChanged(sender: AnyObject) {
     }
     
 
