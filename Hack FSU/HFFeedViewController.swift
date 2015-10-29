@@ -27,11 +27,11 @@ class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        checkForContent()
+        
     }
     
     override func viewWillLayoutSubviews() {
-        
+        checkForContent()
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
