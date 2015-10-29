@@ -27,10 +27,11 @@ class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        checkForContent()
     }
     
     override func viewWillLayoutSubviews() {
-        checkForContent()
+        
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -48,8 +49,12 @@ class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     /* checkForContent will check if there is data to be displayed in the view. If not, it will set the correct Glyptodon view. */
     func checkForContent() {
+        let update = 0
+        let hacker = 1
+        let twitter = 2
+        
             switch(self.feedSegmentControl.selectedSegmentIndex) {
-            case 0: if updateFeedArray.count == 0 {
+            case update: if updateFeedArray.count == 0 {
                 feedTableView.alpha = 0.0
                 tableViewContainerView.glyptodon.show("No Updates. Happy Hacking!")
                 
@@ -57,14 +62,14 @@ class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDa
                 tableViewContainerView.glyptodon.hide()
                 feedTableView.alpha = 1.0
                 }
-            case 1: if hackerFeedArray.count == 0 {
+            case hacker: if hackerFeedArray.count == 0 {
                 feedTableView.alpha = 0.0
                 tableViewContainerView.glyptodon.show("No Posts. Happy Hacking!")
             }   else {
                 feedTableView.alpha = 0.0
                 tableViewContainerView.glyptodon.hide()
                 }
-            case 2: if twitterFeedArray.count == 0 {
+            case twitter: if twitterFeedArray.count == 0 {
                 feedTableView.alpha = 0.0
                 tableViewContainerView.glyptodon.show("No Tweets Yet. Use the Hashtag: #HackFSU")
             }   else {
