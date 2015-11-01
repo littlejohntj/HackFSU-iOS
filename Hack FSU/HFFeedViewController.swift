@@ -22,12 +22,11 @@ class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     // MARK: Class Variables
     var updateFeedArray:[String] = [String]()
-    var hackerFeedArray:[String] = [String]()
     var twitterFeedArray:[String] = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        feedTableView.setContentOffset(CGPointZero, animated: false)
     }
     
     override func viewWillLayoutSubviews() {
@@ -50,8 +49,7 @@ class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDa
     /* checkForContent will check if there is data to be displayed in the view. If not, it will set the correct Glyptodon view. */
     func checkForContent() {
         let update = 0
-        let hacker = 1
-        let twitter = 2
+        let twitter = 1
         
             switch(self.feedSegmentControl.selectedSegmentIndex) {
             case update: if updateFeedArray.count == 0 {
@@ -61,13 +59,6 @@ class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDa
             }   else {
                 tableViewContainerView.glyptodon.hide()
                 feedTableView.alpha = 1.0
-                }
-            case hacker: if hackerFeedArray.count == 0 {
-                feedTableView.alpha = 0.0
-                tableViewContainerView.glyptodon.show("No Posts. Happy Hacking!")
-            }   else {
-                feedTableView.alpha = 0.0
-                tableViewContainerView.glyptodon.hide()
                 }
             case twitter: if twitterFeedArray.count == 0 {
                 feedTableView.alpha = 0.0

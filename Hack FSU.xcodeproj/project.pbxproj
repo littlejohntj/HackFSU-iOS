@@ -10,7 +10,7 @@
 		615085CE1BDA16D40066E7BE /* HFMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615085CD1BDA16D40066E7BE /* HFMapViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		615085D01BDAA55E0066E7BE /* HFMentorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615085CF1BDAA55E0066E7BE /* HFMentorViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		615085F81BDD901B0066E7BE /* HFSponsorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615085F71BDD901B0066E7BE /* HFSponsorViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		615085FE1BDEE2400066E7BE /* HackFsuColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615085FD1BDEE2400066E7BE /* HackFsuColors.swift */; settings = {ASSET_TAGS = (); }; };
+		615085FE1BDEE2400066E7BE /* HFColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615085FD1BDEE2400066E7BE /* HFColors.swift */; settings = {ASSET_TAGS = (); }; };
 		61551A701BD9C0C50091D44A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61551A6F1BD9C0C50091D44A /* AppDelegate.swift */; };
 		61551A751BD9C0C50091D44A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61551A731BD9C0C50091D44A /* Main.storyboard */; };
 		61551A771BD9C0C50091D44A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61551A761BD9C0C50091D44A /* Assets.xcassets */; };
@@ -44,7 +44,7 @@
 		615085CD1BDA16D40066E7BE /* HFMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFMapViewController.swift; sourceTree = "<group>"; };
 		615085CF1BDAA55E0066E7BE /* HFMentorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFMentorViewController.swift; sourceTree = "<group>"; };
 		615085F71BDD901B0066E7BE /* HFSponsorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFSponsorViewController.swift; sourceTree = "<group>"; };
-		615085FD1BDEE2400066E7BE /* HackFsuColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HackFsuColors.swift; sourceTree = "<group>"; };
+		615085FD1BDEE2400066E7BE /* HFColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFColors.swift; sourceTree = "<group>"; };
 		61551A6C1BD9C0C50091D44A /* Hack FSU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hack FSU.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		61551A6F1BD9C0C50091D44A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61551A741BD9C0C50091D44A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -123,10 +123,10 @@
 		61551A6E1BD9C0C50091D44A /* Hack FSU */ = {
 			isa = PBXGroup;
 			children = (
-				61551A6F1BD9C0C50091D44A /* AppDelegate.swift */,
-				615085FD1BDEE2400066E7BE /* HackFsuColors.swift */,
-				61551A9F1BD9E6F80091D44A /* View Controllers */,
 				61551A731BD9C0C50091D44A /* Main.storyboard */,
+				61551A6F1BD9C0C50091D44A /* AppDelegate.swift */,
+				61EE2DBB1BE3E49E00E80DDF /* Style */,
+				61551A9F1BD9E6F80091D44A /* View Controllers */,
 				61551A761BD9C0C50091D44A /* Assets.xcassets */,
 				61551A781BD9C0C50091D44A /* LaunchScreen.storyboard */,
 				61551A7B1BD9C0C50091D44A /* Info.plist */,
@@ -162,6 +162,14 @@
 				615085F71BDD901B0066E7BE /* HFSponsorViewController.swift */,
 			);
 			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		61EE2DBB1BE3E49E00E80DDF /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				615085FD1BDEE2400066E7BE /* HFColors.swift */,
+			);
+			name = Style;
 			sourceTree = "<group>";
 		};
 		ED45C38FB39F58E0F2DB6D87 /* Frameworks */ = {
@@ -358,7 +366,7 @@
 				61551A701BD9C0C50091D44A /* AppDelegate.swift in Sources */,
 				615085CE1BDA16D40066E7BE /* HFMapViewController.swift in Sources */,
 				615085D01BDAA55E0066E7BE /* HFMentorViewController.swift in Sources */,
-				615085FE1BDEE2400066E7BE /* HackFsuColors.swift in Sources */,
+				615085FE1BDEE2400066E7BE /* HFColors.swift in Sources */,
 				615085F81BDD901B0066E7BE /* HFSponsorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

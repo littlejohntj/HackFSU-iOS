@@ -33,9 +33,9 @@ class HFMapViewController: UIViewController {
     
     func setImage() {
         switch(self.floorSegmentControl.selectedSegmentIndex) {
-        case 0: self.MapView.image = UIImage(named: "diracFloorOne")
-        case 1: self.MapView.image = UIImage(named: "diracFloorTwo")
-        case 2: self.MapView.image = UIImage(named: "diracFloorThree")
+        case 0: self.MapView.image = UIImage(named: "firstFloor")
+        case 1: self.MapView.image = UIImage(named: "secondFloor")
+        case 2: self.MapView.image = UIImage(named: "thirdFloor")
         default: break
         }
     }
