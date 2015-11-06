@@ -298,26 +298,26 @@
                                     <action selector="floorMapSegmentValueChange:" destination="i06-q5-fth" eventType="valueChanged" id="iNE-t4-B1x"/>
                                 </connections>
                             </segmentedControl>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="firstFloor" translatesAutoresizingMaskIntoConstraints="NO" id="Xr2-2L-Kyp">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5eo-Ns-4D0">
                                 <rect key="frame" x="20" y="108" width="560" height="435"/>
-                            </imageView>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="7M9-Qw-B4c" firstAttribute="top" secondItem="FVO-Fe-gE5" secondAttribute="bottom" constant="8" id="2hM-JI-YSj"/>
-                            <constraint firstItem="Xr2-2L-Kyp" firstAttribute="top" secondItem="7M9-Qw-B4c" secondAttribute="bottom" constant="8" id="ALW-07-Igj"/>
-                            <constraint firstItem="3RH-4C-YvQ" firstAttribute="top" secondItem="Xr2-2L-Kyp" secondAttribute="bottom" constant="8" id="LoH-ON-T5r"/>
-                            <constraint firstItem="Xr2-2L-Kyp" firstAttribute="leading" secondItem="BtO-Us-KZZ" secondAttribute="leading" constant="20" id="Mx0-IZ-xgV"/>
-                            <constraint firstAttribute="trailing" secondItem="Xr2-2L-Kyp" secondAttribute="trailing" constant="20" id="WI2-xR-NEL"/>
+                            <constraint firstItem="3RH-4C-YvQ" firstAttribute="top" secondItem="5eo-Ns-4D0" secondAttribute="bottom" constant="8" id="HQ8-nu-zqC"/>
                             <constraint firstItem="7M9-Qw-B4c" firstAttribute="leading" secondItem="BtO-Us-KZZ" secondAttribute="leading" constant="20" id="bAc-rv-6oA"/>
+                            <constraint firstItem="5eo-Ns-4D0" firstAttribute="top" secondItem="7M9-Qw-B4c" secondAttribute="bottom" constant="8" id="bu9-po-565"/>
+                            <constraint firstItem="5eo-Ns-4D0" firstAttribute="leading" secondItem="BtO-Us-KZZ" secondAttribute="leadingMargin" id="dJ7-2A-5Yc"/>
+                            <constraint firstItem="5eo-Ns-4D0" firstAttribute="trailing" secondItem="BtO-Us-KZZ" secondAttribute="trailingMargin" id="h5M-MG-F48"/>
                             <constraint firstAttribute="trailing" secondItem="7M9-Qw-B4c" secondAttribute="trailing" constant="20" id="nxV-m5-tCE"/>
                             <constraint firstItem="7M9-Qw-B4c" firstAttribute="centerX" secondItem="BtO-Us-KZZ" secondAttribute="centerX" id="yhU-u0-Ywx"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Gfw-z8-gqA"/>
                     <connections>
-                        <outlet property="MapView" destination="Xr2-2L-Kyp" id="DSi-kk-qaj"/>
                         <outlet property="floorSegmentControl" destination="7M9-Qw-B4c" id="fFg-oc-WeS"/>
+                        <outlet property="scrollView" destination="5eo-Ns-4D0" id="gOD-9X-eLL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mK0-qw-dUW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -417,7 +417,4 @@
             <point key="canvasLocation" x="-1333" y="908"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="firstFloor" width="1144" height="751"/>
-    </resources>
 </document>

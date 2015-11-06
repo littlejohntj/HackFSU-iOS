@@ -8,16 +8,26 @@
 
 import UIKit
 
-class HFMapViewController: UIViewController {
+class HFMapViewController: UIViewController, UIScrollViewDelegate {
 
     // MARK: UI Outlets
-    @IBOutlet weak var MapView: UIImageView!
+    
+    @IBOutlet weak var scrollView: UIScrollView!
     
     @IBOutlet weak var floorSegmentControl: UISegmentedControl!
     
+    // MARK: Class Variables 
+    
+    var mapImageView:UIImageView = UIImageView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        self.scrollView.delegate = self
+        
+        self.mapImageView.frame = CGRectMake(0, 0, scrollView.frame.size.width, scrollView.frame.size.height)
+        self.mapImageView.image = UIImage(named: "firstFloor")
+        self.scrollView.addSubview(mapImageView)
     }
     
     
@@ -32,12 +42,12 @@ class HFMapViewController: UIViewController {
     }
     
     func setImage() {
-        switch(self.floorSegmentControl.selectedSegmentIndex) {
-        case 0: self.MapView.image = UIImage(named: "firstFloor")
-        case 1: self.MapView.image = UIImage(named: "secondFloor")
-        case 2: self.MapView.image = UIImage(named: "thirdFloor")
-        default: break
-        }
+//        switch(self.floorSegmentControl.selectedSegmentIndex) {
+//        case 0: self.MapView.image = UIImage(named: "firstFloor")
+//        case 1: self.MapView.image = UIImage(named: "secondFloor")
+//        case 2: self.MapView.image = UIImage(named: "thirdFloor")
+//        default: break
+//      }
     }
 
     /*

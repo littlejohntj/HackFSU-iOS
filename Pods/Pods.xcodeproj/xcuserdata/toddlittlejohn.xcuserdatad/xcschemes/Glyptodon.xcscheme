@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "096D100B0BB295EF90692F6D"
+               BlueprintIdentifier = "EC9D51C3300969F859C1759E"
                BuildableName = "Glyptodon.framework"
                BlueprintName = "Glyptodon"
                ReferencedContainer = "container:Pods.xcodeproj">

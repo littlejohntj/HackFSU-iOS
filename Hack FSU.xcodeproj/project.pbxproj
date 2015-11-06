@@ -19,6 +19,7 @@
 		61551A901BD9C0C50091D44A /* Hack_FSUUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61551A8F1BD9C0C50091D44A /* Hack_FSUUITests.swift */; };
 		61551A9E1BD9E5360091D44A /* HFFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61551A9D1BD9E5360091D44A /* HFFeedViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		61551AA11BD9EE0E0091D44A /* HFScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61551AA01BD9EE0E0091D44A /* HFScheduleViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		61D2D14E1BE7C53500145EBF /* HelpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D2D14D1BE7C53500145EBF /* HelpRequest.swift */; settings = {ASSET_TAGS = (); }; };
 		CED336EC00D9EC75BF013854 /* Pods_Hack_FSU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F3179E63106B529DE3B4C8D /* Pods_Hack_FSU.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,8 @@
 		61551A911BD9C0C50091D44A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61551A9D1BD9E5360091D44A /* HFFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFFeedViewController.swift; sourceTree = "<group>"; };
 		61551AA01BD9EE0E0091D44A /* HFScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFScheduleViewController.swift; sourceTree = "<group>"; };
+		61D2D14D1BE7C53500145EBF /* HelpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpRequest.swift; sourceTree = "<group>"; };
+		61D2D14F1BE7C83E00145EBF /* Hack FSU-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hack FSU-Bridging-Header.h"; sourceTree = "<group>"; };
 		75938323F00D36E19490B513 /* Pods-Hack FSU.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hack FSU.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hack FSU/Pods-Hack FSU.debug.xcconfig"; sourceTree = "<group>"; };
 		F55EC12BE118A0CA1F4CEFC3 /* Pods-Hack FSU.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hack FSU.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hack FSU/Pods-Hack FSU.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,6 +110,7 @@
 				61551A6D1BD9C0C50091D44A /* Products */,
 				61499DB71E3E5D02AC0122A0 /* Pods */,
 				ED45C38FB39F58E0F2DB6D87 /* Frameworks */,
+				61D2D14F1BE7C83E00145EBF /* Hack FSU-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +131,7 @@
 				61551A6F1BD9C0C50091D44A /* AppDelegate.swift */,
 				61EE2DBB1BE3E49E00E80DDF /* Style */,
 				61551A9F1BD9E6F80091D44A /* View Controllers */,
+				61D2D14C1BE7C50400145EBF /* Classes */,
 				61551A761BD9C0C50091D44A /* Assets.xcassets */,
 				61551A781BD9C0C50091D44A /* LaunchScreen.storyboard */,
 				61551A7B1BD9C0C50091D44A /* Info.plist */,
@@ -162,6 +167,14 @@
 				615085F71BDD901B0066E7BE /* HFSponsorViewController.swift */,
 			);
 			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		61D2D14C1BE7C50400145EBF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				61D2D14D1BE7C53500145EBF /* HelpRequest.swift */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 		61EE2DBB1BE3E49E00E80DDF /* Style */ = {
@@ -245,6 +258,7 @@
 		61551A641BD9C0C50091D44A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Todd Littlejohn";
 				TargetAttributes = {
@@ -367,6 +381,7 @@
 				615085CE1BDA16D40066E7BE /* HFMapViewController.swift in Sources */,
 				615085D01BDAA55E0066E7BE /* HFMentorViewController.swift in Sources */,
 				615085FE1BDEE2400066E7BE /* HFColors.swift in Sources */,
+				61D2D14E1BE7C53500145EBF /* HelpRequest.swift in Sources */,
 				615085F81BDD901B0066E7BE /* HFSponsorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -510,11 +525,14 @@
 			baseConfigurationReference = 75938323F00D36E19490B513 /* Pods-Hack FSU.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Hack FSU/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "HackFSU.Hack-FSU";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Hack FSU-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -523,11 +541,13 @@
 			baseConfigurationReference = F55EC12BE118A0CA1F4CEFC3 /* Pods-Hack FSU.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Hack FSU/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "HackFSU.Hack-FSU";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Hack FSU-Bridging-Header.h";
 			};
 			name = Release;
 		};

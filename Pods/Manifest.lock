@@ -1,13 +1,19 @@
 PODS:
+  - Bolts/Tasks (1.4.0)
   - Glyptodon (1.0.9)
   - KMPlaceholderTextView (1.0.0)
+  - Parse (1.9.1):
+    - Bolts/Tasks (>= 1.4.0)
 
 DEPENDENCIES:
   - Glyptodon (~> 1.0)
   - KMPlaceholderTextView (~> 1.0.0)
+  - Parse
 
 SPEC CHECKSUMS:
+  Bolts: 0e9bce58b9b9f5e8a7a4d47b16d2fabec289072b
   Glyptodon: 0a73952fe2b413f5784a640b665b39719515b3a1
   KMPlaceholderTextView: 08514547996d3bc7ce1b57e296af2ce8e832c0f6
+  Parse: 54a965c8c19a6dde90284ab654dbcc77ef8c001b
 
 COCOAPODS: 0.38.2

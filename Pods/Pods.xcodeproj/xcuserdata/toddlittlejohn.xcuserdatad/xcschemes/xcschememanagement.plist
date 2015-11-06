@@ -4,12 +4,22 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Bolts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Glyptodon.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>KMPlaceholderTextView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Parse.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,37 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>29A5EAF6E34813098157C7722892D64D</key>
+		<key>2E11A9E155076D3551B90E70CDB8AFF8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>351722271B159E8974FBD2D40217B789</key>
+		<key>344A4746530C1F2DBFED667CA3DF9C7E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>813ABD89EDDC13FF88BBD7F2888F9665</key>
+		<key>3F60ED2FB6EB73476B4D70B288254739</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>87719BEB69683A5346357EE2CA089DE6</key>
+		<key>AA00465117132D1F76A169866C381C57</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A11A0E22C3B85C46DDB32354F3379A09</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B3102F27EF9D15D71311221A5CA50312</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F2D80BDA48D05BDE1C7FD167F73D5216</key>
+		<key>C12C29C06DDB95C9EDB8DBE0AC5DA599</key>
 		<dict>
 			<key>primary</key>
 			<true/>

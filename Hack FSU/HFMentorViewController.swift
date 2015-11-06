@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class HFMentorViewController: UIViewController {
     
@@ -74,14 +75,37 @@ class HFMentorViewController: UIViewController {
             alertMessage = "There are multiple text fields not filled out properly."
         }
         
-        let alertController = UIAlertController(title: "Properly Fill Out Text Field", message:
-            alertMessage, preferredStyle: UIAlertControllerStyle.Alert)
-        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
-        self.presentViewController(alertController, animated: true, completion: nil)
+        presentAlert("Properly Fill Out Text Field", alertMessage: alertMessage)
+        
         return false
     }
     
     func sendHelpRequest() {
-        print("woo")
+        let request = HelpRequest(name: nameTextField.text!, location: locationTextField.text!, description: descriptionTextField.text!)
+        
+        request.saveInBackgroundWithBlock { (sucess, error) -> Void in
+            if sucess {
+                self.emptyTextFields()
+                self.presentAlert("Help Request Sucessful", alertMessage: "Keep an eye out for your mentor!")
+                
+            } else {
+                self.presentAlert("Help Request Not Sucessful :(", alertMessage: "We couldn't process your help request. Make sure you're connected to wifi and try again. If this problem persists, come to the mentor room!")
+            }
+        }
+    }
+    
+    func presentAlert(title: String, alertMessage: String) {
+        let alertController = UIAlertController(title: title, message:
+            alertMessage, preferredStyle: UIAlertControllerStyle.Alert)
+        
+        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
+        
+        self.presentViewController(alertController, animated: true, completion: nil)
+    }
+    
+    func emptyTextFields() {
+        self.nameTextField.text = ""
+        self.locationTextField.text = ""
+        self.descriptionTextField.text = ""
     }
 }
