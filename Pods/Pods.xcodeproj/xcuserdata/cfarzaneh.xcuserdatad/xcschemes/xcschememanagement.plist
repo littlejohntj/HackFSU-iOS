@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Bolts.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Glyptodon.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>KMPlaceholderTextView.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>Parse.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>Pods-Hack FSU.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>2E11A9E155076D3551B90E70CDB8AFF8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>344A4746530C1F2DBFED667CA3DF9C7E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3F60ED2FB6EB73476B4D70B288254739</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AA00465117132D1F76A169866C381C57</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C12C29C06DDB95C9EDB8DBE0AC5DA599</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

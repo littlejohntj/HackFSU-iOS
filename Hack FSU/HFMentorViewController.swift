@@ -9,25 +9,64 @@
 import UIKit
 import Parse
 
-class HFMentorViewController: UIViewController {
+class HFMentorViewController: UIViewController, UITextViewDelegate, UITextFieldDelegate {
     
     // MARK: UIOutlets
-    @IBOutlet weak var descriptionTextField: UITextView!
+    @IBOutlet weak var descriptionTextView: UITextView!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var locationTextField: UITextField!
+    @IBOutlet weak var nameImageView:UIImageView!
+    @IBOutlet weak var locationImageView:UIImageView!
     
     // MARK: Class Varibles 
     var textViewColor = UIColor._lightGrayColor()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        descriptionTextField.layer.borderWidth = 0.5
-        descriptionTextField.layer.borderColor = self.textViewColor.CGColor
-        descriptionTextField.layer.cornerRadius = 7.5
+        descriptionTextView.layer.borderWidth = 0.5
+        descriptionTextView.layer.borderColor = self.textViewColor.CGColor
+        descriptionTextView.layer.cornerRadius = 7.5
+        
+        // Set the alpha of the images to 0
+        nameImageView!.alpha = 0
+        locationImageView!.alpha = 0
+        
+        nameTextField.delegate = self // Replace TextField with the name of your textField
+        locationTextField.delegate = self
+        nameTextField.addTarget(self, action: "nameTextFieldDidEnd:", forControlEvents: UIControlEvents.EditingDidEnd)
+        nameTextField.addTarget(self, action: "nameTextFieldDidChange:", forControlEvents: UIControlEvents.EditingChanged)
+        locationTextField.addTarget(self, action: "locationTextFieldDidEnd:", forControlEvents: UIControlEvents.EditingDidEnd)
+        locationTextField.addTarget(self, action: "locationTextFieldDidChange:", forControlEvents: UIControlEvents.EditingChanged)
     }
-
+    
+    func nameTextFieldDidEnd(textField: UITextField) {
+        nameImageView!.alpha = 1
+        if nameTextField.text == "" {
+            nameImageView!.alpha = 0
+        }
+    }
+    
+    func nameTextFieldDidChange(textField: UITextField) {
+        if nameTextField.text == "" {
+            nameImageView!.alpha = 0
+        }
+    }
+    
+    func locationTextFieldDidEnd(textField: UITextField) {
+        locationImageView!.alpha = 1
+        if locationTextField.text == "" {
+            locationImageView!.alpha = 0
+        }
+    }
+    
+    func locationTextFieldDidChange(textField: UITextField) {
+        if locationTextField.text == "" {
+            locationImageView!.alpha = 0
+        }
+    }
+    
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        self.descriptionTextField.resignFirstResponder()
+        self.descriptionTextView.resignFirstResponder()
         self.nameTextField.resignFirstResponder()
         self.locationTextField.resignFirstResponder()
     }
@@ -41,6 +80,24 @@ class HFMentorViewController: UIViewController {
         }
     }
     
+    // Function to switch textFields when tapping return button on keyboard
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        let nextTag: NSInteger = textField.tag + 1;
+        // Try to find next responder
+        if let nextResponder: UIResponder! = textField.superview!.viewWithTag(nextTag){
+            if (nextResponder != nil) {
+                // Found next responder, so set it.
+                nextResponder.becomeFirstResponder()
+            }
+        }
+        else {
+            // Not found, so remove keyboard.
+            textField.resignFirstResponder()
+        }
+        return false; // We do not want UITextField to insert line-breaks.
+    }
+    
+    
     func checkFeildsForRequiredLength() -> Bool {
         // Maximum text field lengths
         let nameTextFieldMaxSize:Int = 100
@@ -53,7 +110,7 @@ class HFMentorViewController: UIViewController {
         let locationTextFieldSize:Int = locationTextField.text!.characters.count
         let locationTextFieldIsCorrectLength:Bool = locationTextFieldSize > 0 && locationTextFieldSize <= locationTextFieldMaxSize
         
-        let descriptionTextFieldSize:Int = descriptionTextField.text!.characters.count
+        let descriptionTextFieldSize:Int = descriptionTextView.text!.characters.count
         let descriptionTextFieldIsCorrectLength:Bool = descriptionTextFieldSize > 0 && descriptionTextFieldSize <= descriptionTextFieldMaxSize
         
         var alertMessage:String!
@@ -81,7 +138,7 @@ class HFMentorViewController: UIViewController {
     }
     
     func sendHelpRequest() {
-        let request = HelpRequest(name: nameTextField.text!, location: locationTextField.text!, description: descriptionTextField.text!)
+        let request = HelpRequest(name: nameTextField.text!, location: locationTextField.text!, description: descriptionTextView.text!)
         
         request.saveInBackgroundWithBlock { (sucess, error) -> Void in
             if sucess {
@@ -106,6 +163,6 @@ class HFMentorViewController: UIViewController {
     func emptyTextFields() {
         self.nameTextField.text = ""
         self.locationTextField.text = ""
-        self.descriptionTextField.text = ""
+        self.descriptionTextView.text = ""
     }
 }
