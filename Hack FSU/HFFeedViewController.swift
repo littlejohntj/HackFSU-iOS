@@ -8,6 +8,7 @@
 
 import UIKit
 import Glyptodon
+import Parse
 
 class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -21,13 +22,14 @@ class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     
     // MARK: Class Variables
-    var updateFeedArray:[String] = [String]()
+    var updateFeedArray:[HFUpdate] = [HFUpdate]()
     var twitterFeedArray:[String] = [String]()
-    var scheduleFeedArray:[String] = [String]() 
+    var scheduleFeedArray:[String] = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         feedTableView.setContentOffset(CGPointZero, animated: false)
+        getUpdatesFromParse()
     }
     
     override func viewWillLayoutSubviews() {
@@ -35,27 +37,73 @@ class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        let update = 0
+        let scheudle = 1
+        let twitter = 2
+        
+        switch (self.feedSegmentControl.selectedSegmentIndex) {
+        case update:
+            return updateFeedArray.count
+        case scheudle:
+            return scheduleFeedArray.count
+        case twitter:
+            return twitterFeedArray.count
+        default: return 0
+        }
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell:UITableViewCell = UITableViewCell()
-        cell.textLabel?.text = "Label"
-        return cell
+
+        let update = 0
+        let scheudle = 1
+        let twitter = 2
+        
+        switch (self.feedSegmentControl.selectedSegmentIndex) {
+        case update:
+            
+            let cell:HFUpdateTableViewCell = tableView.dequeueReusableCellWithIdentifier("HFUpdateTableViewCell") as! HFUpdateTableViewCell
+            let update = updateFeedArray[indexPath.row]
+            cell.title.text = update.getTitle()
+            cell.subTitle.text = update.getContent()
+            print(update.getTimestamp())
+            cell.timestamp.text = update.getTimestamp()
+            print(update.getTimestamp())
+            return cell
+            
+        case scheudle: let cell = UITableViewCell(); return cell
+            
+            
+            
+            
+            
+            
+            
+            
+        case twitter: let cell = UITableViewCell(); return cell
+            
+            
+            
+            
+            
+        default: let cell = UITableViewCell(); return cell
+        }
+
     }
     
     @IBAction func feedSegControlValueChanged(sender: AnyObject) {
-        }
+        
+    }
     
     /* checkForContent will check if there is data to be displayed in the view. If not, it will set the correct Glyptodon view. */
     func checkForContent() {
         let update = 0
-        let twitter = 1
+        let schedule = 1
+        let twitter = 2
         
             switch(self.feedSegmentControl.selectedSegmentIndex) {
             case update: if updateFeedArray.count == 0 {
                 feedTableView.alpha = 0.0
-                tableViewContainerView.glyptodon.show("No Updates. Happy Hacking!")
+                tableViewContainerView.glyptodon.show("Getting Updates. Please Wait.")
                 
             }   else {
                 tableViewContainerView.glyptodon.hide()
@@ -63,13 +111,84 @@ class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDa
                 }
             case twitter: if twitterFeedArray.count == 0 {
                 feedTableView.alpha = 0.0
-                tableViewContainerView.glyptodon.show("No Tweets Yet. Use the Hashtag: #HackFSU")
+                tableViewContainerView.glyptodon.show("Getting Tweets. Please Wait.")
+            }   else {
+                feedTableView.alpha = 0.0
+                tableViewContainerView.glyptodon.hide()
+                }
+            case schedule: if scheduleFeedArray.count == 0 {
+                feedTableView.alpha = 0.0
+                tableViewContainerView.glyptodon.show("Getting Scheudle. Please Wait.")
             }   else {
                 feedTableView.alpha = 0.0
                 tableViewContainerView.glyptodon.hide()
                 }
             default: break
         } // End of Switch
+    }
+    
+    func getUpdatesFromParse() {
+        var updatesArray:[HFUpdate] = [HFUpdate]()
+        let query = PFQuery(className: "Update")
+        query.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
+            if let _ = objects {
+                for update in objects! {
+                    let newUpdateTitle = update.objectForKey("title") as! String
+                    let newUpdateContent = update.objectForKey("subtitle") as! String
+                    let tempTimestamp = update.createdAt!
+                    
+                    let newUpdateTimestamp = self.dateToString(tempTimestamp)
+                    
+                    let newUpdate = HFUpdate(title: newUpdateTitle, content: newUpdateContent, timestamp: newUpdateTimestamp)
+                    updatesArray.append(newUpdate)
+                    
+                }
+                self.updateFeedArray = updatesArray
+                self.feedTableView.reloadData()
+                self.checkForContent()
+            } else {
+                print(error)
+            }
+        }
+    }
+    
+    func dateToString(date: NSDate) -> String {
+        //format date
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateStyle = .FullStyle
+        let dateString = dateFormatter.stringFromDate(date)
+        let brokenStringArray = dateString.componentsSeparatedByString(",")
+        let dayOfWeek = brokenStringArray[0]
+        let shortDay = longDayToShortDay(dayOfWeek)
+        let time = timeAsIWantIt(date)
+        return "\(shortDay) \(time)"
+    }
+    
+    func longDayToShortDay(day: String) -> String {
+        switch(day) {
+        case "Sunday": return "Sun"
+        case "Monday": return "Mon"
+        case "Tuesday": return "Tues"
+        case "Wedneday": return "Wed"
+        case "Thursday": return "Thur"
+        case "Friday": return "Fri"
+        case "Saturday": return "Sat"
+        default: return "Sat"
+        }
+    }
+    
+    func timeAsIWantIt(date: NSDate) -> String {
+        //format date
+       
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "hh:mm a"
+        let dateString = dateFormatter.stringFromDate(date)
+        
+        let timeComponents = dateString.componentsSeparatedByString(":")
+        let hour = Int(timeComponents[0])
+        
+        return "\(hour!):\(timeComponents[1])"
+        
     }
     
 }// End of View Controller Class
