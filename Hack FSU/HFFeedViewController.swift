@@ -23,6 +23,7 @@ class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDa
     // MARK: Class Variables
     var updateFeedArray:[String] = [String]()
     var twitterFeedArray:[String] = [String]()
+    var scheduleFeedArray:[String] = [String]() 
     
     override func viewDidLoad() {
         super.viewDidLoad()

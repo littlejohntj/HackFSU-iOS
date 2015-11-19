@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		615085CE1BDA16D40066E7BE /* HFMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615085CD1BDA16D40066E7BE /* HFMapViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		615085D01BDAA55E0066E7BE /* HFMentorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615085CF1BDAA55E0066E7BE /* HFMentorViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		615085F81BDD901B0066E7BE /* HFSponsorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615085F71BDD901B0066E7BE /* HFSponsorViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		615085FE1BDEE2400066E7BE /* HFColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615085FD1BDEE2400066E7BE /* HFColors.swift */; settings = {ASSET_TAGS = (); }; };
+		615085CE1BDA16D40066E7BE /* HFMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615085CD1BDA16D40066E7BE /* HFMapViewController.swift */; };
+		615085D01BDAA55E0066E7BE /* HFMentorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615085CF1BDAA55E0066E7BE /* HFMentorViewController.swift */; };
+		615085F81BDD901B0066E7BE /* HFSponsorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615085F71BDD901B0066E7BE /* HFSponsorViewController.swift */; };
+		615085FE1BDEE2400066E7BE /* HFColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615085FD1BDEE2400066E7BE /* HFColors.swift */; };
 		61551A701BD9C0C50091D44A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61551A6F1BD9C0C50091D44A /* AppDelegate.swift */; };
 		61551A751BD9C0C50091D44A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61551A731BD9C0C50091D44A /* Main.storyboard */; };
 		61551A771BD9C0C50091D44A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61551A761BD9C0C50091D44A /* Assets.xcassets */; };
 		61551A7A1BD9C0C50091D44A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61551A781BD9C0C50091D44A /* LaunchScreen.storyboard */; };
 		61551A851BD9C0C50091D44A /* Hack_FSUTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61551A841BD9C0C50091D44A /* Hack_FSUTests.swift */; };
 		61551A901BD9C0C50091D44A /* Hack_FSUUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61551A8F1BD9C0C50091D44A /* Hack_FSUUITests.swift */; };
-		61551A9E1BD9E5360091D44A /* HFFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61551A9D1BD9E5360091D44A /* HFFeedViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		61551AA11BD9EE0E0091D44A /* HFScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61551AA01BD9EE0E0091D44A /* HFScheduleViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		61D2D14E1BE7C53500145EBF /* HelpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D2D14D1BE7C53500145EBF /* HelpRequest.swift */; settings = {ASSET_TAGS = (); }; };
+		61551A9E1BD9E5360091D44A /* HFFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61551A9D1BD9E5360091D44A /* HFFeedViewController.swift */; };
+		61551AA11BD9EE0E0091D44A /* HFScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61551AA01BD9EE0E0091D44A /* HFScheduleViewController.swift */; };
+		61D2D14E1BE7C53500145EBF /* HelpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D2D14D1BE7C53500145EBF /* HelpRequest.swift */; };
 		CED336EC00D9EC75BF013854 /* Pods_Hack_FSU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F3179E63106B529DE3B4C8D /* Pods_Hack_FSU.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 

@@ -36,6 +36,7 @@ class HFScheduleViewController: UIViewController, UITableViewDataSource, UITable
     }
     
     @IBAction func scheduleSegControlValueChanged(sender: AnyObject) {
+        
     }
     
 
