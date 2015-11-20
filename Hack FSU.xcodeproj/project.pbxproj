@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		610DD41C1BFE84B30061383D /* HFUpdateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610DD41B1BFE84B30061383D /* HFUpdateTableViewCell.swift */; };
+		610DD41E1BFEBD900061383D /* HFScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610DD41D1BFEBD900061383D /* HFScheduleTableViewCell.swift */; };
+		610DD4201BFEBE5D0061383D /* HFScheduleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610DD41F1BFEBE5D0061383D /* HFScheduleItem.swift */; };
 		61350D411BFE6A260087A30D /* HFUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61350D401BFE6A260087A30D /* HFUpdate.swift */; };
 		61350D441BFE6CFC0087A30D /* HFParseFeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61350D431BFE6CFC0087A30D /* HFParseFeedController.swift */; };
 		615085CE1BDA16D40066E7BE /* HFMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615085CD1BDA16D40066E7BE /* HFMapViewController.swift */; };
@@ -45,6 +47,8 @@
 /* Begin PBXFileReference section */
 		2F3179E63106B529DE3B4C8D /* Pods_Hack_FSU.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hack_FSU.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		610DD41B1BFE84B30061383D /* HFUpdateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFUpdateTableViewCell.swift; sourceTree = "<group>"; };
+		610DD41D1BFEBD900061383D /* HFScheduleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFScheduleTableViewCell.swift; sourceTree = "<group>"; };
+		610DD41F1BFEBE5D0061383D /* HFScheduleItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFScheduleItem.swift; sourceTree = "<group>"; };
 		61350D401BFE6A260087A30D /* HFUpdate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFUpdate.swift; sourceTree = "<group>"; };
 		61350D431BFE6CFC0087A30D /* HFParseFeedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFParseFeedController.swift; sourceTree = "<group>"; };
 		615085CD1BDA16D40066E7BE /* HFMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFMapViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				610DD41B1BFE84B30061383D /* HFUpdateTableViewCell.swift */,
+				610DD41D1BFEBD900061383D /* HFScheduleTableViewCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -195,6 +200,7 @@
 			children = (
 				61D2D14D1BE7C53500145EBF /* HelpRequest.swift */,
 				61350D401BFE6A260087A30D /* HFUpdate.swift */,
+				610DD41F1BFEBE5D0061383D /* HFScheduleItem.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -403,8 +409,10 @@
 				61551A701BD9C0C50091D44A /* AppDelegate.swift in Sources */,
 				61350D411BFE6A260087A30D /* HFUpdate.swift in Sources */,
 				615085CE1BDA16D40066E7BE /* HFMapViewController.swift in Sources */,
+				610DD41E1BFEBD900061383D /* HFScheduleTableViewCell.swift in Sources */,
 				615085D01BDAA55E0066E7BE /* HFMentorViewController.swift in Sources */,
 				615085FE1BDEE2400066E7BE /* HFColors.swift in Sources */,
+				610DD4201BFEBE5D0061383D /* HFScheduleItem.swift in Sources */,
 				61D2D14E1BE7C53500145EBF /* HelpRequest.swift in Sources */,
 				615085F81BDD901B0066E7BE /* HFSponsorViewController.swift in Sources */,
 			);

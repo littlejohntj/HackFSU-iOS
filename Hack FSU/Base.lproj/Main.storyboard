@@ -82,6 +82,55 @@
                                                     <outlet property="title" destination="hr5-gp-gku" id="WOo-uU-jnb"/>
                                                 </connections>
                                             </tableViewCell>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="HFScheduleTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="HFScheduleTableViewCell" rowHeight="60" id="BmI-ze-Qys" customClass="HFScheduleTableViewCell" customModule="Hack_FSU" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="88" width="600" height="60"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BmI-ze-Qys" id="4Ij-bw-ha9">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccp-7g-Bzj">
+                                                            <rect key="frame" x="8" y="34" width="460" height="18"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="460" id="zST-ME-r3b"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <color key="textColor" white="0.42490530300000001" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5:30 AM - 6:30PM" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qiw-Ei-kZi">
+                                                            <rect key="frame" x="431" y="19" width="161" height="21"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="161" id="6wK-bS-yXo"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdC-Re-v5a">
+                                                            <rect key="frame" x="8" y="0.0" width="460" height="29"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="ccp-7g-Bzj" firstAttribute="leading" secondItem="4Ij-bw-ha9" secondAttribute="leadingMargin" id="8OI-al-VvB"/>
+                                                        <constraint firstItem="Qiw-Ei-kZi" firstAttribute="centerY" secondItem="4Ij-bw-ha9" secondAttribute="centerY" id="Sih-SE-7hm"/>
+                                                        <constraint firstItem="ccp-7g-Bzj" firstAttribute="top" secondItem="tdC-Re-v5a" secondAttribute="bottom" constant="5" id="W78-hh-ne6"/>
+                                                        <constraint firstItem="ccp-7g-Bzj" firstAttribute="leading" secondItem="tdC-Re-v5a" secondAttribute="leading" id="Z9e-Tp-b1G"/>
+                                                        <constraint firstItem="Qiw-Ei-kZi" firstAttribute="top" secondItem="4Ij-bw-ha9" secondAttribute="topMargin" constant="11" id="agD-bq-BbM"/>
+                                                        <constraint firstItem="ccp-7g-Bzj" firstAttribute="trailing" secondItem="tdC-Re-v5a" secondAttribute="trailing" id="ajC-ba-Nha"/>
+                                                        <constraint firstItem="Qiw-Ei-kZi" firstAttribute="trailing" secondItem="4Ij-bw-ha9" secondAttribute="trailingMargin" id="oN5-rc-kkt"/>
+                                                        <constraint firstItem="tdC-Re-v5a" firstAttribute="top" secondItem="4Ij-bw-ha9" secondAttribute="top" id="xZ1-Nx-g0E"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="subtitle" destination="ccp-7g-Bzj" id="YDV-hq-iAx"/>
+                                                    <outlet property="time" destination="Qiw-Ei-kZi" id="zVF-ae-SB9"/>
+                                                    <outlet property="title" destination="tdC-Re-v5a" id="WWa-dm-fMF"/>
+                                                </connections>
+                                            </tableViewCell>
                                         </prototypes>
                                         <connections>
                                             <outlet property="dataSource" destination="zsb-bW-EBc" id="ADW-gD-3Mo"/>

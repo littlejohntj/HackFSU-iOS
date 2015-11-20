@@ -23,13 +23,14 @@ class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     // MARK: Class Variables
     var updateFeedArray:[HFUpdate] = [HFUpdate]()
-    var twitterFeedArray:[String] = [String]()
-    var scheduleFeedArray:[String] = [String]()
+    var twitterFeedArray:[HFScheduleItem] = [HFScheduleItem]()
+    var scheduleFeedArray:[HFScheduleItem] = [HFScheduleItem]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         feedTableView.setContentOffset(CGPointZero, animated: false)
         getUpdatesFromParse()
+        getScheduleItemsFromParse()
     }
     
     override func viewWillLayoutSubviews() {
@@ -70,14 +71,16 @@ class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDa
             print(update.getTimestamp())
             return cell
             
-        case scheudle: let cell = UITableViewCell(); return cell
+        case scheudle:
             
+            let cell:HFScheduleTableViewCell = tableView.dequeueReusableCellWithIdentifier("HFScheduleTableViewCell") as! HFScheduleTableViewCell
+            let scheduleItem = scheduleFeedArray[indexPath.row]
+        
+            cell.title.text = scheduleItem.getTitle()
+            cell.subtitle.text = scheduleItem.getSubtitle()
+            cell.time.text = "\(scheduleItem.getStartTime()) - \(scheduleItem.getEndTime())"
             
-            
-            
-            
-            
-            
+            return cell
             
         case twitter: let cell = UITableViewCell(); return cell
             
@@ -91,6 +94,7 @@ class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     @IBAction func feedSegControlValueChanged(sender: AnyObject) {
+        self.feedTableView.reloadData()
         checkForContent()
     }
     
@@ -143,6 +147,36 @@ class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDa
                     
                 }
                 self.updateFeedArray = updatesArray
+                self.feedTableView.reloadData()
+                self.checkForContent()
+            } else {
+                print(error)
+            }
+        }
+    }
+    
+    func getScheduleItemsFromParse() {
+        var scheduleItemsArray:[HFScheduleItem] = [HFScheduleItem]()
+        let query = PFQuery(className: "ScheduleItem")
+        query.findObjectsInBackgroundWithBlock { (obejcts, error) -> Void in
+            if let _ = obejcts {
+                for update in obejcts! {
+                    let newScheduleItemTitle = update.objectForKey("title") as! String
+                    let newScheduleItemSubtitle = update.objectForKey("subtitle") as! String
+                    let newScheduleItemStartTime = update.objectForKey("startTime") as! NSDate
+                    let newScheduleItemEndTime = update.objectForKey("endTime") as! NSDate
+                    
+                    let newScheduleItemStartTimeString = self.timeAsIWantIt(newScheduleItemStartTime)
+                    let newScheduleItemEndTimeString = self.timeAsIWantIt(newScheduleItemEndTime)
+                    
+                    let newScheduleItem = HFScheduleItem(title: newScheduleItemTitle,
+                        subtitle: newScheduleItemSubtitle,
+                        start: newScheduleItemStartTimeString,
+                        end: newScheduleItemEndTimeString)
+                    
+                    scheduleItemsArray.append(newScheduleItem)
+                }
+                self.scheduleFeedArray = scheduleItemsArray
                 self.feedTableView.reloadData()
                 self.checkForContent()
             } else {
