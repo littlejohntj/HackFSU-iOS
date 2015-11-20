@@ -91,7 +91,7 @@ class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     @IBAction func feedSegControlValueChanged(sender: AnyObject) {
-        
+        checkForContent()
     }
     
     /* checkForContent will check if there is data to be displayed in the view. If not, it will set the correct Glyptodon view. */
@@ -104,7 +104,6 @@ class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDa
             case update: if updateFeedArray.count == 0 {
                 feedTableView.alpha = 0.0
                 tableViewContainerView.glyptodon.show("Getting Updates. Please Wait.")
-                
             }   else {
                 tableViewContainerView.glyptodon.hide()
                 feedTableView.alpha = 1.0
@@ -113,14 +112,14 @@ class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDa
                 feedTableView.alpha = 0.0
                 tableViewContainerView.glyptodon.show("Getting Tweets. Please Wait.")
             }   else {
-                feedTableView.alpha = 0.0
+                feedTableView.alpha = 1.0
                 tableViewContainerView.glyptodon.hide()
                 }
             case schedule: if scheduleFeedArray.count == 0 {
                 feedTableView.alpha = 0.0
                 tableViewContainerView.glyptodon.show("Getting Scheudle. Please Wait.")
             }   else {
-                feedTableView.alpha = 0.0
+                feedTableView.alpha = 1.0
                 tableViewContainerView.glyptodon.hide()
                 }
             default: break
