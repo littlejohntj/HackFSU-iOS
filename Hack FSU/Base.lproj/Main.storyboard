@@ -248,14 +248,14 @@
                                 <animations/>
                                 <color key="tintColor" red="0.74509803921568629" green="0.74509803921568629" blue="0.7686274509803922" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Where you at?" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B0K-Ff-fbF">
+                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Where you at?" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B0K-Ff-fbF">
                                 <rect key="frame" x="20" y="192" width="560" height="30"/>
                                 <animations/>
                                 <color key="tintColor" red="0.73333333333333328" green="0.72941176470588232" blue="0.76078431372549016" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yey-H9-sgg">
                                 <rect key="frame" x="256" y="258" width="88" height="21"/>
@@ -279,7 +279,7 @@
                                     <action selector="processHelpRequest:" destination="HLR-yU-5h5" eventType="touchUpInside" id="JXw-s7-Oqj"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h8f-iv-Gtj" customClass="KMPlaceholderTextView" customModule="KMPlaceholderTextView">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h8f-iv-Gtj" customClass="KMPlaceholderTextView" customModule="KMPlaceholderTextView">
                                 <rect key="frame" x="20" y="287" width="560" height="218"/>
                                 <animations/>
                                 <color key="tintColor" red="0.81568627450980391" green="0.81568627450980391" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
@@ -292,20 +292,42 @@
                                     <outlet property="delegate" destination="HLR-yU-5h5" id="AaN-Wz-z4K"/>
                                 </connections>
                             </textView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LGA-Rc-00h" customClass="BEMCheckBox">
-                                <rect key="frame" x="341" y="164" width="21" height="20"/>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LGA-Rc-00h" customClass="BEMCheckBox">
+                                <rect key="frame" x="559" y="164" width="21" height="20"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="21" id="rIo-0b-jU5"/>
+                                    <constraint firstAttribute="height" constant="20" id="tLJ-e7-xOo"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FnV-qd-RKX" customClass="BEMCheckBox">
-                                <rect key="frame" x="341" y="73" width="21" height="20"/>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FnV-qd-RKX" customClass="BEMCheckBox">
+                                <rect key="frame" x="559" y="73" width="21" height="20"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="E6U-fZ-Uhf"/>
+                                    <constraint firstAttribute="width" constant="21" id="ayn-r9-NXR"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZC7-Jq-DuM" customClass="BEMCheckBox">
+                                <rect key="frame" x="559" y="259" width="21" height="20"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="21" id="G8M-XP-9yD"/>
+                                    <constraint firstAttribute="height" constant="20" id="MAD-W9-gIh"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
                                         <real key="value" value="1"/>
@@ -324,14 +346,20 @@
                             <constraint firstItem="GFx-sv-YrK" firstAttribute="centerX" secondItem="DnG-8T-ggE" secondAttribute="centerX" id="Cej-aI-LNX"/>
                             <constraint firstItem="B0K-Ff-fbF" firstAttribute="top" secondItem="9oL-vi-AUc" secondAttribute="bottom" constant="8" id="Ebb-4D-MVD"/>
                             <constraint firstAttribute="leadingMargin" secondItem="Nzd-SY-tBV" secondAttribute="leading" id="Ekq-RJ-mAZ"/>
+                            <constraint firstItem="FnV-qd-RKX" firstAttribute="top" secondItem="XAP-qg-1cV" secondAttribute="bottom" constant="9" id="J5I-PO-F51"/>
                             <constraint firstItem="h8f-iv-Gtj" firstAttribute="leading" secondItem="DnG-8T-ggE" secondAttribute="leading" constant="20" id="KMO-Rj-iza"/>
                             <constraint firstItem="9oL-vi-AUc" firstAttribute="centerX" secondItem="DnG-8T-ggE" secondAttribute="centerX" id="Kt8-Ps-Ift"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FnV-qd-RKX" secondAttribute="trailing" id="Ogz-eF-BY3"/>
                             <constraint firstAttribute="trailing" secondItem="h8f-iv-Gtj" secondAttribute="trailing" constant="20" id="Olf-uX-VxP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZC7-Jq-DuM" secondAttribute="trailing" id="U5u-Ji-XWs"/>
                             <constraint firstItem="Nzd-SY-tBV" firstAttribute="top" secondItem="GFx-sv-YrK" secondAttribute="bottom" constant="8" id="VP5-fD-oFQ"/>
                             <constraint firstItem="9oL-vi-AUc" firstAttribute="top" secondItem="Nzd-SY-tBV" secondAttribute="bottom" constant="33" id="ZJC-p7-gEC"/>
                             <constraint firstItem="Yey-H9-sgg" firstAttribute="top" secondItem="B0K-Ff-fbF" secondAttribute="bottom" constant="36" id="ckK-Sq-d4K"/>
+                            <constraint firstItem="LGA-Rc-00h" firstAttribute="top" secondItem="Nzd-SY-tBV" secondAttribute="bottom" constant="34" id="hNJ-P7-tto"/>
+                            <constraint firstItem="ZC7-Jq-DuM" firstAttribute="top" secondItem="B0K-Ff-fbF" secondAttribute="bottom" constant="37" id="iqd-5g-EtU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Nzd-SY-tBV" secondAttribute="trailing" id="mkN-LV-lgJ"/>
                             <constraint firstItem="Yey-H9-sgg" firstAttribute="centerX" secondItem="DnG-8T-ggE" secondAttribute="centerX" id="mnj-bQ-LIn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LGA-Rc-00h" secondAttribute="trailing" id="oCK-BC-pQO"/>
                             <constraint firstItem="bne-K4-y7d" firstAttribute="top" secondItem="h8f-iv-Gtj" secondAttribute="bottom" constant="8" id="uSC-oW-wBc"/>
                             <constraint firstItem="bne-K4-y7d" firstAttribute="centerX" secondItem="DnG-8T-ggE" secondAttribute="centerX" id="yLN-4P-HND"/>
                         </constraints>
@@ -339,8 +367,10 @@
                     <navigationItem key="navigationItem" id="ki7-Yd-GSN"/>
                     <connections>
                         <outlet property="descriptionTextView" destination="h8f-iv-Gtj" id="AOQ-cu-ush"/>
+                        <outlet property="descriptioncheckBox" destination="ZC7-Jq-DuM" id="fGb-Wm-zta"/>
                         <outlet property="locationTextField" destination="B0K-Ff-fbF" id="gJc-1b-lcO"/>
                         <outlet property="locationcheckBox" destination="LGA-Rc-00h" id="9W2-XN-EoW"/>
+                        <outlet property="mentorView" destination="DnG-8T-ggE" id="ihN-WD-Mtb"/>
                         <outlet property="nameTextField" destination="Nzd-SY-tBV" id="tPU-vy-nDp"/>
                         <outlet property="namecheckBox" destination="FnV-qd-RKX" id="Oga-00-OiB"/>
                     </connections>

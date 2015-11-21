@@ -18,10 +18,14 @@ class HFMentorViewController: UIViewController, UITextViewDelegate, UITextFieldD
     @IBOutlet weak var locationTextField: UITextField!
     @IBOutlet weak var namecheckBox:BEMCheckBox!
     @IBOutlet weak var locationcheckBox:BEMCheckBox!
+    @IBOutlet weak var descriptioncheckBox:BEMCheckBox!
+    @IBOutlet weak var mentorView: UIView!
     
     // MARK: Class Varibles
     var textViewColor = UIColor._lightGrayColor()
-    
+    var keyboardHeightSize:CGFloat!
+    let tbc = UITabBarController().tabBar.frame.size.height
+
     override func viewDidLoad() {
         super.viewDidLoad()
         descriptionTextView.layer.borderWidth = 0.5
@@ -30,18 +34,54 @@ class HFMentorViewController: UIViewController, UITextViewDelegate, UITextFieldD
         
         nameTextField.delegate = self // Replace TextField with the name of your textField
         locationTextField.delegate = self
+        descriptionTextView.delegate = self
         nameTextField.addTarget(self, action: "nameTextFieldDidEnd:", forControlEvents: UIControlEvents.EditingDidEnd)
         nameTextField.addTarget(self, action: "nameTextFieldDidChange:", forControlEvents: UIControlEvents.EditingChanged)
         locationTextField.addTarget(self, action: "locationTextFieldDidEnd:", forControlEvents: UIControlEvents.EditingDidEnd)
         locationTextField.addTarget(self, action: "locationTextFieldDidChange:", forControlEvents: UIControlEvents.EditingChanged)
         
-        //checkBox.translatesAutoresizingMaskIntoConstraints = false
+        // Set all checkBox's animation type to Bounce
+        namecheckBox.onAnimationType = BEMAnimationType.Bounce
+        namecheckBox.offAnimationType = BEMAnimationType.Bounce
+        locationcheckBox.onAnimationType = BEMAnimationType.Bounce
+        locationcheckBox.offAnimationType = BEMAnimationType.Bounce
+        descriptioncheckBox.onAnimationType = BEMAnimationType.Bounce
+        descriptioncheckBox.offAnimationType = BEMAnimationType.Bounce
+        
+        // Keyboard stuff.
+        let center: NSNotificationCenter = NSNotificationCenter.defaultCenter()
+        center.addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
     }
     
+    func keyboardWillShow(notification: NSNotification) {
+        let info:NSDictionary = notification.userInfo!
+        let keyboardSize = (info[UIKeyboardFrameBeginUserInfoKey] as! NSValue).CGRectValue()
+        
+        let keyboardHeight: CGFloat = keyboardSize.height
+        
+        self.keyboardHeightSize = keyboardHeight
+        
+        let _: CGFloat = info[UIKeyboardAnimationDurationUserInfoKey] as! NSNumber as CGFloat
+        
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardWillShowNotification, object: nil)
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardWillHideNotification, object: nil)
+    }
+    
+    //Textfield
+    
     func nameTextFieldDidEnd(textField: UITextField) {
-        namecheckBox.setOn(true, animated:true)
         if nameTextField.text == "" {
             namecheckBox.setOn(false, animated:true)
+        }
+        else {
+            if namecheckBox.on {
+            }
+            else {
+                namecheckBox.setOn(true, animated:true)
+            }
         }
     }
     
@@ -52,15 +92,50 @@ class HFMentorViewController: UIViewController, UITextViewDelegate, UITextFieldD
     }
     
     func locationTextFieldDidEnd(textField: UITextField) {
-        locationcheckBox.setOn(true, animated:true)
         if locationTextField.text == "" {
             locationcheckBox.setOn(false, animated:true)
+        }
+        else {
+            if locationcheckBox.on {
+            }
+            else {
+                locationcheckBox.setOn(true, animated:true)
+            }
         }
     }
     
     func locationTextFieldDidChange(textField: UITextField) {
         if locationTextField.text == "" {
             locationcheckBox.setOn(false, animated:true)
+        }
+    }
+    
+    // Functions for textView
+    
+    func textViewDidBeginEditing(textView: UITextView) {
+        
+       UIView.animateWithDuration(0.25, delay: 0.25, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
+           self.mentorView.frame = CGRectMake(0, (-self.keyboardHeightSize + self.tbc), self.view.bounds.width, self.view.bounds.height)
+            
+            }, completion: nil)
+    }
+
+    func textViewDidEndEditing(textView: UITextView) {
+        if descriptionTextView.text == "" {
+            descriptioncheckBox.setOn(false, animated:true)
+        }
+        else {
+            descriptioncheckBox.setOn(true, animated:true)
+        }
+        UIView.animateWithDuration(0.25, delay: 0.25, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
+            self.mentorView.frame = CGRectMake(0, 0, self.view.bounds.width, self.view.bounds.height)
+            
+            }, completion: nil)
+    }
+    
+    func textViewDidChange(textView: UITextView) {
+        if descriptionTextView.text == "" {
+            descriptioncheckBox.setOn(false, animated:true)
         }
     }
     
