@@ -25,6 +25,7 @@ class HFMentorViewController: UIViewController, UITextViewDelegate, UITextFieldD
     var textViewColor = UIColor._lightGrayColor()
     var keyboardHeightSize:CGFloat!
     let tbc = UITabBarController().tabBar.frame.size.height
+    let istextViewSelected = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,7 +52,10 @@ class HFMentorViewController: UIViewController, UITextViewDelegate, UITextFieldD
         // Keyboard stuff.
         let center: NSNotificationCenter = NSNotificationCenter.defaultCenter()
         center.addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
+        center.addObserver(self, selector: "keyboardDidChange:", name: UIKeyboardDidChangeFrameNotification, object: nil)
     }
+    
+    // Functions for keyboard
     
     func keyboardWillShow(notification: NSNotification) {
         let info:NSDictionary = notification.userInfo!
@@ -65,9 +69,44 @@ class HFMentorViewController: UIViewController, UITextViewDelegate, UITextFieldD
         
     }
     
-    override func viewWillDisappear(animated: Bool) {
-        NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardWillShowNotification, object: nil)
-        NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardWillHideNotification, object: nil)
+    func keyboardDidChange(notification: NSNotification) {
+        //let info:NSDictionary = notification.userInfo!
+        //let keyboardSize = (info[UIKeyboardFrameBeginUserInfoKey] as! NSValue).CGRectValue()
+        //let height:CGFloat = keyboardSize.height
+        //print(height)
+        if istextViewSelected {
+            
+        }
+    }
+    
+    // Functions for textView
+    
+    func textViewDidBeginEditing(textView: UITextView) {
+        
+        istextViewSelected == true
+        UIView.animateWithDuration(0.25, delay: 0.25, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
+            self.mentorView.frame = CGRectMake(0, (-self.keyboardHeightSize + self.tbc), self.view.bounds.width, self.view.bounds.height)
+            
+            }, completion: nil)
+    }
+    
+    func textViewDidEndEditing(textView: UITextView) {
+        if descriptionTextView.text == "" {
+            descriptioncheckBox.setOn(false, animated:true)
+        }
+        else {
+            descriptioncheckBox.setOn(true, animated:true)
+        }
+        UIView.animateWithDuration(0, delay: 0, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
+            self.mentorView.frame = CGRectMake(0, 0, self.view.bounds.width, self.view.bounds.height)
+            
+            }, completion: nil)
+    }
+    
+    func textViewDidChange(textView: UITextView) {
+        if descriptionTextView.text == "" {
+            descriptioncheckBox.setOn(false, animated:true)
+        }
     }
     
     //Textfield
@@ -110,33 +149,11 @@ class HFMentorViewController: UIViewController, UITextViewDelegate, UITextFieldD
         }
     }
     
-    // Functions for textView
+    ////////////////////////////////////////////////////////////////////////////////////////////////////
     
-    func textViewDidBeginEditing(textView: UITextView) {
-        
-       UIView.animateWithDuration(0.25, delay: 0.25, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
-           self.mentorView.frame = CGRectMake(0, (-self.keyboardHeightSize + self.tbc), self.view.bounds.width, self.view.bounds.height)
-            
-            }, completion: nil)
-    }
-
-    func textViewDidEndEditing(textView: UITextView) {
-        if descriptionTextView.text == "" {
-            descriptioncheckBox.setOn(false, animated:true)
-        }
-        else {
-            descriptioncheckBox.setOn(true, animated:true)
-        }
-        UIView.animateWithDuration(0.25, delay: 0.25, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
-            self.mentorView.frame = CGRectMake(0, 0, self.view.bounds.width, self.view.bounds.height)
-            
-            }, completion: nil)
-    }
-    
-    func textViewDidChange(textView: UITextView) {
-        if descriptionTextView.text == "" {
-            descriptioncheckBox.setOn(false, animated:true)
-        }
+    override func viewWillDisappear(animated: Bool) {
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardWillShowNotification, object: nil)
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardWillHideNotification, object: nil)
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
@@ -170,7 +187,6 @@ class HFMentorViewController: UIViewController, UITextViewDelegate, UITextFieldD
         }
         return false; // We do not want UITextField to insert line-breaks.
     }
-    
     
     func checkFeildsForRequiredLength() -> Bool {
         // Maximum text field lengths

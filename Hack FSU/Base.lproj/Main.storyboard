@@ -271,27 +271,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bne-K4-y7d">
-                                <rect key="frame" x="282" y="513" width="36" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Send"/>
-                                <connections>
-                                    <action selector="processHelpRequest:" destination="HLR-yU-5h5" eventType="touchUpInside" id="JXw-s7-Oqj"/>
-                                </connections>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h8f-iv-Gtj" customClass="KMPlaceholderTextView" customModule="KMPlaceholderTextView">
-                                <rect key="frame" x="20" y="287" width="560" height="218"/>
-                                <animations/>
-                                <color key="tintColor" red="0.81568627450980391" green="0.81568627450980391" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="What do you need?"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <outlet property="delegate" destination="HLR-yU-5h5" id="AaN-Wz-z4K"/>
-                                </connections>
-                            </textView>
                             <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LGA-Rc-00h" customClass="BEMCheckBox">
                                 <rect key="frame" x="559" y="164" width="21" height="20"/>
                                 <animations/>
@@ -334,6 +313,19 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h8f-iv-Gtj" customClass="KMPlaceholderTextView" customModule="KMPlaceholderTextView">
+                                <rect key="frame" x="20" y="287" width="560" height="256"/>
+                                <animations/>
+                                <color key="tintColor" red="0.81568627450980391" green="0.81568627450980391" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="What do you need?"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="HLR-yU-5h5" id="AaN-Wz-z4K"/>
+                                </connections>
+                            </textView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -342,7 +334,6 @@
                             <constraint firstAttribute="trailingMargin" secondItem="B0K-Ff-fbF" secondAttribute="trailing" id="5ff-Y2-1ro"/>
                             <constraint firstAttribute="leadingMargin" secondItem="B0K-Ff-fbF" secondAttribute="leading" id="5vX-5v-8da"/>
                             <constraint firstItem="GFx-sv-YrK" firstAttribute="top" secondItem="XAP-qg-1cV" secondAttribute="bottom" constant="8" id="5xp-QX-xT9"/>
-                            <constraint firstItem="PjQ-tX-UhZ" firstAttribute="top" secondItem="bne-K4-y7d" secondAttribute="bottom" constant="8" id="8nB-iU-aVZ"/>
                             <constraint firstItem="GFx-sv-YrK" firstAttribute="centerX" secondItem="DnG-8T-ggE" secondAttribute="centerX" id="Cej-aI-LNX"/>
                             <constraint firstItem="B0K-Ff-fbF" firstAttribute="top" secondItem="9oL-vi-AUc" secondAttribute="bottom" constant="8" id="Ebb-4D-MVD"/>
                             <constraint firstAttribute="leadingMargin" secondItem="Nzd-SY-tBV" secondAttribute="leading" id="Ekq-RJ-mAZ"/>
@@ -354,17 +345,22 @@
                             <constraint firstAttribute="trailingMargin" secondItem="ZC7-Jq-DuM" secondAttribute="trailing" id="U5u-Ji-XWs"/>
                             <constraint firstItem="Nzd-SY-tBV" firstAttribute="top" secondItem="GFx-sv-YrK" secondAttribute="bottom" constant="8" id="VP5-fD-oFQ"/>
                             <constraint firstItem="9oL-vi-AUc" firstAttribute="top" secondItem="Nzd-SY-tBV" secondAttribute="bottom" constant="33" id="ZJC-p7-gEC"/>
+                            <constraint firstItem="PjQ-tX-UhZ" firstAttribute="top" secondItem="h8f-iv-Gtj" secondAttribute="bottom" constant="8" id="c3W-dV-HmB"/>
                             <constraint firstItem="Yey-H9-sgg" firstAttribute="top" secondItem="B0K-Ff-fbF" secondAttribute="bottom" constant="36" id="ckK-Sq-d4K"/>
                             <constraint firstItem="LGA-Rc-00h" firstAttribute="top" secondItem="Nzd-SY-tBV" secondAttribute="bottom" constant="34" id="hNJ-P7-tto"/>
                             <constraint firstItem="ZC7-Jq-DuM" firstAttribute="top" secondItem="B0K-Ff-fbF" secondAttribute="bottom" constant="37" id="iqd-5g-EtU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Nzd-SY-tBV" secondAttribute="trailing" id="mkN-LV-lgJ"/>
                             <constraint firstItem="Yey-H9-sgg" firstAttribute="centerX" secondItem="DnG-8T-ggE" secondAttribute="centerX" id="mnj-bQ-LIn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="LGA-Rc-00h" secondAttribute="trailing" id="oCK-BC-pQO"/>
-                            <constraint firstItem="bne-K4-y7d" firstAttribute="top" secondItem="h8f-iv-Gtj" secondAttribute="bottom" constant="8" id="uSC-oW-wBc"/>
-                            <constraint firstItem="bne-K4-y7d" firstAttribute="centerX" secondItem="DnG-8T-ggE" secondAttribute="centerX" id="yLN-4P-HND"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="ki7-Yd-GSN"/>
+                    <navigationItem key="navigationItem" id="ki7-Yd-GSN">
+                        <barButtonItem key="rightBarButtonItem" title="Send" id="WU7-sd-Rq0">
+                            <connections>
+                                <action selector="processHelpRequest:" destination="HLR-yU-5h5" id="ihk-cD-lEn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="descriptionTextView" destination="h8f-iv-Gtj" id="AOQ-cu-ush"/>
                         <outlet property="descriptioncheckBox" destination="ZC7-Jq-DuM" id="fGb-Wm-zta"/>
