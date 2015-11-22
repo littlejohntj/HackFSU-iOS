@@ -52,6 +52,7 @@ class HFMentorViewController: UIViewController, UITextViewDelegate, UITextFieldD
         // Keyboard stuff.
         let center: NSNotificationCenter = NSNotificationCenter.defaultCenter()
         center.addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
+        center.addObserver(self, selector: "keyboardDidShow:", name: UIKeyboardDidShowNotification, object: nil)
         center.addObserver(self, selector: "keyboardDidChange:", name: UIKeyboardDidChangeFrameNotification, object: nil)
     }
     
@@ -67,23 +68,40 @@ class HFMentorViewController: UIViewController, UITextViewDelegate, UITextFieldD
         
         let _: CGFloat = info[UIKeyboardAnimationDurationUserInfoKey] as! NSNumber as CGFloat
         
+        print("1")
+        
+    }
+    
+    func keyboardDidShow(notification: NSNotification) {
+        print("2")
+        let info:NSDictionary = notification.userInfo!
+        let keyboardSize = (info[UIKeyboardFrameBeginUserInfoKey] as! NSValue).CGRectValue()
+        
+        let keyboardHeight: CGFloat = keyboardSize.height
+        
+        self.keyboardHeightSize = keyboardHeight
+        
+        
+            //let _: CGFloat = info[UIKeyboardAnimationDurationUserInfoKey] as! NSNumber as CGFloat
+            //UIView.animateWithDuration(0.25, delay: 0.25, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
+              //  self.mentorView.frame = CGRectMake(0, (-self.keyboardHeightSize + self.tbc), self.view.bounds.width, self.view.bounds.height)
+                
+                //}, completion: nil)
+  
     }
     
     func keyboardDidChange(notification: NSNotification) {
-        //let info:NSDictionary = notification.userInfo!
-        //let keyboardSize = (info[UIKeyboardFrameBeginUserInfoKey] as! NSValue).CGRectValue()
-        //let height:CGFloat = keyboardSize.height
+        let info:NSDictionary = notification.userInfo!
+        let keyboardSize = (info[UIKeyboardFrameBeginUserInfoKey] as! NSValue).CGRectValue()
+        let height:CGFloat = keyboardSize.height
         //print(height)
-        if istextViewSelected {
-            
-        }
+        print("3")
     }
     
     // Functions for textView
     
     func textViewDidBeginEditing(textView: UITextView) {
         
-        istextViewSelected == true
         UIView.animateWithDuration(0.25, delay: 0.25, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
             self.mentorView.frame = CGRectMake(0, (-self.keyboardHeightSize + self.tbc), self.view.bounds.width, self.view.bounds.height)
             
