@@ -24,13 +24,10 @@ class HFMapViewController: UIViewController, UIScrollViewDelegate {
         super.viewDidLoad()
         
         self.scrollView.delegate = self
-        
         self.mapImageView.frame = CGRectMake(0, 0, scrollView.frame.size.width, scrollView.frame.size.height)
         self.mapImageView.image = UIImage(named: "firstFloor")
         self.scrollView.addSubview(mapImageView)
     }
-    
-    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -42,12 +39,12 @@ class HFMapViewController: UIViewController, UIScrollViewDelegate {
     }
     
     func setImage() {
-//        switch(self.floorSegmentControl.selectedSegmentIndex) {
-//        case 0: self.MapView.image = UIImage(named: "firstFloor")
-//        case 1: self.MapView.image = UIImage(named: "secondFloor")
-//        case 2: self.MapView.image = UIImage(named: "thirdFloor")
-//        default: break
-//      }
+        switch(self.floorSegmentControl.selectedSegmentIndex) {
+        case 0: self.mapImageView.image = UIImage(named: "firstFloor")
+        case 1: self.mapImageView.image = UIImage(named: "secondFloor")
+        case 2: self.mapImageView.image = UIImage(named: "thirdFloor")
+        default: break
+      }
     }
 
     /*
