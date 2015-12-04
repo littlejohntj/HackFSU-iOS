@@ -24,7 +24,7 @@
 		61551A901BD9C0C50091D44A /* Hack_FSUUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61551A8F1BD9C0C50091D44A /* Hack_FSUUITests.swift */; };
 		61551A9E1BD9E5360091D44A /* HFFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61551A9D1BD9E5360091D44A /* HFFeedViewController.swift */; };
 		61D2D14E1BE7C53500145EBF /* HelpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D2D14D1BE7C53500145EBF /* HelpRequest.swift */; };
-		CED336EC00D9EC75BF013854 /* Pods_Hack_FSU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F3179E63106B529DE3B4C8D /* Pods_Hack_FSU.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		CED336EC00D9EC75BF013854 /* Pods_Hack_FSU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F3179E63106B529DE3B4C8D /* Pods_Hack_FSU.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
