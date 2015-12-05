@@ -31,15 +31,6 @@ class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDa
     override func viewDidLoad() {
         super.viewDidLoad()
         feedTableView.setContentOffset(CGPointZero, animated: false)
-        let bounds = UIScreen.mainScreen().bounds
-        let width = bounds.size.width
-        let segSize = ( width - 35.0 ) / 3.0
-        let seg = UISegmentedControl(items: ["Update", "Schedule", "Twitter"])
-        seg.setWidth(segSize, forSegmentAtIndex: 0)
-        seg.setWidth(segSize, forSegmentAtIndex: 1)
-        seg.setWidth(segSize, forSegmentAtIndex: 2)
-        seg.selectedSegmentIndex = 0
-        self.navigationItem.titleView = seg
         getUpdatesFromParse()
         getScheduleItemsFromParse()
         checkForContent()

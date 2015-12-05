@@ -6,5 +6,6 @@ target 'Hack FSU' do
 	pod 'Glyptodon', '~> 1.0'
 	pod 'KMPlaceholderTextView', '~> 1.0.0'
 	pod 'Parse'
-	pod 'BEMCheckBox' 
+	pod 'BEMCheckBox'
+	pod 'FlatUIKit' 
 end
