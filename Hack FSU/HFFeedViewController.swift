@@ -9,6 +9,7 @@
 import UIKit
 import Glyptodon
 import Parse
+import FlatUIKit
 
 class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -34,13 +35,27 @@ class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDa
         getUpdatesFromParse()
         getScheduleItemsFromParse()
         checkForContent()
+        self.feedTableView.rowHeight = UITableViewAutomaticDimension
+        self.feedTableView.estimatedRowHeight = 44.0
+        feedTableView.separatorStyle = UITableViewCellSeparatorStyle.None
+        
+        
+        // Setting Navigation Bar Color
+        self.navigationController?.navigationBar.barTintColor = UIColor.colorFromHex(0xef626c)
+        self.navigationController?.navigationBar.tintColor = .whiteColor()
+
+        // Setting Navigation Bar Title 
+        self.navigationItem.title = "HACKFSU"
+    
+        
+        
     }
     
     override func viewWillLayoutSubviews() {
         checkForContent()
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         let update = 0
         let scheudle = 1
         let twitter = 2
@@ -55,6 +70,10 @@ class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDa
         default: return 0
         }
     }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 
@@ -62,16 +81,22 @@ class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let scheudle = 1
         let twitter = 2
         
+        let tempCellColor = UIColor.colorFromHex(0xFBFBFB)
+        
         switch (self.feedSegmentControl.selectedSegmentIndex) {
         case update:
             
             let cell:HFUpdateTableViewCell = tableView.dequeueReusableCellWithIdentifier("HFUpdateTableViewCell") as! HFUpdateTableViewCell
-            let update = updateFeedArray[indexPath.row]
+            let update = updateFeedArray[indexPath.section]
             cell.title.text = update.getTitle()
             cell.subTitle.text = update.getContent()
             print(update.getTimestamp())
             cell.timestamp.text = update.getTimestamp()
             print(update.getTimestamp())
+            cell.configureFlatCellWithColor(tempCellColor, selectedColor: tempCellColor, roundingCorners: .AllCorners)
+            cell.cornerRadius = 3.5
+            cell.backgroundColor = UIColor.colorFromHex(0xEDECF3)
+
             return cell
             
         case scheudle:
@@ -82,6 +107,11 @@ class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDa
             cell.title.text = scheduleItem.getTitle()
             cell.subtitle.text = scheduleItem.getSubtitle()
             cell.time.text = "\(scheduleItem.getStartTime()) - \(scheduleItem.getEndTime())"
+            cell.configureFlatCellWithColor(tempCellColor, selectedColor: tempCellColor, roundingCorners: .AllCorners)
+            cell.cornerRadius = 3.5
+            
+            cell.backgroundColor = UIColor.colorFromHex(0xEDECF3)
+
             
             return cell
             
@@ -93,8 +123,18 @@ class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDa
             
         default: let cell = UITableViewCell(); return cell
         }
-
+        
+//
+//        
+//        let cell: UITableViewCell = tableView.dequeueReusableCellWithIdentifier("HFUpdateTableViewCell")!
+//        
+//        
+//        
+//
+//        return cell
     }
+    
+    
     
     @IBAction func feedSegControlValueChanged(sender: AnyObject) {
         self.feedTableView.reloadData()
@@ -157,6 +197,18 @@ class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDa
             }
         }
     }
+    
+    func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 6.0
+    }
+    
+    func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let footerView = UIView(frame: CGRectMake(0, 0, tableView.frame.size.width, 6.5))
+        footerView.backgroundColor = UIColor.colorFromHex(0xEDECF3)
+        
+        return footerView
+    }
+    
     
     func getScheduleItemsFromParse() {
         var scheduleItemsArray:[HFScheduleItem] = [HFScheduleItem]()

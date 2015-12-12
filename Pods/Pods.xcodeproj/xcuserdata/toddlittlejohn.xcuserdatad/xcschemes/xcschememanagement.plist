@@ -4,7 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>BEMCheckBox.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Bolts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FlatUIKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -32,57 +42,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>14DC2A6E13B8382FBDD5FEA49BAD9B5A</key>
+		<key>10E3618BCFDF15FD2137CFC11F9FED8F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2E11A9E155076D3551B90E70CDB8AFF8</key>
+		<key>14C38C35F7406A783D8376A2262C113B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>344A4746530C1F2DBFED667CA3DF9C7E</key>
+		<key>198AC3CE42872A94407BC1D8A678BD46</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3F60ED2FB6EB73476B4D70B288254739</key>
+		<key>272088132D32CF9928B8E6D14E550748</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>566D684A68E09758048DBF71B5F34369</key>
+		<key>4DC16211FA10087F9130DC643D2192DD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>708E01B006A9F88B3C13711562282B5E</key>
+		<key>93DE1CCCBC2AAF0E228088019C576074</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AA00465117132D1F76A169866C381C57</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B23D7A131E68C8BAEB65E04D2364791B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B8A759F57254B6094CF99273E5ECEE8B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C12C29C06DDB95C9EDB8DBE0AC5DA599</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>EC25B770E2E786F47106EE8F013163EA</key>
+		<key>DB47E24D77F8E90884701DD2AEF76C0F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

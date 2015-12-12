@@ -1,6 +1,7 @@
 PODS:
   - BEMCheckBox (1.1.1)
   - Bolts/Tasks (1.4.0)
+  - FlatUIKit (1.6.2)
   - Glyptodon (1.0.9)
   - KMPlaceholderTextView (1.0.0)
   - Parse (1.9.1):
@@ -8,6 +9,7 @@ PODS:
 
 DEPENDENCIES:
   - BEMCheckBox
+  - FlatUIKit
   - Glyptodon (~> 1.0)
   - KMPlaceholderTextView (~> 1.0.0)
   - Parse
@@ -15,8 +17,9 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   BEMCheckBox: e1dd80417e0a9f1db4b55d8b8d2f3f477d120795
   Bolts: 0e9bce58b9b9f5e8a7a4d47b16d2fabec289072b
+  FlatUIKit: 1b41f0d4952ce8d970d8479ce79df54a960242c4
   Glyptodon: 0a73952fe2b413f5784a640b665b39719515b3a1
   KMPlaceholderTextView: 08514547996d3bc7ce1b57e296af2ce8e832c0f6
   Parse: 54a965c8c19a6dde90284ab654dbcc77ef8c001b
 
-COCOAPODS: 0.39.0
+COCOAPODS: 0.38.2
