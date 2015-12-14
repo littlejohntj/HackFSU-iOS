@@ -13,13 +13,13 @@ class HFScheduleItem {
     var scheduleItemTitle:String!
     var scheduleItemSubtitle:String!
     var scheduleItemStartTime:String!
-    var scheduleItemEndTime:String!
+   // var scheduleItemEndTime:String!
     
-    init(title: String, subtitle: String, start: String, end: String) {
+    init(title: String, subtitle: String, start: String) {
         self.setTitle(title)
         self.setSubtitle(subtitle)
         self.setStartTime(start)
-        self.setEndTime(end)
+        // self.setEndTime(end)
     }
     
     func setTitle(name: String) {
@@ -34,9 +34,9 @@ class HFScheduleItem {
         self.scheduleItemStartTime = time
     }
     
-    func setEndTime(time: String) {
-        self.scheduleItemEndTime = time
-    }
+//    func setEndTime(time: String) {
+//        self.scheduleItemEndTime = time
+//    }
     
     func getTitle() -> String {
         return self.scheduleItemTitle
@@ -50,8 +50,8 @@ class HFScheduleItem {
         return self.scheduleItemStartTime
     }
     
-    func getEndTime() -> String {
-        return self.scheduleItemEndTime
-    }
-    
+//    func getEndTime() -> String {
+//        return self.scheduleItemEndTime
+//    }
+//    
 }

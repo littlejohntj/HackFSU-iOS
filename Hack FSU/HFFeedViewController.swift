@@ -27,6 +27,12 @@ class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDa
     var updateFeedArray:[HFUpdate] = [HFUpdate]()
     var twitterFeedArray:[HFScheduleItem] = [HFScheduleItem]()
     var scheduleFeedArray:[HFScheduleItem] = [HFScheduleItem]()
+    
+    var fridayFeedArray:[HFScheduleItem] = [HFScheduleItem]()
+    var saturdayFeedArray:[HFScheduleItem] = [HFScheduleItem]()
+    var sundayFeedArray:[HFScheduleItem] = [HFScheduleItem]()
+    
+    var dayOfWeekArray:[String] = [String]()
    // var feedSegmentControl:UISegmentedControl!
     
     override func viewDidLoad() {
@@ -41,13 +47,22 @@ class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         
         // Setting Navigation Bar Color
-        self.navigationController?.navigationBar.barTintColor = UIColor.colorFromHex(0xef626c)
+        self.navigationController?.navigationBar.barTintColor = UIColor._hackRed()
         self.navigationController?.navigationBar.tintColor = .whiteColor()
 
         // Setting Navigation Bar Title 
         self.navigationItem.title = "HACKFSU"
-    
+        let attributesDictionary = [NSFontAttributeName: UIFont(name: "UniSansHeavyCAPS", size: 25)!, NSForegroundColorAttributeName: UIColor.whiteColor()]
+        self.navigationController!.navigationBar.titleTextAttributes = attributesDictionary
+
+//        Putting logo in the top bar
+//        let logo = UIImage(named: "logo.png") as UIImage?
+//        let imageView = UIImageView(image:logo)
+//        imageView.frame.size.width = 100;
+//        imageView.frame.size.height = 30;
+//        imageView.contentMode = UIViewContentMode.ScaleAspectFit
         
+//        self.navigationItem.titleView = imageView
         
     }
     
@@ -58,21 +73,32 @@ class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         let update = 0
         let scheudle = 1
-        let twitter = 2
         
         switch (self.feedSegmentControl.selectedSegmentIndex) {
         case update:
             return updateFeedArray.count
         case scheudle:
-            return scheduleFeedArray.count
-        case twitter:
-            return twitterFeedArray.count
+            return 3
         default: return 0
         }
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        
+        if self.feedSegmentControl.selectedSegmentIndex == 0 {
+            return 1
+        } else {
+            if section == 0 {
+                return fridayFeedArray.count
+            } else if section == 1 {
+                return saturdayFeedArray.count
+            } else if section == 2 {
+                return sundayFeedArray.count
+            } else {
+                return 0
+            }
+        }
+        
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -96,22 +122,42 @@ class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDa
             cell.configureFlatCellWithColor(tempCellColor, selectedColor: tempCellColor, roundingCorners: .AllCorners)
             cell.cornerRadius = 3.5
             cell.backgroundColor = UIColor.colorFromHex(0xEDECF3)
-
             return cell
             
         case scheudle:
             
             let cell:HFScheduleTableViewCell = tableView.dequeueReusableCellWithIdentifier("HFScheduleTableViewCell") as! HFScheduleTableViewCell
-            let scheduleItem = scheduleFeedArray[indexPath.row]
-        
+            let scheduleItem:HFScheduleItem!
+            
+            if indexPath.section == 0 {
+                scheduleItem = fridayFeedArray[indexPath.row]
+            } else if indexPath.section == 1 {
+                scheduleItem = saturdayFeedArray[indexPath.row]
+            } else if indexPath.section == 2 {
+                scheduleItem = sundayFeedArray[indexPath.row]
+            } else {
+                scheduleItem = fridayFeedArray[indexPath.row]
+                // SWITCH TO A DEFAULT ITEM
+            }
+            
             cell.title.text = scheduleItem.getTitle()
             cell.subtitle.text = scheduleItem.getSubtitle()
-            cell.time.text = "\(scheduleItem.getStartTime()) - \(scheduleItem.getEndTime())"
-            cell.configureFlatCellWithColor(tempCellColor, selectedColor: tempCellColor, roundingCorners: .AllCorners)
-            cell.cornerRadius = 3.5
+            cell.time.text = "\(scheduleItem.getStartTime())"
             
+            if indexPath.row == 0 {
+                cell.configureFlatCellWithColor(tempCellColor, selectedColor: tempCellColor, roundingCorners: [.TopLeft, .TopRight])
+                cell.cornerRadius = 3.5
+            } else if indexPath.row == scheduleFeedArray.count - 1 {
+                cell.configureFlatCellWithColor(tempCellColor, selectedColor: tempCellColor, roundingCorners: [.BottomLeft,
+                    .BottomRight])
+                cell.cornerRadius = 3.5
+            } else {
+                cell.configureFlatCellWithColor(tempCellColor, selectedColor: tempCellColor, roundingCorners: .AllCorners)
+                cell.cornerRadius = 0
+            }
+        
             cell.backgroundColor = UIColor.colorFromHex(0xEDECF3)
-
+            
             
             return cell
             
@@ -124,6 +170,7 @@ class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDa
         default: let cell = UITableViewCell(); return cell
         }
         
+        
 //
 //        
 //        let cell: UITableViewCell = tableView.dequeueReusableCellWithIdentifier("HFUpdateTableViewCell")!
@@ -134,11 +181,47 @@ class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDa
 //        return cell
     }
     
+    func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 6.0
+    }
+    
+    func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let footerView = UIView(frame: CGRectMake(0, 0, tableView.frame.size.width, 6.5))
+        footerView.backgroundColor = UIColor.colorFromHex(0xEDECF3)
+        
+        return footerView
+    }
+    
+    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let cell:ScheduleHeaderCell = (tableView.dequeueReusableCellWithIdentifier("scheduleHeader") as? ScheduleHeaderCell)!
+        cell.backgroundColor = UIColor.colorFromHex(0xEDECF3) // CLEAR
+        
+        if section == 0 {
+            cell.headerLabel.text = "Friday"
+        } else if section == 1 {
+            cell.headerLabel.text = "Saturday"
+        } else if section == 2 {
+            cell.headerLabel.text = "Sunday"
+        }
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        if self.feedSegmentControl.selectedSegmentIndex == 1 {
+            return 34.0
+        } else {
+            return 0.0
+        }
+    }
+    
+    
     
     
     @IBAction func feedSegControlValueChanged(sender: AnyObject) {
         self.feedTableView.reloadData()
         checkForContent()
+        getUpdatesFromParse()
+        getScheduleItemsFromParse()
     }
     
     /* checkForContent will check if there is data to be displayed in the view. If not, it will set the correct Glyptodon view. */
@@ -174,15 +257,19 @@ class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func getUpdatesFromParse() {
+        
+        
         var updatesArray:[HFUpdate] = [HFUpdate]()
-        let query = PFQuery(className: "Update")
+        let query = PFQuery(className: "Update").orderByDescending("createdAt")
         query.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
             if let _ = objects {
+                
+                self.updateFeedArray.removeAll()
+                
                 for update in objects! {
                     let newUpdateTitle = update.objectForKey("title") as! String
                     let newUpdateContent = update.objectForKey("subtitle") as! String
                     let tempTimestamp = update.createdAt!
-                    
                     let newUpdateTimestamp = self.dateToString(tempTimestamp)
                     
                     let newUpdate = HFUpdate(title: newUpdateTitle, content: newUpdateContent, timestamp: newUpdateTimestamp)
@@ -198,36 +285,44 @@ class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }
     }
     
-    func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 6.0
-    }
-    
-    func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        let footerView = UIView(frame: CGRectMake(0, 0, tableView.frame.size.width, 6.5))
-        footerView.backgroundColor = UIColor.colorFromHex(0xEDECF3)
-        
-        return footerView
-    }
     
     
     func getScheduleItemsFromParse() {
+        
+        
+        
         var scheduleItemsArray:[HFScheduleItem] = [HFScheduleItem]()
-        let query = PFQuery(className: "ScheduleItem")
+        let query = PFQuery(className: "ScheduleItem").orderByAscending("startTime")
+        var stateForArrayFill = -1
         query.findObjectsInBackgroundWithBlock { (obejcts, error) -> Void in
             if let _ = obejcts {
+                
+                self.fridayFeedArray.removeAll()
+                self.saturdayFeedArray.removeAll()
+                self.sundayFeedArray.removeAll()
+                
                 for update in obejcts! {
                     let newScheduleItemTitle = update.objectForKey("title") as! String
                     let newScheduleItemSubtitle = update.objectForKey("subtitle") as! String
                     let newScheduleItemStartTime = update.objectForKey("startTime") as! NSDate
-                    let newScheduleItemEndTime = update.objectForKey("endTime") as! NSDate
+                    // let newScheduleItemEndTime = update.objectForKey("endTime") as! NSDate
                     
                     let newScheduleItemStartTimeString = self.timeAsIWantIt(newScheduleItemStartTime)
-                    let newScheduleItemEndTimeString = self.timeAsIWantIt(newScheduleItemEndTime)
+                    // let newScheduleItemEndTimeString = self.timeAsIWantIt(newScheduleItemEndTime)
                     
                     let newScheduleItem = HFScheduleItem(title: newScheduleItemTitle,
                         subtitle: newScheduleItemSubtitle,
-                        start: newScheduleItemStartTimeString,
-                        end: newScheduleItemEndTimeString)
+                        start: newScheduleItemStartTimeString)
+                    
+                    stateForArrayFill = self.getDayOfWeek(newScheduleItemStartTime.dateByAddingTimeInterval(18000))
+                    
+                    if stateForArrayFill == 0 {
+                        self.fridayFeedArray.append(newScheduleItem)
+                    } else if stateForArrayFill == 1 {
+                        self.saturdayFeedArray.append(newScheduleItem)
+                    } else if stateForArrayFill == 2 {
+                        self.sundayFeedArray.append(newScheduleItem)
+                    }
                     
                     scheduleItemsArray.append(newScheduleItem)
                 }
@@ -247,12 +342,29 @@ class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let dateString = dateFormatter.stringFromDate(date)
         let brokenStringArray = dateString.componentsSeparatedByString(",")
         let dayOfWeek = brokenStringArray[0]
+        
         let shortDay = longDayToShortDay(dayOfWeek)
         let time = timeAsIWantIt(date)
         return "\(shortDay) \(time)"
     }
     
+    func getDayOfWeek(date: NSDate) -> Int {
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateStyle = .FullStyle
+        let dateString = dateFormatter.stringFromDate(date)
+        let brokenStringArray = dateString.componentsSeparatedByString(",")
+        let dayOfWeek = brokenStringArray[0]
+        
+        switch(dayOfWeek) {
+        case "Sunday": return 2
+        case "Friday": return 0
+        case "Saturday": return 1
+        default: return 1
+        }
+    }
+    
     func longDayToShortDay(day: String) -> String {
+        
         switch(day) {
         case "Sunday": return "Sun"
         case "Monday": return "Mon"
@@ -263,6 +375,7 @@ class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDa
         case "Saturday": return "Sat"
         default: return "Sat"
         }
+        
     }
     
     func timeAsIWantIt(date: NSDate) -> String {
@@ -270,8 +383,7 @@ class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDa
        
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = "hh:mm a"
-        let dateString = dateFormatter.stringFromDate(date)
-        
+        let dateString = dateFormatter.stringFromDate(date.dateByAddingTimeInterval(18000))
         let timeComponents = dateString.componentsSeparatedByString(":")
         let hour = Int(timeComponents[0])
         

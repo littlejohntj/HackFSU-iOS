@@ -20,6 +20,8 @@ class HFMentorViewController: UIViewController, UITextViewDelegate, UITextFieldD
     @IBOutlet weak var locationcheckBox:BEMCheckBox!
     @IBOutlet weak var descriptioncheckBox:BEMCheckBox!
     @IBOutlet weak var mentorView: UIView!
+    @IBOutlet weak var locationBackgroundBox: UIView!
+    @IBOutlet weak var nameBackgroundBox: UIView!
     
     // MARK: Class Varibles
     var textViewColor = UIColor._lightGrayColor()
@@ -31,7 +33,12 @@ class HFMentorViewController: UIViewController, UITextViewDelegate, UITextFieldD
         super.viewDidLoad()
         descriptionTextView.layer.borderWidth = 0.5
         descriptionTextView.layer.borderColor = self.textViewColor.CGColor
-        descriptionTextView.layer.cornerRadius = 7.5
+        
+        nameBackgroundBox.layer.borderWidth = 0.5
+        nameBackgroundBox.layer.borderColor = self.textViewColor.CGColor
+        
+        locationBackgroundBox.layer.borderWidth = 0.5
+        locationBackgroundBox.layer.borderColor = self.textViewColor.CGColor
         
         nameTextField.delegate = self // Replace TextField with the name of your textField
         locationTextField.delegate = self
@@ -54,6 +61,9 @@ class HFMentorViewController: UIViewController, UITextViewDelegate, UITextFieldD
         center.addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
         center.addObserver(self, selector: "keyboardDidShow:", name: UIKeyboardDidShowNotification, object: nil)
         center.addObserver(self, selector: "keyboardDidChange:", name: UIKeyboardDidChangeFrameNotification, object: nil)
+        
+        self.navigationController?.navigationBar.barTintColor = UIColor._hackGreen()
+        self.navigationController?.navigationBar.tintColor = .whiteColor()
     }
     
     // Functions for keyboard

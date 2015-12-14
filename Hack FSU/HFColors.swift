@@ -16,6 +16,24 @@ extension UIColor {
         return colorFromHex(0xD0D0D5)
     }
     
+    class func _hackRed() -> UIColor {
+        return colorFromHex(0xef626c)
+    }
+    
+    class func _hackBlue() -> UIColor {
+        return colorFromHex(0xA8D3F1)
+    }
+    
+    class func _hackGreen() -> UIColor {
+        return colorFromHex(0x8BD1C9)
+    }
+    
+    class func _hackTan() -> UIColor {
+        return colorFromHex(0xeecdb5)
+    }
+    
+    
+    
     class func colorFromHex(rgbValue:UInt32) -> UIColor {
         
         let red = CGFloat((rgbValue & 0xFF0000) >> 16)/256.0
