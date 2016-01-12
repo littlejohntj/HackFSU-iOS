@@ -31,6 +31,7 @@ class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDa
     var fridayFeedArray:[HFScheduleItem] = [HFScheduleItem]()
     var saturdayFeedArray:[HFScheduleItem] = [HFScheduleItem]()
     var sundayFeedArray:[HFScheduleItem] = [HFScheduleItem]()
+    var dayArray: [[HFScheduleItem]] = []
     
     var dayOfWeekArray:[String] = [String]()
    // var feedSegmentControl:UISegmentedControl!
@@ -44,7 +45,6 @@ class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDa
         self.feedTableView.rowHeight = UITableViewAutomaticDimension
         self.feedTableView.estimatedRowHeight = 44.0
         feedTableView.separatorStyle = UITableViewCellSeparatorStyle.None
-        
         
         // Setting Navigation Bar Color
         self.navigationController?.navigationBar.barTintColor = UIColor._hackRed()
@@ -68,6 +68,10 @@ class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     override func viewWillLayoutSubviews() {
         checkForContent()
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        getUpdatesFromParse()
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -147,7 +151,15 @@ class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDa
             if indexPath.row == 0 {
                 cell.configureFlatCellWithColor(tempCellColor, selectedColor: tempCellColor, roundingCorners: [.TopLeft, .TopRight])
                 cell.cornerRadius = 3.5
-            } else if indexPath.row == scheduleFeedArray.count - 1 {
+            } else if indexPath.section == 0 && indexPath.row == fridayFeedArray.count - 1  {
+                cell.configureFlatCellWithColor(tempCellColor, selectedColor: tempCellColor, roundingCorners: [.BottomLeft,
+                    .BottomRight])
+                cell.cornerRadius = 3.5
+            } else if indexPath.section == 1 && indexPath.row == saturdayFeedArray.count - 1  {
+                cell.configureFlatCellWithColor(tempCellColor, selectedColor: tempCellColor, roundingCorners: [.BottomLeft,
+                    .BottomRight])
+                cell.cornerRadius = 3.5
+            } else if indexPath.section == 2 && indexPath.row == sundayFeedArray.count - 1  {
                 cell.configureFlatCellWithColor(tempCellColor, selectedColor: tempCellColor, roundingCorners: [.BottomLeft,
                     .BottomRight])
                 cell.cornerRadius = 3.5
@@ -289,7 +301,7 @@ class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func getScheduleItemsFromParse() {
         
-        
+        print("merp ")
         
         var scheduleItemsArray:[HFScheduleItem] = [HFScheduleItem]()
         let query = PFQuery(className: "ScheduleItem").orderByAscending("startTime")

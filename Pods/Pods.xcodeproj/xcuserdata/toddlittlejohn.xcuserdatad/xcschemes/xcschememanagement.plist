@@ -34,6 +34,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ParseUI.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Hack FSU.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,37 +47,42 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>10E3618BCFDF15FD2137CFC11F9FED8F</key>
+		<key>085A247A50E3335554F21A2419239DAF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>14C38C35F7406A783D8376A2262C113B</key>
+		<key>3725851A3DDB90E556EB005DEA68BDC2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>198AC3CE42872A94407BC1D8A678BD46</key>
+		<key>455C77A05426FBCF173F9CD735721579</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>272088132D32CF9928B8E6D14E550748</key>
+		<key>46811236B9ACD93C444FF45B8536FD09</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4DC16211FA10087F9130DC643D2192DD</key>
+		<key>8A3AD588D543F55A28ECA62947D98654</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>93DE1CCCBC2AAF0E228088019C576074</key>
+		<key>AF55DCB7FDE404D86D14DA9674F07235</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DB47E24D77F8E90884701DD2AEF76C0F</key>
+		<key>C4C1F539867D90D665370072CB0CDAE2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F593E15EC2A77B7B191C2A7250DEB582</key>
 		<dict>
 			<key>primary</key>
 			<true/>

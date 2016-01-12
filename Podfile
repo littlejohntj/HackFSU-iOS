@@ -7,5 +7,6 @@ target 'Hack FSU' do
 	pod 'KMPlaceholderTextView', '~> 1.0.0'
 	pod 'Parse'
 	pod 'BEMCheckBox'
-	pod 'FlatUIKit' 
+	pod 'FlatUIKit'
+	pod 'ParseUI' 
 end

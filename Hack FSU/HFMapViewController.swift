@@ -7,54 +7,62 @@
 //
 
 import UIKit
+import FlatUIKit
+import Parse
 
-class HFMapViewController: UIViewController, UIScrollViewDelegate {
+class HFMapViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    // MARK: UI Outlets
     
-    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var floorTableView: UITableView!
     
-    @IBOutlet weak var floorSegmentControl: UISegmentedControl!
+    @IBOutlet var mapTableViewContainerView: UIView!
+    // MARK: Class Variables
     
-    // MARK: Class Variables 
-    
-    var mapImageView:UIImageView = UIImageView()
+    var mapArray:[String] = ["firstFloor", "secondFloor", "thirdFloor"]
+    // var feedSegmentControl:UISegmentedControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        floorTableView.setContentOffset(CGPointZero, animated: false)
+
+        self.floorTableView.rowHeight = UITableViewAutomaticDimension
+        self.floorTableView.estimatedRowHeight = 44.0
         
-        self.scrollView.delegate = self
-        self.mapImageView.frame = CGRectMake(0, 0, scrollView.frame.size.width, scrollView.frame.size.height)
-        self.mapImageView.image = UIImage(named: "firstFloor")
-        self.scrollView.addSubview(mapImageView)
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        floorTableView.separatorStyle = UITableViewCellSeparatorStyle.None
+        
+        // Setting Navigation Bar Color
+        self.navigationController?.navigationBar.barTintColor = UIColor._hackRed()
+        self.navigationController?.navigationBar.tintColor = .whiteColor()
+        
+        // Setting Navigation Bar Title
+        self.navigationItem.title = "VENUE MAP"
+        let attributesDictionary = [NSFontAttributeName: UIFont(name: "UniSansHeavyCAPS", size: 25)!, NSForegroundColorAttributeName: UIColor.whiteColor()]
+        self.navigationController!.navigationBar.titleTextAttributes = attributesDictionary
+        
+        
     }
     
-    @IBAction func floorMapSegmentValueChange(sender: AnyObject) {
-        setImage()
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 200.0
     }
     
-    func setImage() {
-        switch(self.floorSegmentControl.selectedSegmentIndex) {
-        case 0: self.mapImageView.image = UIImage(named: "firstFloor")
-        case 1: self.mapImageView.image = UIImage(named: "secondFloor")
-        case 2: self.mapImageView.image = UIImage(named: "thirdFloor")
-        default: break
-      }
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 3
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
     }
-    */
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        let cell:HFMapTableViewCell = tableView.dequeueReusableCellWithIdentifier("HFMapTableViewCell") as! HFMapTableViewCell
+        let map = mapArray[indexPath.section]
+        cell.mapImage.image = UIImage(named: map)
+        cell.mapImage.contentMode = .ScaleAspectFit
+        cell.backgroundColor = UIColor.colorFromHex(0xEDECF3)
+        return cell
 
+    }
+    
 }

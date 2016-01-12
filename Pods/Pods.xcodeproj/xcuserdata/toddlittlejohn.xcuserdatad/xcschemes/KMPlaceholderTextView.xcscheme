@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "323AD31C619F60B7EE963BC8"
+               BlueprintIdentifier = "D2399A230154C6CCC413C76F"
                BuildableName = "KMPlaceholderTextView.framework"
                BlueprintName = "KMPlaceholderTextView"
                ReferencedContainer = "container:Pods.xcodeproj">

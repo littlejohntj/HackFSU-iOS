@@ -12,7 +12,7 @@ import Parse
 class HelpRequest: PFObject, PFSubclassing {
     
     static func parseClassName() -> String {
-        return "Help"
+        return "HelpRequest"
     }
     
     override class func initialize() {
