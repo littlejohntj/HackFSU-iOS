@@ -145,8 +145,8 @@
 				610DD41B1BFE84B30061383D /* HFUpdateTableViewCell.swift */,
 				610DD41D1BFEBD900061383D /* HFScheduleTableViewCell.swift */,
 				6164B05F1C1F584B00FC04BA /* ScheduleHeaderCell.swift */,
-				6166252D1C21324100842E0E /* HFMapTableViewCell.swift */,
 				613859301C2E5850002F9FA2 /* MapHeaderViewCell.swift */,
+				6166252D1C21324100842E0E /* HFMapTableViewCell.swift */,
 				613970981C3B11F200BFEC2E /* HFSponsorTableViewCell.swift */,
 			);
 			name = Cells;

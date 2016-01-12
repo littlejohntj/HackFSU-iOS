@@ -2,7 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "secondfloor.png",
+      "filename" : "secondFloorWithBG.png",
       "scale" : "1x"
     },
     {

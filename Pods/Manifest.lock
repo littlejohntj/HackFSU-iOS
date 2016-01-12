@@ -1,4 +1,5 @@
 PODS:
+  - Agrume (2.0.2)
   - BEMCheckBox (1.1.1)
   - Bolts/Tasks (1.4.0)
   - FlatUIKit (1.6.2)
@@ -11,6 +12,7 @@ PODS:
     - Parse (~> 1.9)
 
 DEPENDENCIES:
+  - Agrume (from `https://github.com/JanGorman/Agrume.git`)
   - BEMCheckBox
   - FlatUIKit
   - Glyptodon (~> 1.0)
@@ -18,7 +20,17 @@ DEPENDENCIES:
   - Parse
   - ParseUI
 
+EXTERNAL SOURCES:
+  Agrume:
+    :git: https://github.com/JanGorman/Agrume.git
+
+CHECKOUT OPTIONS:
+  Agrume:
+    :commit: 62746b62b1e26cd01cf7b41b184fd14000457146
+    :git: https://github.com/JanGorman/Agrume.git
+
 SPEC CHECKSUMS:
+  Agrume: d8f0b55713f0cac8927d410bd87eec0487d74061
   BEMCheckBox: e1dd80417e0a9f1db4b55d8b8d2f3f477d120795
   Bolts: 0e9bce58b9b9f5e8a7a4d47b16d2fabec289072b
   FlatUIKit: 1b41f0d4952ce8d970d8479ce79df54a960242c4

@@ -8,5 +8,6 @@ target 'Hack FSU' do
 	pod 'Parse'
 	pod 'BEMCheckBox'
 	pod 'FlatUIKit'
-	pod 'ParseUI' 
+	pod 'ParseUI'
+	pod 'Agrume', :git => 'https://github.com/JanGorman/Agrume.git' 
 end

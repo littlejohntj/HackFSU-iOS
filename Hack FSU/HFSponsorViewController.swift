@@ -66,7 +66,7 @@ class HFSponsorViewController: UIViewController, UITableViewDelegate, UITableVie
         cell.configureFlatCellWithColor(UIColor.whiteColor(), selectedColor: UIColor.whiteColor(), roundingCorners: .AllCorners)
         cell.cornerRadius = 3.5
         cell.backgroundColor = UIColor.colorFromHex(0xEDECF3)
-        cell.separatorHeight = 10.0
+//        cell.separatorHeight = 10.0
         return cell
     }
     

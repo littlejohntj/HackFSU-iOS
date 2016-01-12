@@ -14,10 +14,10 @@ class HFMapTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        mapImage.layer.cornerRadius = 3.5
+        mapImage.clipsToBounds = true
     }
 
-    override func layoutSubviews() {
-    }
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
