@@ -10,6 +10,7 @@
 		610DD41C1BFE84B30061383D /* HFUpdateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610DD41B1BFE84B30061383D /* HFUpdateTableViewCell.swift */; };
 		610DD41E1BFEBD900061383D /* HFScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610DD41D1BFEBD900061383D /* HFScheduleTableViewCell.swift */; };
 		610DD4201BFEBE5D0061383D /* HFScheduleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610DD41F1BFEBE5D0061383D /* HFScheduleItem.swift */; };
+		611E91591C45B6CC005F9CC1 /* HFMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611E91581C45B6CC005F9CC1 /* HFMap.swift */; };
 		61350D411BFE6A260087A30D /* HFUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61350D401BFE6A260087A30D /* HFUpdate.swift */; };
 		61350D441BFE6CFC0087A30D /* HFParseFeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61350D431BFE6CFC0087A30D /* HFParseFeedController.swift */; };
 		613859311C2E5850002F9FA2 /* MapHeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613859301C2E5850002F9FA2 /* MapHeaderViewCell.swift */; };
@@ -76,6 +77,7 @@
 		610DD41B1BFE84B30061383D /* HFUpdateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFUpdateTableViewCell.swift; sourceTree = "<group>"; };
 		610DD41D1BFEBD900061383D /* HFScheduleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFScheduleTableViewCell.swift; sourceTree = "<group>"; };
 		610DD41F1BFEBE5D0061383D /* HFScheduleItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFScheduleItem.swift; sourceTree = "<group>"; };
+		611E91581C45B6CC005F9CC1 /* HFMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFMap.swift; sourceTree = "<group>"; };
 		61350D401BFE6A260087A30D /* HFUpdate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFUpdate.swift; sourceTree = "<group>"; };
 		61350D431BFE6CFC0087A30D /* HFParseFeedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFParseFeedController.swift; sourceTree = "<group>"; };
 		613859301C2E5850002F9FA2 /* MapHeaderViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapHeaderViewCell.swift; sourceTree = "<group>"; };
@@ -245,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				61D2D14D1BE7C53500145EBF /* HelpRequest.swift */,
+				611E91581C45B6CC005F9CC1 /* HFMap.swift */,
 				61350D401BFE6A260087A30D /* HFUpdate.swift */,
 				610DD41F1BFEBE5D0061383D /* HFScheduleItem.swift */,
 				6139709A1C3B19B400BFEC2E /* HFSponsor.swift */,
@@ -477,6 +480,7 @@
 				615085CE1BDA16D40066E7BE /* HFMapViewController.swift in Sources */,
 				610DD41E1BFEBD900061383D /* HFScheduleTableViewCell.swift in Sources */,
 				615085D01BDAA55E0066E7BE /* HFMentorViewController.swift in Sources */,
+				611E91591C45B6CC005F9CC1 /* HFMap.swift in Sources */,
 				6164B0601C1F584B00FC04BA /* ScheduleHeaderCell.swift in Sources */,
 				615085FE1BDEE2400066E7BE /* HFColors.swift in Sources */,
 				6139709B1C3B19B400BFEC2E /* HFSponsor.swift in Sources */,

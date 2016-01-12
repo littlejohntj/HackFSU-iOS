@@ -639,7 +639,7 @@ class HFMentorViewController: UIViewController, UITextViewDelegate, UITextFieldD
             alertMessage, preferredStyle: UIAlertControllerStyle.Alert)
         
         alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
-        
+//        alertController.view.tintColor = UIColor._hackRed()
         self.presentViewController(alertController, animated: true, completion: nil)
     }
     

@@ -395,7 +395,8 @@ class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDa
        
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = "hh:mm a"
-        let dateString = dateFormatter.stringFromDate(date.dateByAddingTimeInterval(18000))
+//        let dateString = dateFormatter.stringFromDate(date.dateByAddingTimeInterval(18000))
+        let dateString = dateFormatter.stringFromDate(date)
         let timeComponents = dateString.componentsSeparatedByString(":")
         let hour = Int(timeComponents[0])
         

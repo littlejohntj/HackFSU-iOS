@@ -59,9 +59,6 @@ class HFSponsorViewController: UIViewController, UITableViewDelegate, UITableVie
         
         cell.sponsorImage.file = sponsor.getSponsorImage()
         cell.sponsorImage.loadInBackground()
-        cell.sponsorLevel.text = "\(sponsor.getSponsorLevel())"
-        
-        
         cell.sponLabel.text = sponsor.getSponsorName()
         cell.configureFlatCellWithColor(UIColor.whiteColor(), selectedColor: UIColor.whiteColor(), roundingCorners: .AllCorners)
         cell.cornerRadius = 3.5
