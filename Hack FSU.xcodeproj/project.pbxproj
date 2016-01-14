@@ -34,6 +34,7 @@
 		6164B0611C1F73C000FC04BA /* Pods_Hack_FSU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F3179E63106B529DE3B4C8D /* Pods_Hack_FSU.framework */; };
 		6164B0621C1F73C000FC04BA /* Pods_Hack_FSU.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2F3179E63106B529DE3B4C8D /* Pods_Hack_FSU.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6166252E1C21324100842E0E /* HFMapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6166252D1C21324100842E0E /* HFMapTableViewCell.swift */; };
+		61692B671C482F01007A6221 /* HFSponsorFooterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61692B661C482F01007A6221 /* HFSponsorFooterCell.swift */; };
 		61ACC34D1C44013F00714A5B /* HFCountdownManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61ACC34C1C44013F00714A5B /* HFCountdownManager.swift */; };
 		61ACC34F1C44027A00714A5B /* HFCountdownItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61ACC34E1C44027A00714A5B /* HFCountdownItem.swift */; };
 		61CC64C61C472D6200E08521 /* unisans.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 61CC64C51C472D6200E08521 /* unisans.OTF */; };
@@ -105,6 +106,7 @@
 		61551A9D1BD9E5360091D44A /* HFFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFFeedViewController.swift; sourceTree = "<group>"; };
 		6164B05F1C1F584B00FC04BA /* ScheduleHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleHeaderCell.swift; sourceTree = "<group>"; };
 		6166252D1C21324100842E0E /* HFMapTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFMapTableViewCell.swift; sourceTree = "<group>"; };
+		61692B661C482F01007A6221 /* HFSponsorFooterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFSponsorFooterCell.swift; sourceTree = "<group>"; };
 		61ACC34C1C44013F00714A5B /* HFCountdownManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFCountdownManager.swift; sourceTree = "<group>"; };
 		61ACC34E1C44027A00714A5B /* HFCountdownItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFCountdownItem.swift; sourceTree = "<group>"; };
 		61CC64C51C472D6200E08521 /* unisans.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = unisans.OTF; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				613859301C2E5850002F9FA2 /* MapHeaderViewCell.swift */,
 				6166252D1C21324100842E0E /* HFMapTableViewCell.swift */,
 				613970981C3B11F200BFEC2E /* HFSponsorTableViewCell.swift */,
+				61692B661C482F01007A6221 /* HFSponsorFooterCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -485,6 +488,7 @@
 				615085FE1BDEE2400066E7BE /* HFColors.swift in Sources */,
 				6139709B1C3B19B400BFEC2E /* HFSponsor.swift in Sources */,
 				610DD4201BFEBE5D0061383D /* HFScheduleItem.swift in Sources */,
+				61692B671C482F01007A6221 /* HFSponsorFooterCell.swift in Sources */,
 				61D2D14E1BE7C53500145EBF /* HelpRequest.swift in Sources */,
 				615085F81BDD901B0066E7BE /* HFSponsorViewController.swift in Sources */,
 			);

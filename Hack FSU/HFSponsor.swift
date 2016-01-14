@@ -13,12 +13,15 @@ class HFSponsor {
     private var sponsorName:String!
     private var sponsorImageData:PFFile!
     private var sponsorLevel:Int!
+    private var sponsorAspectValue:CGFloat!
+    private var sizeEvaluated:Bool!
     
     
     init(name: String, image: PFFile, level:Int ) {
         sponsorName = name
         sponsorImageData = image
         sponsorLevel = level
+        sizeEvaluated = false
     }
     
     init(name: String) {
@@ -36,4 +39,26 @@ class HFSponsor {
     func getSponsorLevel() -> Int {
         return self.sponsorLevel
     }
+    
+    func getSizeEvaluated() -> Bool {
+        return self.sizeEvaluated
+    }
+    
+    func getSponsorAspectValue() -> CGFloat {
+        return self.sponsorAspectValue
+    }
+    
+    func setSponsorAspectValue(value: CGFloat) {
+        if value <= 0.0 {
+            self.sponsorAspectValue = 0.75
+        } else {
+            self.sponsorAspectValue = value
+        }
+    }
+    
+    func sizeWasEvaluated() {
+        self.sizeEvaluated = true 
+    }
+    
+    
 }

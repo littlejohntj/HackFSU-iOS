@@ -102,6 +102,7 @@ class HFMapViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let map = mapArray[indexPath.section]
         map.getMapImage().getDataInBackgroundWithBlock { (imageData, error) -> Void in
             let newMap = UIImage(data: imageData!)
+            print(newMap?.size.height)
             let agrume = Agrume(image: newMap!)
             agrume.showFrom(self)
         }

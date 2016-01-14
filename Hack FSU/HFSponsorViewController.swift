@@ -50,8 +50,6 @@ class HFSponsorViewController: UIViewController, UITableViewDelegate, UITableVie
         return sponsorFeedArray.count
     }
     
-    
-    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell:HFSponsorTableViewCell = tableView.dequeueReusableCellWithIdentifier("sponsor") as! HFSponsorTableViewCell
         let sponsor:HFSponsor = sponsorFeedArray[indexPath.section]
@@ -67,12 +65,20 @@ class HFSponsorViewController: UIViewController, UITableViewDelegate, UITableVie
         return cell
     }
     
-//    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-//        let aspectRatio:CGFloat = 0.4
-//        let width = UIScreen.mainScreen().bounds.width - 16.0
-//        let height = width * aspectRatio
-//        return height
-//    }
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        
+        if allSizesAreEvaluated() {
+            let sponsor = sponsorFeedArray[indexPath.section]
+            let screenWidth = UIScreen.mainScreen().bounds.width
+            let screenWidthWithBorders = screenWidth - 16.0
+            print(screenWidthWithBorders)
+            let sponsorImageHeight = screenWidthWithBorders * sponsor.getSponsorAspectValue() + 30.0 
+            print(sponsorImageHeight)
+            return sponsorImageHeight
+        } else {
+            return 44.0
+        }
+    }
     
     func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 6.0
@@ -121,11 +127,44 @@ class HFSponsorViewController: UIViewController, UITableViewDelegate, UITableVie
                 
                 self.sponsorFeedArray = sponsorArray
                 self.sponsorTableView.reloadData()
-                self.checkForContent()
+                self.calculateImageRatios()
             } else {
                 print(error)
             }
         }
+    }
+    
+    func calculateImageRatios() {
+        for sponsor in self.sponsorFeedArray {
+            sponsor.getSponsorImage().getDataInBackgroundWithBlock({ (imageData, error) -> Void in
+                if imageData != nil {
+                    let imageSize:CGSize = (UIImage(data: imageData!)?.size)!
+                    let imageHeight:CGFloat = imageSize.height
+                    let imageWidth:CGFloat = imageSize.width
+                    let newValue = imageHeight / imageWidth
+                    sponsor.setSponsorAspectValue(newValue)
+                    sponsor.sizeWasEvaluated()
+                    print("taco")
+                    
+                    if self.allSizesAreEvaluated() {
+                        self.sponsorTableView.reloadData()
+                        self.checkForContent()
+                    }
+                }
+            })
+        }
+        
+        
+        
+    }
+    
+    func allSizesAreEvaluated() -> Bool {
+        for sponsor in sponsorFeedArray {
+            if sponsor.getSizeEvaluated() == false {
+                return false
+            }
+        }
+        return true
     }
 
 }

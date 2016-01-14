@@ -72,6 +72,7 @@ class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     override func viewDidAppear(animated: Bool) {
         getUpdatesFromParse()
+        UIApplication.sharedApplication().applicationIconBadgeNumber = 0
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {

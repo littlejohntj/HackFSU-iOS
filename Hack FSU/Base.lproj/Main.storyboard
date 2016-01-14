@@ -662,47 +662,45 @@
                         <viewControllerLayoutGuide type="bottom" id="XIU-OP-UKH"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="nH2-wX-AwN">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="268" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hLv-D0-r6D">
-                                <rect key="frame" x="10" y="20" width="580" height="580"/>
+                                <rect key="frame" x="10" y="20" width="580" height="780"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" red="0.92941176469999998" green="0.92549019610000005" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="sectionIndexTrackingBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" restorationIdentifier="HFSponsorTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="sponsor" rowHeight="423" id="2sa-ss-bgz" customClass="HFSponsorTableViewCell" customModule="Hack_FSU" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="92" width="580" height="423"/>
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" restorationIdentifier="HFSponsorTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="sponsor" rowHeight="415" id="2sa-ss-bgz" customClass="HFSponsorTableViewCell" customModule="Hack_FSU" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="580" height="415"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2sa-ss-bgz" id="rDG-rL-34f">
-                                            <rect key="frame" x="0.0" y="0.0" width="580" height="422.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="580" height="414.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="PFImageView" translatesAutoresizingMaskIntoConstraints="NO" id="1fp-EJ-h1o" customClass="PFImageView">
-                                                    <rect key="frame" x="0.0" y="0.0" width="580" height="422.5"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" secondItem="1fp-EJ-h1o" secondAttribute="height" multiplier="290:211" id="g2L-5g-e8f"/>
-                                                    </constraints>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="PFImageView" translatesAutoresizingMaskIntoConstraints="NO" id="1fp-EJ-h1o" customClass="PFImageView">
+                                                    <rect key="frame" x="0.0" y="0.0" width="580" height="385"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZH-QW-T85">
-                                                    <rect key="frame" x="8" y="393" width="564" height="17"/>
+                                                    <rect key="frame" x="8" y="385" width="564" height="29.5"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="17" id="wTg-NX-2qF"/>
+                                                        <constraint firstAttribute="height" constant="29.5" id="e6N-vj-yZr"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="AZH-QW-T85" firstAttribute="trailing" secondItem="rDG-rL-34f" secondAttribute="trailingMargin" id="7s2-PI-IJs"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="AZH-QW-T85" secondAttribute="bottom" constant="4.5" id="QmJ-RR-5Pk"/>
-                                                <constraint firstAttribute="bottom" secondItem="1fp-EJ-h1o" secondAttribute="bottom" id="SbD-g4-pdQ"/>
-                                                <constraint firstItem="1fp-EJ-h1o" firstAttribute="leading" secondItem="rDG-rL-34f" secondAttribute="leading" id="VWz-zP-HvL"/>
-                                                <constraint firstItem="1fp-EJ-h1o" firstAttribute="top" secondItem="rDG-rL-34f" secondAttribute="top" id="gUF-CD-kV1"/>
-                                                <constraint firstItem="AZH-QW-T85" firstAttribute="leading" secondItem="rDG-rL-34f" secondAttribute="leadingMargin" id="kOc-u9-ifm"/>
-                                                <constraint firstAttribute="trailing" secondItem="1fp-EJ-h1o" secondAttribute="trailing" id="ogG-BI-alK"/>
+                                                <constraint firstAttribute="trailing" secondItem="AZH-QW-T85" secondAttribute="trailing" constant="8" id="5yO-Vb-Uoc"/>
+                                                <constraint firstItem="AZH-QW-T85" firstAttribute="leading" secondItem="rDG-rL-34f" secondAttribute="leading" constant="8" id="DlR-dS-hue"/>
+                                                <constraint firstAttribute="bottom" secondItem="AZH-QW-T85" secondAttribute="bottom" id="WB2-D9-vqZ"/>
+                                                <constraint firstItem="1fp-EJ-h1o" firstAttribute="leading" secondItem="rDG-rL-34f" secondAttribute="leading" id="hDu-fu-Pbr"/>
+                                                <constraint firstItem="1fp-EJ-h1o" firstAttribute="top" secondItem="rDG-rL-34f" secondAttribute="top" id="ojA-12-5wC"/>
+                                                <constraint firstItem="AZH-QW-T85" firstAttribute="top" secondItem="1fp-EJ-h1o" secondAttribute="bottom" id="pA7-Tf-slb"/>
+                                                <constraint firstAttribute="trailing" secondItem="1fp-EJ-h1o" secondAttribute="trailing" id="t0w-z5-Eay"/>
+                                                <constraint firstItem="AZH-QW-T85" firstAttribute="top" secondItem="1fp-EJ-h1o" secondAttribute="bottom" id="x1r-ZW-Y4P"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.13725490200000001" green="0.43529411759999997" blue="0.78039215689999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -711,14 +709,31 @@
                                             <outlet property="sponsorImage" destination="1fp-EJ-h1o" id="Tnt-Ih-enh"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="sponsorHeader" rowHeight="10" id="xjT-Ew-s9b">
-                                        <rect key="frame" x="0.0" y="515" width="580" height="10"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="HFSponsorFooterCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="sponsorFooter" rowHeight="30" id="xjT-Ew-s9b" customClass="HFSponsorFooterCell" customModule="Hack_FSU" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="507" width="580" height="30"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xjT-Ew-s9b" id="EJy-Dh-8VU">
-                                            <rect key="frame" x="0.0" y="0.0" width="580" height="9.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="580" height="29.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j0G-st-f8K">
+                                                    <rect key="frame" x="8" y="4" width="564" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="j0G-st-f8K" firstAttribute="top" secondItem="EJy-Dh-8VU" secondAttribute="top" constant="4" id="Dxk-qk-hCW"/>
+                                                <constraint firstAttribute="trailing" secondItem="j0G-st-f8K" secondAttribute="trailing" constant="8" id="JLe-8U-KCT"/>
+                                                <constraint firstAttribute="bottom" secondItem="j0G-st-f8K" secondAttribute="bottom" constant="4.5" id="KAC-7p-pAM"/>
+                                                <constraint firstItem="j0G-st-f8K" firstAttribute="leading" secondItem="EJy-Dh-8VU" secondAttribute="leading" constant="8" id="YEW-Lw-nKq"/>
+                                            </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.92941176469999998" green="0.92549019610000005" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="sponsorLabel" destination="j0G-st-f8K" id="kdD-fg-4ny"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -737,6 +752,8 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="olP-pB-2AM"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="800"/>
                     <connections>
                         <outlet property="sponsorContainerView" destination="nH2-wX-AwN" id="ZrX-fg-3ej"/>
                         <outlet property="sponsorTableView" destination="hLv-D0-r6D" id="sns-Rp-cK6"/>
