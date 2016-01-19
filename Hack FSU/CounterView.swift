@@ -34,7 +34,7 @@ class CounterView: UIView {
         let radius: CGFloat = max(bounds.width, bounds.height)
         
         // 3
-        let arcWidth: CGFloat = 80.0
+        let arcWidth: CGFloat = 60.0
         
         // 4
         let fullTime:CGFloat = NSDate.timeBetween(countdownManager.getHackingStartTime(), date2: countdownManager.getHackingEndTime())

@@ -569,27 +569,30 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WRo-6l-mJx" customClass="CounterView" customModule="Hack_FSU" customModuleProvider="target">
                                         <rect key="frame" x="17" y="22" width="366" height="366"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pinkfeather" translatesAutoresizingMaskIntoConstraints="NO" id="hA3-64-VMy">
+                                                <rect key="frame" x="55" y="154" width="256" height="58"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="hA3-64-VMy" secondAttribute="height" multiplier="128:29" id="fLX-nx-gjv"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
                                         <color key="backgroundColor" red="0.92941176469999998" green="0.92549019610000005" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="WRo-6l-mJx" secondAttribute="height" multiplier="1:1" id="F5G-a3-tkV"/>
+                                            <constraint firstItem="hA3-64-VMy" firstAttribute="centerY" secondItem="WRo-6l-mJx" secondAttribute="centerY" id="J2i-Z4-fiG"/>
+                                            <constraint firstItem="hA3-64-VMy" firstAttribute="leading" secondItem="WRo-6l-mJx" secondAttribute="leading" constant="55" id="R4U-et-Rp5"/>
+                                            <constraint firstAttribute="trailing" secondItem="hA3-64-VMy" secondAttribute="trailing" constant="55" id="ldZ-kT-h2I"/>
+                                            <constraint firstItem="hA3-64-VMy" firstAttribute="centerX" secondItem="WRo-6l-mJx" secondAttribute="centerX" id="zOY-2q-nxV"/>
                                         </constraints>
                                     </view>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pinkfeather" translatesAutoresizingMaskIntoConstraints="NO" id="hA3-64-VMy">
-                                        <rect key="frame" x="94" y="181" width="212" height="48"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="hA3-64-VMy" secondAttribute="height" multiplier="53:12" id="Ful-AB-JB9"/>
-                                        </constraints>
-                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.92941176469999998" green="0.92549019610000005" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="WRo-6l-mJx" firstAttribute="centerX" secondItem="NMp-5W-n5D" secondAttribute="centerX" id="0yt-bY-Nyz"/>
-                                    <constraint firstItem="hA3-64-VMy" firstAttribute="leading" secondItem="NMp-5W-n5D" secondAttribute="leading" constant="94" id="6ns-MB-dYW"/>
                                     <constraint firstAttribute="trailing" secondItem="WRo-6l-mJx" secondAttribute="trailing" constant="17" id="Smn-C8-ACa"/>
                                     <constraint firstItem="WRo-6l-mJx" firstAttribute="centerY" secondItem="NMp-5W-n5D" secondAttribute="centerY" id="Ter-X1-Qob"/>
-                                    <constraint firstAttribute="trailing" secondItem="hA3-64-VMy" secondAttribute="trailing" constant="94" id="c9g-rT-eRf"/>
                                     <constraint firstItem="WRo-6l-mJx" firstAttribute="leading" secondItem="NMp-5W-n5D" secondAttribute="leading" constant="17" id="gD3-gW-2eM"/>
-                                    <constraint firstItem="hA3-64-VMy" firstAttribute="centerY" secondItem="WRo-6l-mJx" secondAttribute="centerY" id="tu5-Ys-KtE"/>
                                 </constraints>
                             </view>
                         </subviews>

@@ -647,6 +647,7 @@
 				PROVISIONING_PROFILE = "333e0c91-e45f-458e-a7ed-829f77fcf8dd";
 				SWIFT_OBJC_BRIDGING_HEADER = "Hack FSU-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -665,6 +666,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "44cbc663-93a2-450e-a212-7e1944965fa2";
 				SWIFT_OBJC_BRIDGING_HEADER = "Hack FSU-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -775,6 +777,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "44cbc663-93a2-450e-a212-7e1944965fa2";
 				SWIFT_OBJC_BRIDGING_HEADER = "Hack FSU-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = adHoc;
 		};
