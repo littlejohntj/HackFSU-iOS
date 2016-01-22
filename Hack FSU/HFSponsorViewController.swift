@@ -107,7 +107,7 @@ class HFSponsorViewController: UIViewController, UITableViewDelegate, UITableVie
         
         var sponsorArray:[HFSponsor] = [HFSponsor]()
         
-        let query = PFQuery(className: "Sponsor").orderByDescending("level")
+        let query = PFQuery(className: "Sponsor").orderByAscending("level")
         
         query.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
             if let _ = objects {
@@ -119,10 +119,10 @@ class HFSponsorViewController: UIViewController, UITableViewDelegate, UITableVie
                     let newSponsorImage = sponsor.objectForKey("image") as? PFFile
                     let newSponsorLevel = sponsor.objectForKey("level") as! Int
                     
-                    if newSponsorLevel != 1 {
-                        let newSponsor = HFSponsor(name: newSponsorName, image: newSponsorImage!, level: newSponsorLevel)
-                        sponsorArray.append(newSponsor)
-                    }
+                    
+                    let newSponsor = HFSponsor(name: newSponsorName, image: newSponsorImage!, level: newSponsorLevel)
+                    sponsorArray.append(newSponsor)
+                    
                 }
                 
                 self.sponsorFeedArray = sponsorArray

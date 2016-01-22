@@ -570,20 +570,19 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WRo-6l-mJx" customClass="CounterView" customModule="Hack_FSU" customModuleProvider="target">
                                         <rect key="frame" x="17" y="22" width="366" height="366"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pinkfeather" translatesAutoresizingMaskIntoConstraints="NO" id="hA3-64-VMy">
-                                                <rect key="frame" x="55" y="154" width="256" height="58"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lightning" translatesAutoresizingMaskIntoConstraints="NO" id="eV3-zQ-8Wg">
+                                                <rect key="frame" x="70" y="70" width="226" height="226"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="hA3-64-VMy" secondAttribute="height" multiplier="128:29" id="fLX-nx-gjv"/>
+                                                    <constraint firstAttribute="width" secondItem="eV3-zQ-8Wg" secondAttribute="height" multiplier="1:1" id="B7d-lV-s1E"/>
                                                 </constraints>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.92941176469999998" green="0.92549019610000005" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="WRo-6l-mJx" secondAttribute="height" multiplier="1:1" id="F5G-a3-tkV"/>
-                                            <constraint firstItem="hA3-64-VMy" firstAttribute="centerY" secondItem="WRo-6l-mJx" secondAttribute="centerY" id="J2i-Z4-fiG"/>
-                                            <constraint firstItem="hA3-64-VMy" firstAttribute="leading" secondItem="WRo-6l-mJx" secondAttribute="leading" constant="55" id="R4U-et-Rp5"/>
-                                            <constraint firstAttribute="trailing" secondItem="hA3-64-VMy" secondAttribute="trailing" constant="55" id="ldZ-kT-h2I"/>
-                                            <constraint firstItem="hA3-64-VMy" firstAttribute="centerX" secondItem="WRo-6l-mJx" secondAttribute="centerX" id="zOY-2q-nxV"/>
+                                            <constraint firstItem="eV3-zQ-8Wg" firstAttribute="leading" secondItem="WRo-6l-mJx" secondAttribute="leading" constant="70" id="cx9-Bp-uOl"/>
+                                            <constraint firstAttribute="trailing" secondItem="eV3-zQ-8Wg" secondAttribute="trailing" constant="70" id="eqT-7N-HUF"/>
+                                            <constraint firstItem="eV3-zQ-8Wg" firstAttribute="centerY" secondItem="WRo-6l-mJx" secondAttribute="centerY" id="fek-Xn-1uu"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -625,11 +624,11 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="400" height="600"/>
                     <connections>
-                        <outlet property="centerLogo" destination="hA3-64-VMy" id="eRe-zH-4S7"/>
                         <outlet property="countDownCircle" destination="WRo-6l-mJx" id="ChF-6m-H4K"/>
                         <outlet property="hoursTimeLabel" destination="fyz-5j-7zi" id="UYn-6L-vcD"/>
                         <outlet property="minutesTimerLabel" destination="4mG-IW-SXS" id="ASL-PY-Ylg"/>
                         <outlet property="secondsTimerLabel" destination="VoL-J5-sAo" id="OyJ-tL-PNz"/>
+                        <outlet property="shapeImage" destination="eV3-zQ-8Wg" id="vic-30-gBQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oxC-JR-M4E" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -955,11 +954,11 @@
         <image name="Clock" width="25" height="25"/>
         <image name="Clock Filled-50" width="25" height="25"/>
         <image name="firstFloor" width="4767" height="3129"/>
+        <image name="lightning" width="833" height="833"/>
         <image name="map" width="25" height="25"/>
         <image name="map-filled" width="25" height="25"/>
         <image name="news" width="25" height="25"/>
         <image name="news-filled" width="25" height="25"/>
-        <image name="pinkfeather" width="600" height="200"/>
         <image name="sponsor" width="25" height="25"/>
         <image name="sponsor-filled" width="25" height="25"/>
         <image name="yoda" width="24" height="24"/>

@@ -34,7 +34,7 @@ class CounterView: UIView {
         let radius: CGFloat = max(bounds.width, bounds.height)
         
         // 3
-        let arcWidth: CGFloat = 60.0
+        let arcWidth: CGFloat = 40.0
         
         // 4
         let fullTime:CGFloat = NSDate.timeBetween(countdownManager.getHackingStartTime(), date2: countdownManager.getHackingEndTime())
@@ -45,6 +45,7 @@ class CounterView: UIView {
         
         if countdownManager.hackingHasntStarted() {
             percentLeft = 1.0
+            print("U PLAYED YO SELF")
         } else {
             percentLeft = timeLeft / fullTime
         }
@@ -54,6 +55,8 @@ class CounterView: UIView {
         } else if percentLeft < 0.0 {
             percentLeft = 0.0
         }
+        
+        print(percentLeft)
         
         // 5
         let startAngle: CGFloat = 3.0 * π / 2.0

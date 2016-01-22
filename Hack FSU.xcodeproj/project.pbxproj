@@ -25,7 +25,6 @@
 		615085FE1BDEE2400066E7BE /* HFColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615085FD1BDEE2400066E7BE /* HFColors.swift */; };
 		61551A701BD9C0C50091D44A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61551A6F1BD9C0C50091D44A /* AppDelegate.swift */; };
 		61551A751BD9C0C50091D44A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61551A731BD9C0C50091D44A /* Main.storyboard */; };
-		61551A771BD9C0C50091D44A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61551A761BD9C0C50091D44A /* Assets.xcassets */; };
 		61551A7A1BD9C0C50091D44A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61551A781BD9C0C50091D44A /* LaunchScreen.storyboard */; };
 		61551A851BD9C0C50091D44A /* Hack_FSUTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61551A841BD9C0C50091D44A /* Hack_FSUTests.swift */; };
 		61551A901BD9C0C50091D44A /* Hack_FSUUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61551A8F1BD9C0C50091D44A /* Hack_FSUUITests.swift */; };
@@ -39,6 +38,7 @@
 		61ACC34F1C44027A00714A5B /* HFCountdownItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61ACC34E1C44027A00714A5B /* HFCountdownItem.swift */; };
 		61CC64C61C472D6200E08521 /* unisans.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 61CC64C51C472D6200E08521 /* unisans.OTF */; };
 		61D2D14E1BE7C53500145EBF /* HelpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D2D14D1BE7C53500145EBF /* HelpRequest.swift */; };
+		61F2087E1C51EF4C00B7CD27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61F2087D1C51EF4C00B7CD27 /* Assets.xcassets */; };
 		CED336EC00D9EC75BF013854 /* Pods_Hack_FSU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F3179E63106B529DE3B4C8D /* Pods_Hack_FSU.framework */; };
 /* End PBXBuildFile section */
 
@@ -94,7 +94,6 @@
 		61551A6C1BD9C0C50091D44A /* Hack FSU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hack FSU.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		61551A6F1BD9C0C50091D44A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61551A741BD9C0C50091D44A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		61551A761BD9C0C50091D44A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61551A791BD9C0C50091D44A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		61551A7B1BD9C0C50091D44A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61551A801BD9C0C50091D44A /* Hack FSUTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hack FSUTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +111,7 @@
 		61CC64C51C472D6200E08521 /* unisans.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = unisans.OTF; sourceTree = "<group>"; };
 		61D2D14D1BE7C53500145EBF /* HelpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpRequest.swift; sourceTree = "<group>"; };
 		61D2D14F1BE7C83E00145EBF /* Hack FSU-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hack FSU-Bridging-Header.h"; sourceTree = "<group>"; };
+		61F2087D1C51EF4C00B7CD27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75938323F00D36E19490B513 /* Pods-Hack FSU.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hack FSU.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hack FSU/Pods-Hack FSU.debug.xcconfig"; sourceTree = "<group>"; };
 		F55EC12BE118A0CA1F4CEFC3 /* Pods-Hack FSU.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hack FSU.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hack FSU/Pods-Hack FSU.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -207,9 +207,9 @@
 				61551A9F1BD9E6F80091D44A /* Views */,
 				610DD41A1BFE848A0061383D /* Cells */,
 				61D2D14C1BE7C50400145EBF /* Classes */,
-				61551A761BD9C0C50091D44A /* Assets.xcassets */,
 				61551A781BD9C0C50091D44A /* LaunchScreen.storyboard */,
 				61CC64C51C472D6200E08521 /* unisans.OTF */,
+				61F2087D1C51EF4C00B7CD27 /* Assets.xcassets */,
 				61551A7B1BD9C0C50091D44A /* Info.plist */,
 			);
 			path = "Hack FSU";
@@ -392,8 +392,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				61551A7A1BD9C0C50091D44A /* LaunchScreen.storyboard in Resources */,
-				61551A771BD9C0C50091D44A /* Assets.xcassets in Resources */,
 				61551A751BD9C0C50091D44A /* Main.storyboard in Resources */,
+				61F2087E1C51EF4C00B7CD27 /* Assets.xcassets in Resources */,
 				61CC64C61C472D6200E08521 /* unisans.OTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -625,7 +625,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "44cbc663-93a2-450e-a212-7e1944965fa2";
+				PROVISIONING_PROFILE = "312d49a1-b34f-40b9-94f1-74249894be2d";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -664,7 +664,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hackfsu.ios.hackfsu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "44cbc663-93a2-450e-a212-7e1944965fa2";
+				PROVISIONING_PROFILE = "312d49a1-b34f-40b9-94f1-74249894be2d";
 				SWIFT_OBJC_BRIDGING_HEADER = "Hack FSU-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -755,7 +755,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "44cbc663-93a2-450e-a212-7e1944965fa2";
+				PROVISIONING_PROFILE = "312d49a1-b34f-40b9-94f1-74249894be2d";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -775,7 +775,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hackfsu.ios.hackfsu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "44cbc663-93a2-450e-a212-7e1944965fa2";
+				PROVISIONING_PROFILE = "312d49a1-b34f-40b9-94f1-74249894be2d";
 				SWIFT_OBJC_BRIDGING_HEADER = "Hack FSU-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};

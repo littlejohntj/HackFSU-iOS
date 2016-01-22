@@ -16,7 +16,7 @@ class HFCountdownViewController: UIViewController {
 
     @IBOutlet weak var countDownCircle: CounterView!
     
-    @IBOutlet weak var centerLogo: UIImageView!
+    @IBOutlet weak var shapeImage: UIImageView!
     
     @IBOutlet weak var secondsTimerLabel: UILabel!
     
@@ -27,7 +27,7 @@ class HFCountdownViewController: UIViewController {
     var timer = NSTimer()
     var timerCount:Int!
     var timerIsRunning = false
-    
+    let shapeArray:[String] = ["lightning", "triangle", "line", "cross"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,6 +57,15 @@ class HFCountdownViewController: UIViewController {
         } else {
             countdownManager.loadCountdownEventsFromParse()
         }
+        
+        
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        let random = Int(arc4random_uniform(4))
+        let image = shapeArray[random]
+        self.shapeImage.image = UIImage(named: image as! String)
+
     }
     
     func checkForNewTimes() {
@@ -156,6 +165,8 @@ class HFCountdownViewController: UIViewController {
             let hours = timerCount / secondsInAnHour
             let minutes = ( timerCount - ( hours * secondsInAnHour ) ) / secondsInAMinute
             let seconds = timerCount - (hours * secondsInAnHour) - ( minutes * secondsInAMinute )
+            
+            
             
             if hours < 10 {
                 hoursTimeLabel.text = "0\(hours)"
