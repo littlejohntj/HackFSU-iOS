@@ -327,7 +327,7 @@ class HFFeedViewController: UIViewController, UITableViewDelegate, UITableViewDa
                         subtitle: newScheduleItemSubtitle,
                         start: newScheduleItemStartTimeString)
                     
-                    stateForArrayFill = self.getDayOfWeek(newScheduleItemStartTime.dateByAddingTimeInterval(18000))
+                    stateForArrayFill = self.getDayOfWeek(newScheduleItemStartTime)
                     
                     if stateForArrayFill == 0 {
                         self.fridayFeedArray.append(newScheduleItem)
